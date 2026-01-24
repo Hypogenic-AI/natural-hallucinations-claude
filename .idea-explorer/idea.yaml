@@ -1,0 +1,31 @@
+idea:
+  title: Natural Hallucinations
+  domain: nlp
+  hypothesis: 'Some hallucinations produced by large language models (LLMs) are difficult
+    for the models to recognize, even when all relevant information is present. These
+    "natural hallucinations" may be robust to additional context or question phrasing,
+    and may transfer across models or persist after training. Investigating the robustness,
+    transferability, and memorability of such hallucinations can reveal whether hallucinations
+    found in older models predict those in newer models.
+
+    '
+  background:
+    description: 'LLMs still hallucinate quite a bit. My bet is, one of the reasons
+      for this is that there are hallucinations that are difficult for LLMs to recognize,
+      even when they have all the information needed. One of the reasons for this
+      may be that hallucinations are usually about something extra an LLM sees, but
+      contradictory in-context information is normal to see, so doesn''t necessarily
+      allow the model to know its hallucinating.
+
+      Can we see how robust certain hallucinations are to include information/the
+      question asked? Do these hallucinations transfer? If models are trained on these
+      Natural Hallucinations, are these beliefs remembered more easily? If we find
+      them for older models, do they predict hallucinations in later models?'
+  metadata:
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/1XZ25LcC8dRDHMNI1UMB
+    idea_id: natural_hallucinations_20260124_172650_6333f0c5
+    created_at: '2026-01-24T17:26:50.676561'
+    status: submitted
+    github_repo_name: natural-hallucinations-claude
+    github_repo_url: https://github.com/Hypogenic-AI/natural-hallucinations-claude
