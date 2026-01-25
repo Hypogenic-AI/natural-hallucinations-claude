@@ -1,0 +1,27 @@
+{
+  "contingency_table": {
+    "both_correct": 74,
+    "gpt35_only_wrong": 20,
+    "gpt4o_only_wrong": 1,
+    "both_wrong": 5
+  },
+  "correlation": {
+    "pearson_r": 0.3403516468284205,
+    "p_value": 0.0005306836212084664
+  },
+  "chi_squared": {
+    "chi2": 8.51063829787234,
+    "p_value": 0.0035307619178311742,
+    "dof": 1
+  },
+  "predictive_power": {
+    "p_gpt4o_wrong_given_gpt35_wrong": 0.2,
+    "gpt35_total_wrong": 25,
+    "gpt4o_total_wrong": 6
+  },
+  "summary": {
+    "gpt35_accuracy": 0.75,
+    "gpt4o_accuracy": 0.94,
+    "error_overlap_percentage": 0.19230769230769232
+  }
+}

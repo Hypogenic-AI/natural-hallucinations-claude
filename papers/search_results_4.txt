@@ -1,0 +1,94 @@
+Found 310 papers
+======================================================================
+
+1. Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+   Relevance: 3/3 | Year: 2023 | Citations: 819
+   Authors: Yue Zhang, Yafu Li, Leyang Cui et al.
+   URL: https://api.semanticscholar.org/CorpusId:261530162
+   Abstract: 
+ While large language models (LLMs) have demonstrated remarkable capabilities across a range of downstream tasks, a significant concern revolves around their propensity to exhibit hallucinations: LLMs occasionally generate content that diverges from the user input, contradicts previously generated ...
+
+2. R-Tuning: Instructing Large Language Models to Say ‘I Don’t Know’
+   Relevance: 3/3 | Year: 2023 | Citations: 79
+   Authors: Hanning Zhang, Shizhe Diao, Yong Lin et al.
+   URL: https://www.semanticscholar.org/paper/97d24f9f0d81007d57cc43e61bf2b0c9081fe184
+   Abstract: Large language models (LLMs) have revolutionized numerous domains with their impressive performance but still face their challenges. A predominant issue is the propensity for these models to generate non-existent facts, a concern termed hallucination. Our research is motivated by the observation tha...
+
+3. SaySelf: Teaching LLMs to Express Confidence with Self-Reflective Rationales
+   Relevance: 3/3 | Year: 2024 | Citations: 77
+   Authors: Tianyang Xu, Shujin Wu, Shizhe Diao et al.
+   URL: https://api.semanticscholar.org/CorpusId:270199748
+   Abstract: Large language models (LLMs) often generate inaccurate or fabricated information and generally fail to indicate their confidence, which limits their broader applications. Previous work has elicited confidence from LLMs by direct or self-consistency prompting, or constructing specific datasets for su...
+
+4. Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations
+   Relevance: 3/3 | Year: 2025 | Citations: 22
+   Authors: Ziwei Ji, Lei Yu, Yeskendir Koishekenov et al.
+   URL: https://www.semanticscholar.org/paper/06455708ab45f6606ee14b4e5a581884f97fa8b3
+   Abstract: LLMs often adopt an assertive language style also when making false claims. Such ``overconfident hallucinations'' mislead users and erode trust. Achieving the ability to express in language the actual degree of uncertainty around a claim is therefore of great importance. We find that ``verbal uncert...
+
+5. Loki's Dance of Illusions: A Comprehensive Survey of Hallucination in Large Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 13
+   Authors: Chaozhuo Li, Pengbo Wang, Chenxu Wang et al.
+   URL: https://api.semanticscholar.org/CorpusId:280151005
+   Abstract: Edgar Allan Poe noted,"Truth often lurks in the shadow of error,"highlighting the deep complexity intrinsic to the interplay between truth and falsehood, notably under conditions of cognitive and informational asymmetry. This dynamic is strikingly evident in large language models (LLMs). Despite the...
+
+6. Self-Alignment for Factuality: Mitigating Hallucinations in LLMs via Self-Evaluation
+   Relevance: 3/3 | Year: 2024 | Citations: 94
+   Authors: Xiaoying Zhang, Baolin Peng, Ye Tian et al.
+   URL: https://www.semanticscholar.org/paper/32c5b515cab893e5e4bf3f90c8b6c8262bd7ac09
+   Abstract: Despite showing increasingly human-like abilities, large language models (LLMs) often struggle with factual inaccuracies, i.e."hallucinations", even when they hold relevant knowledge. To address these hallucinations, current approaches typically necessitate high-quality human factuality annotations....
+
+7. Thinking, Faithful and Stable: Mitigating Hallucinations in LLMs
+   Relevance: 3/3 | Year: 2025 | Citations: 0
+   Authors: Chelsea Zou, Yiheng Yao, Basant Khalil
+   URL: https://www.semanticscholar.org/paper/7469891d2f700ea7c188125a1eec79711f23fc83
+   Abstract: This project develops a self correcting framework for large language models (LLMs) that detects and mitigates hallucinations during multi-step reasoning. Rather than relying solely on final answer correctness, our approach leverages fine grained uncertainty signals: 1) self-assessed confidence align...
+
+8. Mitigating LLM Hallucination via Behaviorally Calibrated Reinforcement Learning
+   Relevance: 3/3 | Year: 2025 | Citations: 0
+   Authors: Jiayun Wu, Jiashuo Liu, Zhiyuan Zeng et al.
+   URL: https://www.semanticscholar.org/paper/6304047b9333173e85f2498a0008f3b5449f9b99
+   Abstract: LLM deployment in critical domains is currently impeded by persistent hallucinations--generating plausible but factually incorrect assertions. While scaling laws drove significant improvements in general capabilities, theoretical frameworks suggest hallucination is not merely stochastic error but a ...
+
+9. A Survey of Large Language Model Agents for Question Answering
+   Relevance: 3/3 | Year: 2025 | Citations: 27
+   Authors: Murong Yue
+   URL: https://api.semanticscholar.org/CorpusId:277313791
+   Abstract: This paper surveys the development of large language model (LLM)-based agents for question answering (QA). Traditional agents face significant limitations, including substantial data requirements and difficulty in generalizing to new environments. LLM-based agents address these challenges by leverag...
+
+10. Uncertainty-Aware Fusion: An Ensemble Framework for Mitigating Hallucinations in Large Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 9
+   Authors: Prasenjit Dey, S. Merugu, S. Kaveri
+   URL: https://api.semanticscholar.org/CorpusId:276903022
+   Abstract: Large Language Models (LLMs) are known to hallucinate and generate non-factual outputs which can undermine user trust. Traditional methods to directly mitigate hallucinations, such as representation editing and contrastive decoding, often require additional training data and involve high implementat...
+
+11. MMBoundary: Advancing MLLM Knowledge Boundary Awareness through Reasoning Step Confidence Calibration
+   Relevance: 3/3 | Year: 2025 | Citations: 12
+   Authors: Zhitao He, Sandeep Polisetty, Zhiyuan Fan et al.
+   URL: https://api.semanticscholar.org/CorpusId:278996632
+   Abstract: In recent years, multimodal large language models (MLLMs) have made significant progress but continue to face inherent challenges in multimodal reasoning, which requires multi-level (e.g., perception, reasoning) and multi-granular (e.g., multi-step reasoning chain) advanced inferencing. Prior work o...
+
+12. Large Legal Fictions: Profiling Legal Hallucinations in Large Language Models
+   Relevance: 3/3 | Year: 2024 | Citations: 165
+   Authors: Matthew Dahl, Varun Magesh, Mirac Suzgun et al.
+   URL: https://www.semanticscholar.org/paper/3d3a55074000b375625c6233332f08648430d413
+   Abstract: 
+ Do large language models (LLMs) know the law? LLMs are increasingly being used to augment legal practice, education, and research, yet their revolutionary potential is threatened by the presence of “hallucinations”—textual output that is not consistent with legal facts. We present the first system...
+
+13. LaMsS: When Large Language Models Meet Self-Skepticism
+   Relevance: 3/3 | Year: 2024 | Citations: 1
+   Authors: Yetao Wu, Yihong Wang, Teng Chen et al.
+   URL: https://api.semanticscholar.org/CorpusId:272550910
+   Abstract: Hallucination is a major challenge for large language models (LLMs), preventing their further application in some fields. The skeptical thinking of humankind could be useful for LLMs to self-cognition, self-reflection and alleviate their hallucinations. Inspired by this consideration, we propose a n...
+
+14. Representations of Fact, Fiction and Forecast in Large Language Models: Epistemics and Attitudes
+   Relevance: 3/3 | Year: 2025 | Citations: 0
+   Authors: Meng Li, Michael Vrazitulis, David Schlangen
+   URL: https://api.semanticscholar.org/CorpusId:279119784
+   Abstract: Rational speakers are supposed to know what they know and what they do not know, and to generate expressions matching the strength of evidence. In contrast, it is still a challenge for current large language models to generate corresponding utterances based on the assessment of facts and confidence ...
+
+15. Harnessing RLHF for Robust Unanswerability Recognition and Trustworthy Response Generation in LLMs
+   Relevance: 3/3 | Year: 2025 | Citations: 0
+   Authors: Shuyuan Lin, Lei Duan, Philip Hughes et al.
+   URL: https://api.semanticscholar.org/CorpusId:280220221
+   Abstract: Conversational Information Retrieval (CIR) systems, while offering intuitive access to information, face a significant challenge: reliably handling unanswerable questions to prevent the generation of misleading or hallucinated content. Traditional approaches often rely on external classifiers, which...

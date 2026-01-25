@@ -1,0 +1,51 @@
+\section{Methodology}
+\label{sec:methodology}
+
+We design four experiments to test whether \naturalhall exist and to characterize their properties.
+
+\subsection{Dataset and Models}
+
+\para{Dataset.} We use the \truthfulqa benchmark~\citep{lin2021truthfulqa}, which contains 817 questions across 38 categories designed to elicit \imitativefalsehoods. Categories include Misconceptions, Stereotypes, Misquotations, Proverbs, Language, and Law. We randomly sample 100 questions (seed=42) for our primary experiments.
+
+\para{Models.} We evaluate four models spanning different providers and architectures:
+\begin{itemize}
+    \item \gptfour (OpenAI)---state-of-the-art proprietary model
+    \item \gptthree (OpenAI)---older baseline for temporal analysis
+    \item \claude (Anthropic via OpenRouter)---different training methodology
+    \item \llama (Meta via OpenRouter)---open-source alternative
+\end{itemize}
+All models use greedy decoding (temperature=0) for reproducibility, with maximum 256 tokens per response.
+
+\para{Evaluation protocol.} Following \citet{lin2021truthfulqa}, we use \gptfour as a judge to evaluate correctness. The judge compares each response against \truthfulqa's lists of correct and incorrect reference answers, marking responses as correct if they semantically match any correct answer or appropriately express uncertainty (\eg ``I don't know'').
+
+\subsection{Experiment 1: Cross-Model Transfer}
+
+We present each of the 100 questions to all four models and record correctness. We define a question as exhibiting a \emph{natural hallucination} if at least 3 of 4 models produce incorrect answers. This threshold balances identifying shared errors while allowing for model-specific noise.
+
+\para{Metrics.} We compute per-model accuracy and identify the set of \naturalhall. We also calculate pairwise Pearson correlations between model error patterns to assess the degree of error sharing.
+
+\subsection{Experiment 2: Robustness to Paraphrasing}
+
+For each identified natural hallucination, we generate three semantically equivalent paraphrases using \claude. Paraphrases preserve the question's meaning while varying phrasing, word order, and vocabulary. We then test all four models on each paraphrase.
+
+\para{Metrics.} We define the robustness score as the fraction of paraphrases that still produce errors for each model. A question is ``highly robust'' if at least 2 of 3 paraphrases cause failures.
+
+\subsection{Experiment 3: Self-Recognition}
+
+We test whether models can identify their own errors when asked directly. For each incorrect response, we present the model with its own answer and ask: ``Is the following answer correct? [answer]''. We compare recognition rates for two groups:
+\begin{itemize}
+    \item \textbf{Natural hallucinations}: errors on questions where $\geq$3 models failed
+    \item \textbf{Model-specific errors}: errors on questions where only that model failed
+\end{itemize}
+
+\para{Metrics.} Recognition rate is the fraction of errors that the model correctly identifies as incorrect. The recognition gap is the difference between rates for model-specific versus natural hallucinations.
+
+\subsection{Experiment 4: Temporal Analysis}
+
+We compare error patterns between \gptthree (older) and \gptfour (newer) to test whether older model errors predict newer model errors. We construct a 2$\times$2 contingency table: (both correct, only GPT-3.5 wrong, only GPT-4o wrong, both wrong).
+
+\para{Metrics.} We compute: (1) the conditional probability $P(\text{GPT-4o wrong} \mid \text{GPT-3.5 wrong})$, measuring error inheritance; (2) Pearson correlation between error patterns; and (3) statistical significance via chi-squared test.
+
+\subsection{Statistical Analysis}
+
+All correlation tests use Pearson's $r$ with bootstrapped 95\% confidence intervals. For comparing recognition rates, we use McNemar's test for paired proportions. We report $p$-values and apply Benjamini-Hochberg correction for multiple comparisons where applicable. We set $\alpha = 0.05$ for all tests.

@@ -1,0 +1,41 @@
+%%%%% GENERAL FORMATTING MACROS %%%%%
+% General formatting and styling macros for academic papers
+% Import with: \input{commands/general}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PARAGRAPH AND TEXT FORMATTING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Bold paragraph headers (use: \para{Header.} followed by text)
+\newcommand{\para}[1]{\noindent \textbf{#1}}
+
+% Cut content for space (content is hidden but preserved in source)
+\newcommand{\cutforspace}[1]{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RESULT HIGHLIGHTING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Arrows for showing improvement/decline in results (simplified without color)
+\newcommand{\increase}{$\uparrow$}
+\newcommand{\decrease}{$\downarrow$}
+
+% Phantom star for alignment in tables
+\newcommand{\pstar}{\phantom{*}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ALGORITHM STYLING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Comment style for algorithms (triangleright marker)
+\newcommand{\rightcomment}[1]{\(\triangleright\) {\small \it #1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MISCELLANEOUS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Ordinals
+\newcommand{\nth}[1]{#1\textsuperscript{th}}
+
+% Generic fixme/todo command
+\newcommand{\fixme}[1]{[FIXME: #1]}

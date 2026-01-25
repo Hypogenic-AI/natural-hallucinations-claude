@@ -1,0 +1,92 @@
+Found 71 papers
+======================================================================
+
+1. SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models
+   Relevance: 3/3 | Year: 2023 | Citations: 685
+   Authors: Potsawee Manakul, Adian Liusie, M. Gales
+   URL: https://www.semanticscholar.org/paper/7c1707db9aafd209aa93db3251e7ebd593d55876
+   Abstract: Generative Large Language Models (LLMs) such as GPT-3 are capable of generating highly fluent responses to a wide variety of user prompts. However, LLMs are known to hallucinate facts and make non-factual statements which can undermine trust in their output. Existing fact-checking approaches either ...
+
+2. A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions
+   Relevance: 3/3 | Year: 2023 | Citations: 1960
+   Authors: Lei Huang, Weijiang Yu, Weitao Ma et al.
+   URL: https://www.semanticscholar.org/paper/1e909e2a8cdacdcdff125ebcc566f37cb869a1c8
+   Abstract: The emergence of large language models (LLMs) has marked a significant breakthrough in natural language processing (NLP), fueling a paradigm shift in information acquisition. Nevertheless, LLMs are prone to hallucination, generating plausible yet nonfactual content. This phenomenon raises significan...
+
+3. INSIDE: LLMs' Internal States Retain the Power of Hallucination Detection
+   Relevance: 3/3 | Year: 2024 | Citations: 204
+   Authors: Chao Chen, Kai Liu, Ze Chen et al.
+   URL: https://www.semanticscholar.org/paper/f62acb5a743ea4d47a045460a9ee346c2cec5068
+   Abstract: Knowledge hallucination have raised widespread concerns for the security and reliability of deployed LLMs. Previous efforts in detecting hallucinations have been employed at logit-level uncertainty estimation or language-level self-consistency evaluation, where the semantic information is inevitably...
+
+4. RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models
+   Relevance: 3/3 | Year: 2023 | Citations: 189
+   Authors: Yuanhao Wu, Juno Zhu, Siliang Xu et al.
+   URL: https://www.semanticscholar.org/paper/cfce709a65f90312d2bdc1a6cf0380c19becf694
+   Abstract: Retrieval-augmented generation (RAG) has become a main technique for alleviating hallucinations in large language models (LLMs). Despite the integration of RAG, LLMs may still present unsupported or contradictory claims to the retrieved contents. In order to develop effective hallucination preventio...
+
+5. HaloScope: Harnessing Unlabeled LLM Generations for Hallucination Detection
+   Relevance: 3/3 | Year: 2024 | Citations: 63
+   Authors: Xuefeng Du, Chaowei Xiao, Yixuan Li
+   URL: https://www.semanticscholar.org/paper/62cb110668b1b3352eebf3e5dac1e3c018681227
+   Abstract: The surge in applications of large language models (LLMs) has prompted concerns about the generation of misleading or fabricated information, known as hallucinations. Therefore, detecting hallucinations has become critical to maintaining trust in LLM-generated content. A primary challenge in learnin...
+
+6. Unsupervised Real-Time Hallucination Detection based on the Internal States of Large Language Models
+   Relevance: 3/3 | Year: 2024 | Citations: 59
+   Authors: Weihang Su, Changyue Wang, Qingyao Ai et al.
+   URL: https://www.semanticscholar.org/paper/411b725522e2747e890ba5acfbf43d22f759c00a
+   Abstract: Hallucinations in large language models (LLMs) refer to the phenomenon of LLMs producing responses that are coherent yet factually inaccurate. This issue undermines the effectiveness of LLMs in practical applications, necessitating research into detecting and mitigating hallucinations of LLMs. Previ...
+
+7. Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs
+   Relevance: 3/3 | Year: 2024 | Citations: 122
+   Authors: Jannik Kossen, Jiatong Han, Muhammed Razzak et al.
+   URL: https://www.semanticscholar.org/paper/648375ec8d90cb792de76030223539498612102e
+   Abstract: We propose semantic entropy probes (SEPs), a cheap and reliable method for uncertainty quantification in Large Language Models (LLMs). Hallucinations, which are plausible-sounding but factually incorrect and arbitrary model generations, present a major challenge to the practical adoption of LLMs. Re...
+
+8. The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models
+   Relevance: 3/3 | Year: 2024 | Citations: 109
+   Authors: Junyi Li, Jie Chen, Ruiyang Ren et al.
+   URL: https://api.semanticscholar.org/CorpusId:266844012
+   Abstract: In the era of large language models (LLMs), hallucination (i.e., the tendency to generate factually incorrect content) poses great challenge to trustworthy and reliable deployment of LLMs in real-world applications. To tackle the LLM hallucination, three key questions should be well studied: how to ...
+
+9. SAC3: Reliable Hallucination Detection in Black-Box Language Models via Semantic-aware Cross-check Consistency
+   Relevance: 3/3 | Year: 2023 | Citations: 92
+   Authors: Jiaxin Zhang, Zhuohang Li, Kamalika Das et al.
+   URL: https://www.semanticscholar.org/paper/6af460d34bfc8e955e43fbe15cedcf329b48bc19
+   Abstract: Hallucination detection is a critical step toward understanding the trustworthiness of modern language models (LMs). To achieve this goal, we re-examine existing detection approaches based on the self-consistency of LMs and uncover two types of hallucinations resulting from 1) question-level and 2) ...
+
+10. Mitigating Entity-Level Hallucination in Large Language Models
+   Relevance: 3/3 | Year: 2024 | Citations: 23
+   Authors: Weihang Su, Yichen Tang, Qingyao Ai et al.
+   URL: https://api.semanticscholar.org/CorpusId:271162228
+   Abstract: The emergence of Large Language Models (LLMs) has revolutionized how users access information, shifting from traditional search engines to direct question-and-answer interactions with LLMs. However, the widespread adoption of LLMs has revealed a significant challenge known as hallucination, wherein ...
+
+11. MedHalu: Hallucinations in Responses to Healthcare Queries by Large Language Models
+   Relevance: 3/3 | Year: 2024 | Citations: 22
+   Authors: Vibhor Agarwal, Yiqiao Jin, Mohit Chandra et al.
+   URL: https://api.semanticscholar.org/CorpusId:272987286
+   Abstract: Large language models (LLMs) are starting to complement traditional information seeking mechanisms such as web search. LLM-powered chatbots like ChatGPT are gaining prominence among the general public. AI chatbots are also increasingly producing content on social media platforms. However, LLMs are a...
+
+12. Cost-Effective Hallucination Detection for LLMs
+   Relevance: 3/3 | Year: 2024 | Citations: 16
+   Authors: Simon Valentin, Jinmiao Fu, Gianluca Detommaso et al.
+   URL: https://api.semanticscholar.org/CorpusId:271571420
+   Abstract: Large language models (LLMs) can be prone to hallucinations - generating unreliable outputs that are unfaithful to their inputs, external facts or internally inconsistent. In this work, we address several challenges for post-hoc hallucination detection in production settings. Our pipeline for halluc...
+
+13. Steer LLM Latents for Hallucination Detection
+   Relevance: 3/3 | Year: 2025 | Citations: 26
+   Authors: Seongheon Park, Xuefeng Du, Min-Hsuan Yeh et al.
+   URL: https://www.semanticscholar.org/paper/6e656a4e3b8b0f0f78c11cd87673991eacbfe95f
+   Abstract: Hallucinations in LLMs pose a significant concern to their safe deployment in real-world applications. Recent approaches have leveraged the latent space of LLMs for hallucination detection, but their embeddings, optimized for linguistic coherence rather than factual accuracy, often fail to clearly s...
+
+14. InterrogateLLM: Zero-Resource Hallucination Detection in LLM-Generated Answers
+   Relevance: 3/3 | Year: 2024 | Citations: 27
+   Authors: Yakir Yehuda, Itzik Malkiel, Oren Barkan et al.
+   URL: https://www.semanticscholar.org/paper/e011dc8af89a254c2fed4ca140dff1c32133c647
+   Abstract: Despite the many advances of Large Language Models (LLMs) and their unprecedented rapid evolution, their impact and integration into every facet of our daily lives is limited due to various reasons. One critical factor hindering their widespread adoption is the occurrence of hallucinations, where LL...
+
+15. Chain of Natural Language Inference for Reducing Large Language Model Ungrounded Hallucinations
+   Relevance: 3/3 | Year: 2023 | Citations: 55
+   Authors: Deren Lei, Yaxi Li, Mengya Hu et al.
+   URL: https://www.semanticscholar.org/paper/79429814fd4d967b9277af2805c53f370e52ebb5
+   Abstract: Large language models (LLMs) can generate fluent natural language texts when given relevant documents as background context. This ability has attracted considerable interest in developing industry applications of LLMs. However, LLMs are prone to generate hallucinations that are not supported by the ...

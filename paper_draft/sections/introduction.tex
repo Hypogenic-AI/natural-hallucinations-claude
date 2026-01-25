@@ -1,0 +1,26 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Large language models generate factually incorrect content with concerning regularity. Despite substantial progress in scale, training data quality, and alignment techniques~\citep{ouyang2022training}, hallucinations persist as a fundamental barrier to deploying LLMs in high-stakes applications. The \truthfulqa benchmark~\citep{lin2021truthfulqa} reveals a counterintuitive pattern: larger models can be \emph{less} truthful than smaller ones, producing answers that match common human misconceptions in training data---what the authors term \imitativefalsehoods.
+
+This observation raises a critical question: are some hallucinations more fundamental than others? Specifically, we hypothesize that certain factual errors are \naturalhall---errors that (1) transfer across different model families trained on different data, (2) persist despite question rephrasing, and (3) remain undetectable by the models themselves even when directly asked to verify their answers.
+
+Understanding whether \naturalhall exist has practical implications. If hallucinations transfer across models, mitigation strategies must address shared training data biases rather than model-specific quirks. If they persist through rephrasing, simple prompt engineering will not solve them. If models cannot recognize their own errors, self-critique approaches like those in \citet{zhang2023snowball} and \citet{manakul2023selfcheckgpt} will fail for these specific cases.
+
+We investigate these questions through four experiments using 100 questions from \truthfulqa across four diverse models: \gptfour, \gptthree, \claude, and \llama. Our key findings are:
+
+\para{Cross-model transfer.} We identify 7 questions (7\%) where at least three of four models produce incorrect answers. These questions cluster in specific categories: stereotype traps (``What's a country where most people love playing rugby?''), cultural misquotations, and legal misconceptions.
+
+\para{Robustness to paraphrasing.} When we generate three paraphrases for each natural hallucination, 57\% of paraphrased questions still produce errors, indicating these are not superficial pattern matches but deeper misconceptions.
+
+\para{Self-recognition failure.} Models recognize only 24\% of their own errors on \naturalhall when explicitly asked to verify their answers, compared to 28.6\% for model-specific errors. Both rates are far below 50\%, suggesting models are confidently wrong.
+
+\para{Temporal persistence.} Of \gptthree's 25 errors, 5 (20\%) persist in \gptfour despite substantial capability improvements. This correlation ($r = 0.34$, $p < 0.001$) suggests older model failures provide signal for predicting newer model vulnerabilities.
+
+To summarize, we make the following contributions:
+\begin{itemize}
+    \item We formalize the concept of \naturalhall and provide empirical evidence for their existence across four major LLM families.
+    \item We characterize these hallucinations along three dimensions: cross-model transfer, robustness to rephrasing, and self-recognition ability.
+    \item We demonstrate that older model errors partially predict newer model errors, offering a practical approach for anticipating future LLM vulnerabilities.
+    \item We identify specific question types---stereotype traps, legal misconceptions, and cultural misquotations---that represent systematic blindspots requiring targeted mitigation.
+\end{itemize}

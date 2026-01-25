@@ -1,0 +1,92 @@
+Found 118 papers
+======================================================================
+
+1. LM vs LM: Detecting Factual Errors via Cross Examination
+   Relevance: 3/3 | Year: 2023 | Citations: 185
+   Authors: Roi Cohen, May Hamri, Mor Geva et al.
+   URL: https://www.semanticscholar.org/paper/ed0ed87161a2beab9e1bed3e783d7487a5f1062a
+   Abstract: A prominent weakness of modern language models (LMs) is their tendency to generate factually incorrect text, which hinders their usability. A natural question is whether such factual errors can be detected automatically. Inspired by truth-seeking mechanisms in law, we propose a factuality evaluation...
+
+2. Fine-grained Hallucination Detection and Editing for Language Models
+   Relevance: 3/3 | Year: 2024 | Citations: 130
+   Authors: Abhika Mishra, Akari Asai, Vidhisha Balachandran et al.
+   URL: https://www.semanticscholar.org/paper/028d75496e51943f52c7b2177344a3c089c18058
+   Abstract: Large language models (LMs) are prone to generate factual errors, which are often called hallucinations. In this paper, we introduce a comprehensive taxonomy of hallucinations and argue that hallucinations manifest in diverse forms, each requiring varying degrees of careful assessments to verify fac...
+
+3. Generating Benchmarks for Factuality Evaluation of Language Models
+   Relevance: 3/3 | Year: 2023 | Citations: 124
+   Authors: Dor Muhlgay, Ori Ram, Inbal Magar et al.
+   URL: https://www.semanticscholar.org/paper/a72975eb88eb31f193e9587e7415cb04e7bcdbee
+   Abstract: Before deploying a language model (LM) within a given domain, it is important to measure its tendency to generate factually incorrect information in that domain. Existing methods for factuality evaluation of LLM generation focus on facts sampled from the LM itself, and thus do not control the set of...
+
+4. Factuality Enhanced Language Models for Open-Ended Text Generation
+   Relevance: 3/3 | Year: 2022 | Citations: 275
+   Authors: Nayeon Lee, Wei Ping, Peng Xu et al.
+   URL: https://www.semanticscholar.org/paper/f12a6168ed8de1aee69fee51b469b1aecd5f903e
+   Abstract: Pretrained language models (LMs) are susceptible to generate text with nonfactual information. In this work, we measure and improve the factual accuracy of large-scale LMs for open-ended text generation. We design the FactualityPrompts test set and metrics to measure the factuality of LM generations...
+
+5. MEDEC: A Benchmark for Medical Error Detection and Correction in Clinical Notes
+   Relevance: 3/3 | Year: 2024 | Citations: 90
+   Authors: Asma Ben Abacha, Wen-wai Yim, Yujuan Fu et al.
+   URL: https://www.semanticscholar.org/paper/19ac2750cd1e02362f25fc2bdd88110fa127db34
+   Abstract: Several studies showed that Large Language Models (LLMs) can answer medical questions correctly, even outperforming the average human score in some medical exams. However, to our knowledge, no study has been conducted to assess the ability of language models to validate existing or generated medical...
+
+6. FactKB: Generalizable Factuality Evaluation using Language Models Enhanced with Factual Knowledge
+   Relevance: 3/3 | Year: 2023 | Citations: 62
+   Authors: Shangbin Feng, Vidhisha Balachandran, Yuyang Bai et al.
+   URL: https://www.semanticscholar.org/paper/663d743272e9ab04f54d9105a3c3a3f6e22dd1dd
+   Abstract: Evaluating the factual consistency of automatically generated summaries is essential for the progress and adoption of reliable summarization systems. Despite recent advances, existing factuality evaluation models are not robust, being especially prone to entity and relation errors in new domains. We...
+
+7. Attention Satisfies: A Constraint-Satisfaction Lens on Factual Errors of Language Models
+   Relevance: 3/3 | Year: 2023 | Citations: 67
+   Authors: Mert Yuksekgonul, Varun Chandrasekaran, Erik Jones et al.
+   URL: https://www.semanticscholar.org/paper/fdc75b7b51ca98e555a4a8f0bc261e76bac6fb70
+   Abstract: We investigate the internal behavior of Transformer-based Large Language Models (LLMs) when they generate factually incorrect text. We propose modeling factual queries as constraint satisfaction problems and use this framework to investigate how the LLM interacts internally with factual constraints....
+
+8. ErrorRadar: Benchmarking Complex Mathematical Reasoning of Multimodal Large Language Models Via Error Detection
+   Relevance: 3/3 | Year: 2024 | Citations: 33
+   Authors: Yibo Yan, Shen Wang, Jiahao Huo et al.
+   URL: https://www.semanticscholar.org/paper/1c4b489f203b7eab37fbc7264f04718f1e879a73
+   Abstract: As the field of Multimodal Large Language Models (MLLMs) continues to evolve, their potential to revolutionize artificial intelligence is particularly promising, especially in addressing mathematical reasoning tasks. Current mathematical benchmarks predominantly focus on evaluating MLLMs' problem-so...
+
+9. ReFACT: A Benchmark for Scientific Confabulation Detection with Positional Error Annotations
+   Relevance: 3/3 | Year: 2025 | Citations: 0
+   Authors: Yindong Wang, Martin Preiss, M. Bugueño et al.
+   URL: https://www.semanticscholar.org/paper/fbc88bb4550fd3af7646d0d88966f52d2bfad0bb
+   Abstract: Large Language Models (LLMs) frequently confabulate scientific facts, severely undermining their trustworthiness. Addressing this challenge requires benchmarks that go beyond binary factuality and enable fine-grained evaluation. We introduce ReFACT (Reddit False And Correct Texts), a benchmark of 1,...
+
+10. The Drill-Down and Fabricate Test (DDFT): A Protocol for Measuring Epistemic Robustness in Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 0
+   Authors: Rahul Baxi
+   URL: https://www.semanticscholar.org/paper/01c0a463ee05043587d0a668bf3f01b1d1c68904
+   Abstract: Current language model evaluations measure what models know under ideal conditions but not how robustly they know it under realistic stress. Static benchmarks like MMLU and TruthfulQA cannot distinguish a model that lacks knowledge from one whose verification mechanisms collapse when information deg...
+
+11. Video SimpleQA: Towards Factuality Evaluation in Large Video Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 8
+   Authors: Meng Cao, Pengfei Hu, Yingyao Wang et al.
+   URL: https://www.semanticscholar.org/paper/27c670b6d93dbab27486e490b4414c36adc66172
+   Abstract: Recent advancements in Large Video Language Models (LVLMs) have highlighted their potential for multi-modal understanding, yet evaluating their factual grounding in videos remains a critical unsolved challenge. To address this gap, we introduce Video SimpleQA, the first comprehensive benchmark tailo...
+
+12. Drowzee: Metamorphic Testing for Fact-Conflicting Hallucination Detection in Large Language Models
+   Relevance: 3/3 | Year: 2024 | Citations: 20
+   Authors: Ningke Li, Yuekang Li, Yi Liu et al.
+   URL: https://api.semanticscholar.org/CorpusId:269484211
+   Abstract: Large language models (LLMs) have revolutionized language processing, but face critical challenges with security, privacy, and generating hallucinations — coherent but factually inaccurate outputs. A major issue is fact-conflicting hallucination (FCH), where LLMs produce content contradicting ground...
+
+13. Survey on Factuality in Large Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 11
+   Authors: Cunxiang Wang, Xiaoze Liu, Yuanhao Yue et al.
+   URL: https://www.semanticscholar.org/paper/bc65bff4600123bf5d9fcb63db80facddf3a8aeb
+   Abstract: This survey addresses the crucial issue of factuality in Large Language Models (LLMs). As LLMs find applications across diverse domains, the reliability and accuracy of their outputs become vital. We define the “factuality issue” as the probability of LLMs to produce content inconsistent with establ...
+
+14. SAC3: Reliable Hallucination Detection in Black-Box Language Models via Semantic-aware Cross-check Consistency
+   Relevance: 3/3 | Year: 2023 | Citations: 92
+   Authors: Jiaxin Zhang, Zhuohang Li, Kamalika Das et al.
+   URL: https://api.semanticscholar.org/CorpusId:265019095
+   Abstract: Hallucination detection is a critical step toward understanding the trustworthiness of modern language models (LMs). To achieve this goal, we re-examine existing detection approaches based on the self-consistency of LMs and uncover two types of hallucinations resulting from 1) question-level and 2) ...
+
+15. AccessEval: Benchmarking Disability Bias in Large Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 1
+   Authors: Srikant Panda, Amit Agarwal, Hitesh Laxmichand Patel
+   URL: https://www.semanticscholar.org/paper/f3cef7d431f72c88928ec5532ea72b97cbe82477
+   Abstract: Large Language Models (LLMs) are increasingly deployed across diverse domains but often exhibit disparities in how they handle real-life queries. To systematically investigate these effects within various disability contexts, we introduce \textbf{AccessEval (Accessibility Evaluation)}, a benchmark e...

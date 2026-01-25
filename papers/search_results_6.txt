@@ -1,0 +1,93 @@
+Found 43 papers
+======================================================================
+
+1. TruthfulQA: Measuring How Models Mimic Human Falsehoods
+   Relevance: 3/3 | Year: 2021 | Citations: 2693
+   Authors: Stephanie C. Lin, Jacob Hilton, Owain Evans
+   URL: https://www.semanticscholar.org/paper/77d956cdab4508d569ae5741549b78e715fd0749
+   Abstract: We propose a benchmark to measure whether a language model is truthful in generating answers to questions. The benchmark comprises 817 questions that span 38 categories, including health, law, finance and politics. We crafted questions that some humans would answer falsely due to a false belief or m...
+
+2. Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity
+   Relevance: 3/3 | Year: 2023 | Citations: 261
+   Authors: Cunxiang Wang, Xiaoze Liu, Yuanhao Yue et al.
+   URL: https://api.semanticscholar.org/CorpusId:263835211
+   Abstract: This survey addresses the crucial issue of factuality in Large Language Models (LLMs). As LLMs find applications across diverse domains, the reliability and accuracy of their outputs become vital. We define the Factuality Issue as the probability of LLMs to produce content inconsistent with establis...
+
+3. Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+   Relevance: 3/3 | Year: 2023 | Citations: 819
+   Authors: Yue Zhang, Yafu Li, Leyang Cui et al.
+   URL: https://api.semanticscholar.org/CorpusId:261530162
+   Abstract: 
+ While large language models (LLMs) have demonstrated remarkable capabilities across a range of downstream tasks, a significant concern revolves around their propensity to exhibit hallucinations: LLMs occasionally generate content that diverges from the user input, contradicts previously generated ...
+
+4. TruthX: Alleviating Hallucinations by Editing Large Language Models in Truthful Space
+   Relevance: 3/3 | Year: 2024 | Citations: 81
+   Authors: Shaolei Zhang, Tian Yu, Yang Feng
+   URL: https://api.semanticscholar.org/CorpusId:268041726
+   Abstract: Large Language Models (LLMs) sometimes suffer from producing hallucinations, especially LLMs may generate untruthful responses despite knowing the correct knowledge. Activating the truthfulness within LLM is the key to fully unlocking LLM's knowledge potential. In this paper, we propose TruthX, an i...
+
+5. A Survey on Evaluation of Large Language Models
+   Relevance: 3/3 | Year: 2023 | Citations: 2786
+   Authors: Yu-Chu Chang, Xu Wang, Jindong Wang et al.
+   URL: https://www.semanticscholar.org/paper/888728745dbb769e29ed475d4f7661eebe1a71cf
+   Abstract: Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications. As LLMs continue to play a vital role in both research and daily use, their evaluation becomes increasingly critical, not only at the task l...
+
+6. HalluLens: LLM Hallucination Benchmark
+   Relevance: 3/3 | Year: 2025 | Citations: 43
+   Authors: Yejin Bang, Ziwei Ji, A. Schelten et al.
+   URL: https://api.semanticscholar.org/CorpusId:278033255
+   Abstract: Large language models (LLMs) often generate responses that deviate from user input or training data, a phenomenon known as"hallucination."These hallucinations undermine user trust and hinder the adoption of generative AI systems. Addressing hallucinations is essential for the advancement of LLMs. Th...
+
+7. Aligning Large Language Models through Synthetic Feedback
+   Relevance: 3/3 | Year: 2023 | Citations: 84
+   Authors: Sungdong Kim, Sanghwan Bae, Jamin Shin et al.
+   URL: https://api.semanticscholar.org/CorpusId:258841835
+   Abstract: Aligning large language models (LLMs) to human values has become increasingly important as it enables sophisticated steering of LLMs. However, it requires significant human demonstrations and feedback or distillation from proprietary LLMs such as ChatGPT. In this work, we propose a novel alignment l...
+
+8. Hallucination Detection in Large Language Models with Metamorphic Relations
+   Relevance: 3/3 | Year: 2025 | Citations: 19
+   Authors: Borui Yang, Md Afif Al Mamun, Jie M. Zhang et al.
+   URL: https://api.semanticscholar.org/CorpusId:276575266
+   Abstract: Large Language Models (LLMs) are prone to hallucinations, e.g., factually incorrect information, in their responses. These hallucinations present challenges for LLM-based applications that demand high factual accuracy. Existing hallucination detection methods primarily depend on external resources, ...
+
+9. Spectral Editing of Activations for Large Language Model Alignment
+   Relevance: 3/3 | Year: 2024 | Citations: 41
+   Authors: Yifu Qiu, Zheng Zhao, Yftah Ziser et al.
+   URL: https://api.semanticscholar.org/CorpusId:269790825
+   Abstract: Large language models (LLMs) often exhibit undesirable behaviours, such as generating untruthful or biased content. Editing their internal representations has been shown to be effective in mitigating such behaviours on top of the existing alignment methods. We propose a novel inference-time editing ...
+
+10. In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation
+   Relevance: 3/3 | Year: 2024 | Citations: 39
+   Authors: Shiqi Chen, Miao Xiong, Junteng Liu et al.
+   URL: https://api.semanticscholar.org/CorpusId:268248195
+   Abstract: Large language models (LLMs) frequently hallucinate and produce factual errors, yet our understanding of why they make these errors remains limited. In this study, we delve into the underlying mechanisms of LLM hallucinations from the perspective of inner representations, and discover a salient patt...
+
+11. A Survey of Uncertainty Estimation Methods on Large Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 14
+   Authors: Zhiqiu Xia, Jinxuan Xu, Yuqian Zhang et al.
+   URL: https://api.semanticscholar.org/CorpusId:276742323
+   Abstract: Large language models (LLMs) have demonstrated remarkable capabilities across various tasks. However, these models could offer biased, hallucinated, or non-factual responses camouflaged by their fluency and realistic appearance. Uncertainty estimation is the key method to address this challenge. Whi...
+
+12. SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models
+   Relevance: 3/3 | Year: 2024 | Citations: 13
+   Authors: Jianyi Zhang, Da-Cheng Juan, Cyrus Rashtchian et al.
+   URL: https://api.semanticscholar.org/CorpusId:273821431
+   Abstract: Large language models (LLMs) have demonstrated remarkable capabilities, but their outputs can sometimes be unreliable or factually incorrect. To address this, we introduce Self Logits Evolution Decoding (SLED), a novel decoding framework that enhances the truthfulness of LLMs without relying on exte...
+
+13. IterAlign: Iterative Constitutional Alignment of Large Language Models
+   Relevance: 3/3 | Year: 2024 | Citations: 7
+   Authors: Xiusi Chen, Hongzhi Wen, Sreyashi Nag et al.
+   URL: https://api.semanticscholar.org/CorpusId:268723950
+   Abstract: With the rapid development of large language models (LLMs), aligning LLMs with human values and societal norms to ensure their reliability and safety has become crucial. Reinforcement learning with human feedback (RLHF) and Constitutional AI (CAI) have been proposed for LLM alignment. However, these...
+
+14. MR-Align: Meta-Reasoning Informed Factuality Alignment for Large Reasoning Models
+   Relevance: 3/3 | Year: 2025 | Citations: 0
+   Authors: Xinming Wang, Jian Xu, Bin Yu et al.
+   URL: https://api.semanticscholar.org/CorpusId:282574958
+   Abstract: Large reasoning models (LRMs) show strong capabilities in complex reasoning, yet their marginal gains on evidence-dependent factual questions are limited. We find this limitation is partially attributable to a reasoning-answer hit gap, where the model identifies the correct facts during reasoning bu...
+
+15. Selected Languages are All You Need for Cross-lingual Truthfulness Transfer
+   Relevance: 3/3 | Year: 2024 | Citations: 3
+   Authors: Weihao Liu, Ning Wu, Wenbiao Ding et al.
+   URL: https://api.semanticscholar.org/CorpusId:270619905
+   Abstract: Truthfulness stands out as an essential challenge for Large Language Models (LLMs). Although many works have developed various ways for truthfulness enhancement, they seldom focus on truthfulness in multilingual scenarios. Meanwhile, contemporary multilingual aligning technologies struggle to balanc...

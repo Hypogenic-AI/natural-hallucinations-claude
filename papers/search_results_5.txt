@@ -1,0 +1,92 @@
+Found 188 papers
+======================================================================
+
+1. Causal-LLaVA: Causal Disentanglement for Mitigating Hallucination in Multimodal Large Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 2
+   Authors: Xinmiao Hu, Chun Wang, Ruihe An et al.
+   URL: https://api.semanticscholar.org/CorpusId:278904768
+   Abstract: Multimodal Large Language Models (MLLMs) have demonstrated strong performance in visual understanding tasks, yet they often suffer from object hallucinations--generating descriptions of objects that are inconsistent with or entirely absent from the input. This issue is closely related to dataset bia...
+
+2. Shadows in the Attention: Contextual Perturbation and Representation Drift in the Dynamics of Hallucination in LLMs
+   Relevance: 3/3 | Year: 2025 | Citations: 8
+   Authors: Zeyu Wei, Shuo Wang, Xiaohui Rong et al.
+   URL: https://api.semanticscholar.org/CorpusId:278788553
+   Abstract: Hallucinations -- plausible yet erroneous outputs -- remain a critical barrier to reliable deployment of large language models (LLMs). We present the first systematic study linking hallucination incidence to internal-state drift induced by incremental context injection. Using TruthfulQA, we construc...
+
+3. Extracting Visual Facts from Intermediate Layers for Mitigating Hallucinations in Multimodal Large Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 0
+   Authors: Haoran Zhou, Zihan Zhang, Hao Chen
+   URL: https://www.semanticscholar.org/paper/ba70e3bb637b49ed3354d106924bbc0e3f126858
+   Abstract: Multimodal Large Language Models (MLLMs) have made significant strides by combining visual recognition and language understanding to generate content that is both coherent and contextually accurate. However, MLLMs continue to struggle with object hallucinations, where models produce seemingly plausi...
+
+4. Large Model-Based Agents: State-of-the-Art, Cooperation Paradigms, Security and Privacy, and Future Trends
+   Relevance: 3/3 | Year: 2024 | Citations: 24
+   Authors: Yuntao Wang, Yanghe Pan, Zhou Su et al.
+   URL: https://www.semanticscholar.org/paper/993159b86a19ad1310423f35918adfab30b6c10e
+   Abstract: With the rapid advancement of large models (LMs), the development of general-purpose intelligent agents powered by LMs has become a reality. It is foreseeable that in the near future, LM-driven general AI agents will serve as essential tools in production tasks, capable of autonomous communication a...
+
+5. DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models
+   Relevance: 2/3 | Year: 2023 | Citations: 284
+   Authors: Yung-Sung Chuang, Yujia Xie, Hongyin Luo et al.
+   URL: https://www.semanticscholar.org/paper/ed5020eeda1fbe8c29b1282d654b34abee22d90f
+   Abstract: Despite their impressive capabilities, large language models (LLMs) are prone to hallucinations, i.e., generating content that deviates from facts seen during pretraining. We propose a simple decoding strategy for reducing hallucinations with pretrained LLMs that does not require conditioning on ret...
+
+6. Hallucination Augmented Contrastive Learning for Multimodal Large Language Model
+   Relevance: 2/3 | Year: 2023 | Citations: 116
+   Authors: Chaoya Jiang, Haiyang Xu, Mengfan Dong et al.
+   URL: https://api.semanticscholar.org/CorpusId:266174200
+   Abstract: Multi-modal large language models (MLLMs) have been shown to efficiently integrate natural language with visual information to handle multi-modal tasks. However, MLLMs still face a fundamental limitation of hallucinations, where they tend to generate erroneous or fabricated information. In this pape...
+
+7. ReDeEP: Detecting Hallucination in Retrieval-Augmented Generation via Mechanistic Interpretability
+   Relevance: 2/3 | Year: 2024 | Citations: 61
+   Authors: ZhongXiang Sun, Xiaoxue Zang, Kai Zheng et al.
+   URL: https://www.semanticscholar.org/paper/f3658afcd181e4078e1e96ff86eac224fd92faab
+   Abstract: Retrieval-Augmented Generation (RAG) models are designed to incorporate external knowledge, reducing hallucinations caused by insufficient parametric (internal) knowledge. However, even with accurate and relevant retrieved content, RAG models can still produce hallucinations by generating outputs th...
+
+8. Can Knowledge Graphs Reduce Hallucinations in LLMs? : A Survey
+   Relevance: 2/3 | Year: 2023 | Citations: 148
+   Authors: Garima Agrawal, Tharindu Kumarage, Zeyad Alghami et al.
+   URL: https://www.semanticscholar.org/paper/ec67d5f0e236f23c6b48b926f9e25db52194dd71
+   Abstract: The contemporary LLMs are prone to producing hallucinations, stemming mainly from the knowledge gaps within the models. To address this critical limitation, researchers employ diverse strategies to augment the LLMs by incorporating external knowledge, aiming to reduce hallucinations and enhance reas...
+
+9. TruthX: Alleviating Hallucinations by Editing Large Language Models in Truthful Space
+   Relevance: 2/3 | Year: 2024 | Citations: 81
+   Authors: Shaolei Zhang, Tian Yu, Yang Feng
+   URL: https://www.semanticscholar.org/paper/c19ea4c61ad94644f7e315d4bb547f6c610fc93d
+   Abstract: Large Language Models (LLMs) sometimes suffer from producing hallucinations, especially LLMs may generate untruthful responses despite knowing the correct knowledge. Activating the truthfulness within LLM is the key to fully unlocking LLM's knowledge potential. In this paper, we propose TruthX, an i...
+
+10. Loki's Dance of Illusions: A Comprehensive Survey of Hallucination in Large Language Models
+   Relevance: 2/3 | Year: 2025 | Citations: 13
+   Authors: Chaozhuo Li, Pengbo Wang, Chenxu Wang et al.
+   URL: https://api.semanticscholar.org/CorpusId:280151005
+   Abstract: Edgar Allan Poe noted,"Truth often lurks in the shadow of error,"highlighting the deep complexity intrinsic to the interplay between truth and falsehood, notably under conditions of cognitive and informational asymmetry. This dynamic is strikingly evident in large language models (LLMs). Despite the...
+
+11. SEReDeEP: Hallucination Detection in Retrieval-Augmented Models via Semantic Entropy and Context-Parameter Fusion
+   Relevance: 2/3 | Year: 2025 | Citations: 2
+   Authors: Lei Wang
+   URL: https://www.semanticscholar.org/paper/23506b44f1e5c1d0117d07ff1588a0b159296846
+   Abstract: Retrieval-Augmented Generation (RAG) models frequently encounter hallucination phenomena when integrating external information with internal parametric knowledge. Empirical studies demonstrate that the disequilibrium between external contextual information and internal parametric knowledge constitut...
+
+12. Bridging External and Parametric Knowledge: Mitigating Hallucination of LLMs with Shared-Private Semantic Synergy in Dual-Stream Knowledge
+   Relevance: 2/3 | Year: 2025 | Citations: 1
+   Authors: Yi Sui, Chaozhuo Li, Chen Zhang et al.
+   URL: https://api.semanticscholar.org/CorpusId:279243894
+   Abstract: Retrieval-augmented generation (RAG) aims to mitigate the hallucination of Large Language Models (LLMs) by retrieving and incorporating relevant external knowledge into the generation process. However, the external knowledge may contain noise and conflict with the parametric knowledge of LLMs, leadi...
+
+13. Suppressing VLM Hallucinations with Spectral Representation Filtering
+   Relevance: 2/3 | Year: 2025 | Citations: 0
+   Authors: Ameen Ali, Tamim Zoabi, Lior Wolf
+   URL: https://api.semanticscholar.org/CorpusId:283073170
+   Abstract: Vision-language models (VLMs) frequently produce hallucinations in the form of descriptions of objects, attributes, or relations that do not exist in the image due to over-reliance on language priors and imprecise cross-modal grounding. We introduce Spectral Representation Filtering (SRF), a lightwe...
+
+14. One-stage Modality Distillation for Incomplete Multimodal Learning
+   Relevance: 2/3 | Year: 2023 | Citations: 1
+   Authors: Shicai Wei, Yang Luo, Chunbo Luo
+   URL: https://www.semanticscholar.org/paper/19beab0fe8cc26653c8a4cb4f84f60f42f23cf45
+   Abstract: Learning based on multimodal data has attracted increasing interest recently. While a variety of sensory modalities can be collected for training, not all of them are always available in development scenarios, which raises the challenge to infer with incomplete modality. To address this issue, this ...
+
+15. Lower Layers Matter: Alleviating Hallucination via Multi-Layer Fusion Contrastive Decoding with Truthfulness Refocused
+   Relevance: 2/3 | Year: 2024 | Citations: 0
+   Authors: Dingwei Chen, Feiteng Fang, Shiwen Ni et al.
+   URL: https://api.semanticscholar.org/CorpusId:271892130
+   Abstract: Large Language Models (LLMs) have demonstrated exceptional performance across various natural language processing tasks. However, they occasionally generate inaccurate and counterfactual outputs, a phenomenon commonly referred to as"hallucinations''. To tackle this issue, recent studies have explore...

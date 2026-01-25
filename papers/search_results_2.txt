@@ -1,0 +1,92 @@
+Found 300 papers
+======================================================================
+
+1. TruthPrInt: Mitigating LVLM Object Hallucination Via Latent Truthful-Guided Pre-Intervention
+   Relevance: 3/3 | Year: 2025 | Citations: 7
+   Authors: Jinhao Duan, Fei Kong, Hao Cheng et al.
+   URL: https://www.semanticscholar.org/paper/02f3ea7628d83e82872d51c80084b07b627487b0
+   Abstract: Object Hallucination (OH) has been acknowledged as one of the major trustworthy challenges in Large Vision-Language Models (LVLMs). Recent advancements in Large Language Models (LLMs) indicate that internal states, such as hidden states, encode the"overall truthfulness"of generated responses. Howeve...
+
+2. HalluRNN: Mitigating Hallucinations via Recurrent Cross-Layer Reasoning in Large Vision-Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 2
+   Authors: Le Yu, Kaishen Wang, Jianlong Xiong et al.
+   URL: https://www.semanticscholar.org/paper/0c8b315d49cf28a4cb3b187b0f81747435c4bf6a
+   Abstract: Though Large Vision-Language Models (LVLMs) have achieved remarkable performance across various tasks, they are still prone to hallucinations-generating outputs that are textually plausible but visually ungrounded. While prior approaches generally address this issue through data-centric fine-tuning ...
+
+3. Cross-Image Contrastive Decoding: Precise, Lossless Suppression of Language Priors in Large Vision-Language Models
+   Relevance: 3/3 | Year: 2025 | Citations: 2
+   Authors: Jianfei Zhao, Feng Zhang, Xin Sun et al.
+   URL: https://www.semanticscholar.org/paper/4a68382026854b3dc0530385f402d498207e5c2d
+   Abstract: Over-reliance on language priors is a major cause of hallucinations in Large Vision-Language Models (LVLMs), often leading to outputs that are linguistically plausible but visually inconsistent. Recent studies have explored contrastive decoding as a training-free solution. However, these methods typ...
+
+4. Steering LVLMs via Sparse Autoencoder for Hallucination Mitigation
+   Relevance: 3/3 | Year: 2025 | Citations: 0
+   Authors: Zhenglin Hua, Jinghan He, Zijun Yao et al.
+   URL: https://www.semanticscholar.org/paper/5464c3cb5412d93ef5b1f6c6b5107b079df28625
+   Abstract: Large vision-language models (LVLMs) have achieved remarkable performance on multimodal tasks. However, they still suffer from hallucinations, generating text inconsistent with visual input, posing significant risks in real-world applications. Existing approaches to address this issue focus on incor...
+
+5. DRAG: Distilling RAG for SLMs from LLMs to Transfer Knowledge and Mitigate Hallucination via Evidence and Graph-based Distillation
+   Relevance: 2/3 | Year: 2025 | Citations: 2
+   Authors: Jennifer Chen, Aidar Myrzakhan, Yaxin Luo et al.
+   URL: https://api.semanticscholar.org/CorpusId:279118692
+   Abstract: Retrieval-Augmented Generation (RAG) methods have proven highly effective for tasks requiring factual consistency and robust knowledge retrieval. However, large-scale RAG systems consume significant computational resources and are prone to generating hallucinated content from Humans. In this work, w...
+
+6. RLHF-V: Towards Trustworthy MLLMs via Behavior Alignment from Fine-Grained Correctional Human Feedback
+   Relevance: 2/3 | Year: 2023 | Citations: 344
+   Authors: Tianyu Yu, Yuan Yao, Haoye Zhang et al.
+   URL: https://api.semanticscholar.org/CorpusId:265608723
+   Abstract: Multimodal Large Language Models (MLLMs) have recently demonstrated impressive capabilities in multimodal understanding, reasoning, and interaction. However, existing MLLMs prevalently suffer from serious hallucination problems, generating text that is not factually grounded in associated images. Th...
+
+7. LLM Internal States Reveal Hallucination Risk Faced With a Query
+   Relevance: 2/3 | Year: 2024 | Citations: 64
+   Authors: Ziwei Ji, Delong Chen, Etsuko Ishii et al.
+   URL: https://www.semanticscholar.org/paper/0ac43cb23cdb84b6c7dc6986c036fb3152e9a286
+   Abstract: The hallucination problem of Large Language Models (LLMs) significantly limits their reliability and trustworthiness. Humans have a self-awareness process that allows us to recognize what we don’t know when faced with queries. Inspired by this, our paper investigates whether LLMs can estimate their ...
+
+8. DASH: Detection and Assessment of Systematic Hallucinations of VLMs
+   Relevance: 2/3 | Year: 2025 | Citations: 7
+   Authors: Maximilian Augustin, Yannic Neuhaus, Matthias Hein
+   URL: https://api.semanticscholar.org/CorpusId:277451902
+   Abstract: Vision-language models (VLMs) are prone to object hallucinations, where they erroneously indicate the presenceof certain objects in an image. Existing benchmarks quantify hallucinations using relatively small, labeled datasets. However, this approach is i) insufficient to assess hallucinations that ...
+
+9. Tracing and Mitigating Hallucinations in Multimodal LLMs via Dynamic Attention Localization
+   Relevance: 2/3 | Year: 2025 | Citations: 0
+   Authors: Tiancheng Yang, Lin Zhang, Jiaye Lin et al.
+   URL: https://www.semanticscholar.org/paper/ee84ceb04672df3cd06cdc5e4e6ff593b9142b49
+   Abstract: Multimodal Large Language Models (MLLMs) achieve strong performance on tasks like image captioning and visual question answering, but remain prone to hallucinations, where generated text conflicts with the visual input. Prior work links this partly to insufficient visual attention, but existing atte...
+
+10. Noise Augmented Fine Tuning for Mitigating Hallucinations in Large Language Models
+   Relevance: 2/3 | Year: 2025 | Citations: 0
+   Authors: Afshin Khadangi, Amir Sartipi, Igor Tchappi et al.
+   URL: https://api.semanticscholar.org/CorpusId:277595858
+   Abstract: Large language models (LLMs) often produce inaccurate or misleading content-hallucinations. To address this challenge, we introduce Noise-Augmented Fine-Tuning (NoiseFiT), a novel framework that leverages adaptive noise injection based on the signal-to-noise ratio (SNR) to enhance model robustness. ...
+
+11. AVHBench: A Cross-Modal Hallucination Benchmark for Audio-Visual Large Language Models
+   Relevance: 2/3 | Year: 2024 | Citations: 16
+   Authors: Kim Sung-Bin, Oh Hyun-Bin, JungMok Lee et al.
+   URL: https://api.semanticscholar.org/CorpusId:273549454
+   Abstract: Following the success of Large Language Models (LLMs), expanding their boundaries to new modalities represents a significant paradigm shift in multimodal understanding. Human perception is inherently multimodal, relying not only on text but also on auditory and visual cues for a complete understandi...
+
+12. Joint Evaluation of Answer and Reasoning Consistency for Hallucination Detection in Large Reasoning Models
+   Relevance: 2/3 | Year: 2025 | Citations: 7
+   Authors: Changyue Wang, Weihang Su, Qingyao Ai et al.
+   URL: https://api.semanticscholar.org/CorpusId:279243836
+   Abstract: Large Reasoning Models (LRMs) extend large language models with explicit, multi-step reasoning traces to enhance transparency and performance on complex tasks. However, these reasoning traces can be redundant or logically inconsistent, becoming a new and hard-to-detect source of hallucination. Exist...
+
+13. Zero-knowledge LLM hallucination detection and mitigation through fine-grained cross-model consistency
+   Relevance: 2/3 | Year: 2025 | Citations: 5
+   Authors: Aman Goel, Daniel Schwartz, Yanjun Qi
+   URL: https://api.semanticscholar.org/CorpusId:280691806
+   Abstract: Large language models (LLMs) have demonstrated impressive capabilities across diverse tasks, but they remain susceptible to hallucinations--generating content that appears plausible but contains factual inaccuracies. We present Finch-Zk, a black-box framework that leverages fine-grained cross-model ...
+
+14. Review of Hallucination Understanding in Large Language and Vision Models
+   Relevance: 2/3 | Year: 2025 | Citations: 0
+   Authors: Z. Ho, Siyuan Liang, Dacheng Tao
+   URL: https://api.semanticscholar.org/CorpusId:281706418
+   Abstract: The widespread adoption of large language and vision models in real-world applications has made urgent the need to address hallucinations -- instances where models produce incorrect or nonsensical outputs. These errors can propagate misinformation during deployment, leading to both financial and ope...
+
+15. SelfCheck-Eval: A Multi-Module Framework for Zero-Resource Hallucination Detection in Large Language Models
+   Relevance: 2/3 | Year: 2025 | Citations: 3
+   Authors: Diyana Muhammed, G. Tuccari, Gollam Rabby et al.
+   URL: https://api.semanticscholar.org/CorpusId:276107224
+   Abstract: Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse applications, from open-domain question answering to scientific writing, medical decision support, and legal analysis. However, their tendency to generate incorrect or fabricated content, commonly known as hallucin...

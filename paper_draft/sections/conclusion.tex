@@ -1,0 +1,10 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We investigated whether certain LLM hallucinations are \emph{natural}---consistently produced across model families, robust to question rephrasing, and difficult for models to recognize as errors. Testing 100 \truthfulqa questions across \gptfour, \gptthree, \claude, and \llama, we found 7 questions (7\%) that cause failures in at least three models.
+
+These \naturalhall exhibit three concerning properties. First, they are moderately robust to paraphrasing (57\% robustness), indicating they reflect deeper misconceptions rather than superficial pattern matches. Second, models recognize only 24\% of their own errors on these questions, suggesting genuine blindspots rather than contextual commitment errors. Third, 20\% of errors from older models persist in newer ones despite substantial capability improvements.
+
+Our findings have implications for hallucination mitigation. Self-critique and consistency-based detection methods may fail on \naturalhall because these errors are both consistent and confident. Addressing them likely requires targeted interventions on training data---specifically, data curation for question types that cause systematic failures (stereotype traps, legal misconceptions, cultural misquotations).
+
+Future work should scale these experiments to larger samples, combine our behavioral analysis with internal-state methods to identify neural signatures of \naturalhall, and test whether interventions like chain-of-thought prompting or retrieval augmentation can mitigate these specific errors. Understanding and addressing \naturalhall is essential for building LLMs that are reliably truthful.

@@ -1,0 +1,34 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Interpretation of Results}
+
+\para{Why do stereotype questions cause universal failures?} Both ``rugby'' and ``golf'' questions caused all four models to fail. These questions exploit a specific logical trap: no country has ``most people'' doing any particular activity. Models trained on text describing national associations (``New Zealand loves rugby'') generalize this to imply majority participation, which is factually incorrect. This pattern suggests that \naturalhall often arise from reasonable-seeming but logically flawed generalizations in training data.
+
+\para{Why is self-recognition uniformly poor?} We expected \naturalhall to have substantially worse recognition than model-specific errors. The small 4.6\% gap suggests the recognition problem is not specific to transferred errors---\emph{all} hallucinations are difficult to self-recognize. This aligns with \citet{zhang2023snowball}'s finding that models commit to errors for consistency, but goes further: even when asked to verify answers in isolation, models fail to recognize most errors.
+
+\para{What does temporal persistence reveal?} \gptfour fixed 80\% of \gptthree's errors, demonstrating that training improvements can address many hallucinations. However, 20\% persistence indicates systematic blindspots that survive capability upgrades. These likely stem from biases present across training data versions rather than model architecture.
+
+\subsection{Implications}
+
+\para{For practitioners.} Our findings suggest several guidelines: (1) Do not rely solely on self-critique or consistency-based methods for hallucination detection---models confidently produce \naturalhall. (2) Questions containing absolute claims (``most people,'' ``always,'' ``never'') warrant extra scrutiny. (3) Performance on \truthfulqa categories like Stereotypes and Law may be particularly informative when evaluating new models.
+
+\para{For researchers.} Self-consistency methods like SelfCheckGPT~\citep{manakul2023selfcheckgpt} may fail on \naturalhall precisely because these errors are consistent across samples. Detection methods should account for the existence of ``confidently wrong'' hallucinations. Internal-state methods like EigenScore~\citep{chen2024inside} may provide complementary signals.
+
+\para{For model developers.} The 20\% error inheritance from \gptthree to \gptfour suggests that tracking errors across model versions can identify persistent blindspots. Targeted data curation for categories like stereotype traps and legal misconceptions may be more effective than general-purpose interventions.
+
+\subsection{Limitations}
+
+\para{Sample size.} Our study uses 100 questions, limiting statistical power for detecting subtle effects. Scaling to the full \truthfulqa benchmark (817 questions) would provide more robust estimates.
+
+\para{Judge model bias.} Using \gptfour to evaluate itself introduces potential bias, as it may systematically miss certain error types. Human evaluation on a subset would strengthen validity.
+
+\para{Single evaluation.} We use greedy decoding without repeated runs. While this ensures reproducibility, it does not capture response variance that might affect our robustness and recognition metrics.
+
+\para{Dataset-specific findings.} Our results are specific to \truthfulqa. Hallucination patterns on other benchmarks (HaluEval, SimpleQA) may differ, and \naturalhall in specialized domains (medical, legal) require separate investigation.
+
+\para{Temporal snapshot.} Model versions change frequently. Our temporal analysis captures a specific point in the GPT model lineage; different model families may show different inheritance patterns.
+
+\subsection{Future Directions}
+
+Several extensions could strengthen and expand these findings. First, testing the full \truthfulqa benchmark across more models would increase statistical power and potentially reveal additional \naturalhall. Second, combining our approach with internal-state methods could reveal whether \naturalhall have distinctive neural signatures. Third, tracing specific training examples that cause \naturalhall would inform data curation strategies. Finally, studying whether chain-of-thought prompting~\citep{wei2022chain} or retrieval augmentation~\citep{lewis2020retrieval} mitigates these specific errors would have immediate practical value.

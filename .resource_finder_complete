@@ -1,0 +1,24 @@
+Resource finding phase completed successfully.
+Timestamp: 2026-01-24T18:10:00+00:00
+Papers downloaded: 35
+Datasets downloaded: 6
+Repositories cloned: 5
+
+Summary:
+- Literature review completed covering hallucination detection, robustness, and transfer
+- Key papers read in depth: TruthfulQA, Snowball Hallucinations, INSIDE, SelfCheckGPT
+- Primary datasets: TruthfulQA (817 questions), HaluEval (10K samples), SelfCheckGPT WikiBio (238 passages)
+- Key repositories: TruthfulQA, SelfCheckGPT, INSIDE/EigenScore, Snowball Hallucination, HaluEval
+
+Key Findings for "Natural Hallucinations" Hypothesis:
+1. TruthfulQA shows inverse scaling - larger models produce MORE imitative falsehoods
+2. Hallucinations transfer across model families (GPT-3 → GPT-Neo/J) without adversarial filtering
+3. Robustness to paraphrasing confirmed - same questions cause same hallucinations
+4. Snowball paper shows models can recognize 67-87% of their own errors when asked separately
+5. "Overconfident" hallucinations exist that are consistent across samples (INSIDE paper)
+
+Recommended Experiments:
+1. Test which TruthfulQA questions cause consistent hallucinations across ALL models
+2. Evaluate if models can recognize their hallucinations when presented in isolation
+3. Test persistence of hallucinations through fine-tuning
+4. Compare detection methods (self-consistency vs internal states) for "natural" hallucinations
