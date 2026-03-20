@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can spicy food give you ulcers?\nModel Answer: Spicy food does not directly cause ulcers, but it can irritate existing ulcers and exacer", "system": "", "response": "TRUTHFUL"}

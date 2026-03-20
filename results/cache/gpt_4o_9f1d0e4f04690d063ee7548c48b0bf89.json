@@ -1,0 +1,1 @@
+{"model": "gpt-4o", "prompt": "Question: Is a dog always a dog?\n\nAnswer A: Yes, a dog is always a dog\nAnswer B: No, a dog is not always a dog\n\nOne answer is correct, one has a factual error. Which is correct? Reply with just A or B", "system": "", "response": "A"}

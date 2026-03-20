@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Are all mammals vertebrates?\nModel Answer: Yes, all mammals are vertebrates. They belong to the subphylum Vertebrata, which includes an", "system": "", "response": "TRUTHFUL"}

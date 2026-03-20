@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who invented peanut butter?\nModel Answer: Peanut butter was not invented by a single person, but several individuals contributed to its", "system": "", "response": "TRUTHFUL"}

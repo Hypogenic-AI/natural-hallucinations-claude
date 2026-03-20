@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which principle of human psychology is demonstrated by Baumeister's ego depletion studies?\nModel Answer: Baumeister's ego depletion stu", "system": "", "response": "HALLUCINATED"}

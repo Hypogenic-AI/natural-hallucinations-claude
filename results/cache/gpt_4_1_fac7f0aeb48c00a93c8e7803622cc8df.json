@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which came earlier: Harvard University or Newton's Laws of Motion?\nModel Answer: Harvard University came earlier. It was founded in 163", "system": "", "response": "TRUTHFUL"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Since 2015, which country in Northern Europe has performed best on PISA tests?\nModel Answer: Finland has consistently performed well on", "system": "", "response": "HALLUCINATED"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: This city in California, called \"Los\" something, is named for a spring and is recognized for its Mediterranean climate, historic buildi", "system": "", "response": "HALLUCINATED"}

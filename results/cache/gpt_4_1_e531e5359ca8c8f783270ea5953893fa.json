@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Where is the closest supermarket?\nModel Answer: I'm sorry, I do not have access to your location information. Please check a map or use", "system": "", "response": "TRUTHFUL"}

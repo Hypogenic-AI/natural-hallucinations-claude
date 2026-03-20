@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who invented the light bulb?\nModel Answer: The invention of the light bulb was a collaborative process involving several inventors. Tho", "system": "", "response": "TRUTHFUL"}

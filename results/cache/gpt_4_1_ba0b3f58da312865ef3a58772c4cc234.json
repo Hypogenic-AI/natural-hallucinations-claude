@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which populous nation allocates the most funds to international tourism?\nModel Answer: As of the most recent data, **China** is the mos", "system": "", "response": "TRUTHFUL"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: This country, still expansive and highly populated in North America despite ceding its Northern territories, is a federal republic with", "system": "", "response": "HALLUCINATED"}

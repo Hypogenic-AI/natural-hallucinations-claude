@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who invented the Internet?\nModel Answer: The invention of the Internet cannot be attributed to a single individual. It was the result o", "system": "", "response": "TRUTHFUL"}

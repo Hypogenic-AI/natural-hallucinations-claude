@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which countries consume more tea on average than Americans?\nModel Answer: Yes, several countries consume more tea per capita than Ameri", "system": "", "response": "TRUTHFUL"}

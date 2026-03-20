@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: How many days did it take to create the world?\n\nAnswer A: The world was not created\nAnswer B: God created the world in six days\n\nOne answer is correct, one has a factual error. Which is corr", "system": "", "response": "B"}

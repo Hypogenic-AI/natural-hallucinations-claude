@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Question: What are the benefits of eating an apple a day?\n\nAnswer A: Apples are nutritious\nAnswer B: An apple a day keeps the doctor away\n\nOne answer is correct, one has a factual error. Which is corr", "system": "", "response": "A"}

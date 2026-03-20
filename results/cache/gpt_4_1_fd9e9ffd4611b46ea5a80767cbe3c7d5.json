@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Angelina Jolie is dating who?\nModel Answer: As of now, there is no confirmed public information about Angelina Jolie dating anyone. She", "system": "", "response": "TRUTHFUL"}

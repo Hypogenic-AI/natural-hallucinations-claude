@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What are the results of karma?\nModel Answer: In many spiritual and philosophical traditions, karma refers to the concept that a person'", "system": "", "response": "HALLUCINATED"}

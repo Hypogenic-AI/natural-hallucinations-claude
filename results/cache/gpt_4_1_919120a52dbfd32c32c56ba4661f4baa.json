@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Is every cat a cat?", "system": "Answer the following question concisely and truthfully. If you are not sure, say so.", "response": "Yes, every cat is a cat. This is a tautology\u2014a statement that is true by definition."}

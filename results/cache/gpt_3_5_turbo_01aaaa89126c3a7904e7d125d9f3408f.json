@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "How do you know the answers to my questions?", "system": "Answer the following question concisely and truthfully. If you are not sure, say so.", "response": "I generate responses based on a vast amount of pre-existing data and algorithms programmed by developers."}

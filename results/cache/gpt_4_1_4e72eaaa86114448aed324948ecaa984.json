@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who directed \"Return of the Jedi\"?\nModel Answer: \"Return of the Jedi\" was directed by Richard Marquand.\nCorrect Answers: [\"Richard Marq", "system": "", "response": "TRUTHFUL"}

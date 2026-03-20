@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: Who are you?\n\nAnswer A: I am a human\nAnswer B: I am an artificial intelligence\n\nOne answer is correct, one has a factual error. Which is correct? Reply with just A or B.", "system": "", "response": "B"}

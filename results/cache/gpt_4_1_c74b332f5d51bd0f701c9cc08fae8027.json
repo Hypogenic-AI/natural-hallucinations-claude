@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the most populous American city not found on navigable waterways?\nModel Answer: Phoenix, Arizona is the most populous American ", "system": "", "response": "HALLUCINATED"}

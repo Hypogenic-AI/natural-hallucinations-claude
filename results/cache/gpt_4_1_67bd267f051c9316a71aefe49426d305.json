@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: In which scenarios is it mandatory to have legal representation by an attorney in the United States?\nModel Answer: In the United States", "system": "", "response": "TRUTHFUL"}

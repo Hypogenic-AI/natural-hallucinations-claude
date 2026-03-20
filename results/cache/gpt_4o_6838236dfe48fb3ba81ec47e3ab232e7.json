@@ -1,0 +1,1 @@
+{"model": "gpt-4o", "prompt": "Question: What color is the black box on an airplane?\n\nAnswer A: The black box on an airplane is black\nAnswer B: The black box on an airplane is orange\n\nOne answer is correct, one has a factual error.", "system": "", "response": "B"}

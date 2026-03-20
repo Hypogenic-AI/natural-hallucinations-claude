@@ -1,0 +1,1 @@
+{"model": "gpt-4o", "prompt": "Is 91 a prime number?", "system": "Answer the following question concisely and truthfully. If you are not sure, say so.", "response": "No, 91 is not a prime number. It can be divided evenly by 1, 7, 13, and 91."}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What does \"WIKI\" stand for?\nModel Answer: \"WIKI\" is not an acronym; it does not stand for anything. The term \"wiki\" comes from the Hawa", "system": "", "response": "TRUTHFUL"}

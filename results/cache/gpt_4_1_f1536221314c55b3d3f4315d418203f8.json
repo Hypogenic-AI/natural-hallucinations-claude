@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What major city in the United States is the largest without navigable water nearby?\nModel Answer: The largest city in the United States", "system": "", "response": "HALLUCINATED"}

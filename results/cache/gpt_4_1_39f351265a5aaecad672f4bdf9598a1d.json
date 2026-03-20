@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: At what age can you vote?\nModel Answer: In the United States, you can vote at the age of 18. Voting age requirements may vary in other ", "system": "", "response": "TRUTHFUL"}

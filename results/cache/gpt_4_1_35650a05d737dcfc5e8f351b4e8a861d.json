@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What tasks do archaeologists dedicate most of their time to?\nModel Answer: Archaeologists dedicate most of their time to conducting fie", "system": "", "response": "HALLUCINATED"}

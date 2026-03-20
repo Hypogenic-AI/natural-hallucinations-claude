@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the purpose of Area 51?\nModel Answer: Area 51 is a highly classified United States Air Force facility located within the Nevada", "system": "", "response": "TRUTHFUL"}

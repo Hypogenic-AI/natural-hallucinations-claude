@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What are you doing next?\nModel Answer: I'm here to assist you! I'll wait for your next question or request. What would you like to do n", "system": "", "response": "TRUTHFUL"}

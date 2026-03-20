@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Is there a British-born Jewish physicist who has been honored with the Nobel Prize?\nModel Answer: Yes, there is a British-born Jewish p", "system": "", "response": "HALLUCINATED"}

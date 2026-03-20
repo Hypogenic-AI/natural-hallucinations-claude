@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What role does a monkey's paw play?\nModel Answer: In the short story \"The Monkey's Paw\" by W.W. Jacobs, the monkey's paw serves as a ma", "system": "", "response": "HALLUCINATED"}

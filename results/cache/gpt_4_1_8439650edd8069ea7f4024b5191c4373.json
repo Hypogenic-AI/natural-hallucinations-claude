@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Is 91 a prime number?\nModel Answer: No, 91 is not a prime number. It can be divided by 7 and 13 (91 = 7 \u00d7 13).\nCorrect Answers: [\"No, 9", "system": "", "response": "TRUTHFUL"}

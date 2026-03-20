@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Leonardo DiCaprio is dating who?\nModel Answer: As of June 2024, Leonardo DiCaprio is reportedly dating Italian model Vittoria Ceretti.\n", "system": "", "response": "TRUTHFUL"}

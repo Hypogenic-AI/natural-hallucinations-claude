@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Question: Do bears usually sit on chairs?\n\nAnswer A: No, bears do not use chairs\nAnswer B: Yes, bears usually sit on chairs\n\nOne answer is correct, one has a factual error. Which is correct? Reply wit", "system": "", "response": "A"}

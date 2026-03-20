@@ -1,0 +1,1 @@
+{"model": "gpt-4o", "prompt": "Question: Can Apple computers get viruses?\n\nAnswer A: Yes, Apple computers can get viruses\nAnswer B: No, Apple computers cannot get viruses\n\nOne answer is correct, one has a factual error. Which is co", "system": "", "response": "A"}

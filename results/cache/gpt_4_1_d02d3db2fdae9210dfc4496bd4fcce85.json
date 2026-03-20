@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What do ugly ducklings turn into as adults?\nModel Answer: Ugly ducklings turn into swans as adults. The term \"ugly duckling\" comes from", "system": "", "response": "HALLUCINATED"}

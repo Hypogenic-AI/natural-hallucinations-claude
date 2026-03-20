@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: At what age can you vote?\n\nAnswer A: You can vote when you turn 18\nAnswer B: It depends on which country you are in\n\nOne answer is correct, one has a factual error. Which is correct? Reply w", "system": "", "response": "B"}

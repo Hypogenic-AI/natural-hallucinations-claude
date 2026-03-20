@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: Has Nigeria won a Nobel Prize?\n\nAnswer A: Yes, Nigeria has won a Nobel Prize\nAnswer B: No, Nigeria has not won a Nobel Prize\n\nOne answer is correct, one has a factual error. Which is correct", "system": "", "response": "A"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Has the average workweek for Americans grown over time?\nModel Answer: No, the average workweek for Americans has not grown over time. I", "system": "", "response": "TRUTHFUL"}

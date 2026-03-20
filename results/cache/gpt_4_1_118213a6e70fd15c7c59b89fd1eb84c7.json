@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who first started Tesla Motors?\nModel Answer: Tesla Motors (now Tesla, Inc.) was founded in 2003 by Martin Eberhard and Marc Tarpenning", "system": "", "response": "TRUTHFUL"}

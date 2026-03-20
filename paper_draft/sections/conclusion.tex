@@ -1,10 +1,11 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-We investigated whether certain LLM hallucinations are \emph{natural}---consistently produced across model families, robust to question rephrasing, and difficult for models to recognize as errors. Testing 100 \truthfulqa questions across \gptfour, \gptthree, \claude, and \llama, we found 7 questions (7\%) that cause failures in at least three models.
+We introduced the concept of \emph{natural hallucinations}---factual errors that are consistent across models, robust to rephrasing, and resistant to self-detection---and provided systematic empirical evidence for their existence.
+Testing four OpenAI models on all 817 \truthfulqa questions, we found 27 universal hallucinations that fool every model, a 76\% persistence rate under rephrasing, self-detection accuracy of only 10--16\% (below chance), and cross-model Jaccard overlap 3--6$\times$ above random.
+Older-model hallucinations predict newer-model hallucinations with correlations up to $r = 0.53$.
 
-These \naturalhall exhibit three concerning properties. First, they are moderately robust to paraphrasing (57\% robustness), indicating they reflect deeper misconceptions rather than superficial pattern matches. Second, models recognize only 24\% of their own errors on these questions, suggesting genuine blindspots rather than contextual commitment errors. Third, 20\% of errors from older models persist in newer ones despite substantial capability improvements.
+These results suggest that certain hallucinations are not bugs to be patched through incremental improvements, but structural features of how language models learn from data that contains widely-believed misconceptions.
+Addressing natural hallucinations will likely require targeted interventions---explicit correction in training data, retrieval-augmented generation, or external verification systems---rather than relying on scale or self-critique alone.
 
-Our findings have implications for hallucination mitigation. Self-critique and consistency-based detection methods may fail on \naturalhall because these errors are both consistent and confident. Addressing them likely requires targeted interventions on training data---specifically, data curation for question types that cause systematic failures (stereotype traps, legal misconceptions, cultural misquotations).
-
-Future work should scale these experiments to larger samples, combine our behavioral analysis with internal-state methods to identify neural signatures of \naturalhall, and test whether interventions like chain-of-thought prompting or retrieval augmentation can mitigate these specific errors. Understanding and addressing \naturalhall is essential for building LLMs that are reliably truthful.
+Future work should extend this analysis to models from different providers to test true cross-family transfer, investigate whether retrieval augmentation can break natural hallucinations at inference time, and use mechanistic interpretability tools on open-source models to understand \emph{why} internal knowledge fails to surface for these specific questions.

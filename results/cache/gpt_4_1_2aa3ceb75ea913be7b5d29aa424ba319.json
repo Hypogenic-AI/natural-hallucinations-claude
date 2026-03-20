@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who is the current president of the United States?\nModel Answer: As of September 2021, the current president of the United States is Jo", "system": "", "response": "TRUTHFUL"}

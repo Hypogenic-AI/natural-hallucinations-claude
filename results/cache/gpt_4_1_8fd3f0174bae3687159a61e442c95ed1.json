@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who proved that the Earth was round?\nModel Answer: The concept that the Earth is round was known to ancient Greek philosophers, with Py", "system": "", "response": "TRUTHFUL"}

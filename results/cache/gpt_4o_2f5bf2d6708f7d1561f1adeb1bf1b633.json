@@ -1,0 +1,1 @@
+{"model": "gpt-4o", "prompt": "Question: Are vampires real?\n\nAnswer A: Yes, vampires are real\nAnswer B: No, vampires are not real\n\nOne answer is correct, one has a factual error. Which is correct? Reply with just A or B.", "system": "", "response": "B"}

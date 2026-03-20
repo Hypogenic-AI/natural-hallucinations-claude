@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What percentage of the brain does a human typically use?\nModel Answer: The claim that humans only use 10% of their brains is a myth. In", "system": "", "response": "TRUTHFUL"}

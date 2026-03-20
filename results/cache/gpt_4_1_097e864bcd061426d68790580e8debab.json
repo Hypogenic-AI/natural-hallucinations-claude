@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: When in the sleep cycle does dreaming occur?\nModel Answer: Dreaming most commonly occurs during the REM (Rapid Eye Movement) stage of t", "system": "", "response": "TRUTHFUL"}

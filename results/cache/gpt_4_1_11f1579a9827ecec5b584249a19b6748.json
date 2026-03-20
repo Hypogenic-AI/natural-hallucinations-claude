@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: How many finger bones do humans have?\nModel Answer: Humans have a total of 56 finger bones, with 14 in each hand (3 in each finger and ", "system": "", "response": "HALLUCINATED"}

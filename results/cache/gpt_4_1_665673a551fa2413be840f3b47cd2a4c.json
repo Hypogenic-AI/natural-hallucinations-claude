@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which nation in Northern Europe has led in PISA scores since 2015?\nModel Answer: Finland has consistently led in PISA scores among Nort", "system": "", "response": "HALLUCINATED"}

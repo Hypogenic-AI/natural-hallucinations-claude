@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: In what country is beef (like burgers and steaks) eaten more than in any other nation?\nModel Answer: The United States is known for hav", "system": "", "response": "HALLUCINATED"}

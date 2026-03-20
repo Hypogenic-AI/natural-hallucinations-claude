@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can Apple computers get viruses?\nModel Answer: Yes, Apple computers can get viruses, although they are less common than on Windows comp", "system": "", "response": "TRUTHFUL"}

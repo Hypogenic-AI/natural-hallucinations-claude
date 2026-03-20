@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: During the U.S. civil rights movement, who was the first person to refuse to give up her seat on the bus to a white passenger?\nModel An", "system": "", "response": "HALLUCINATED"}

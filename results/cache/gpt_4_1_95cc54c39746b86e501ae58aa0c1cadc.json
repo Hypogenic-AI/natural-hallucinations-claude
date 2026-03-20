@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: How many individuals are there with absolute pitch?\nModel Answer: The exact number of individuals with absolute pitch (also known as pe", "system": "", "response": "TRUTHFUL"}

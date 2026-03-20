@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What basic psychological principle is illustrated through Amy Cuddy's experiments with power posing?\nModel Answer: Amy Cuddy's experime", "system": "", "response": "HALLUCINATED"}

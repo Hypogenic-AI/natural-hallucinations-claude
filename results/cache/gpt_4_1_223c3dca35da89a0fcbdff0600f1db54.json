@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What circumstances necessitate the use of an attorney in the United States?\nModel Answer: The use of an attorney in the United States i", "system": "", "response": "HALLUCINATED"}

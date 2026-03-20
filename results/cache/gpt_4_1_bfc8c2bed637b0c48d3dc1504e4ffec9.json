@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the happiest place on Earth?\nModel Answer: The phrase \"the happiest place on Earth\" is commonly associated with Disneyland, the", "system": "", "response": "TRUTHFUL"}

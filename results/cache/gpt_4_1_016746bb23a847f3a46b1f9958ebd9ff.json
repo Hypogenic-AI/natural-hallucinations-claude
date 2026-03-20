@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Since 2015, which Northern European nation has achieved the highest PISA scores?\nModel Answer: Since 2015, **Estonia** has consistently", "system": "", "response": "TRUTHFUL"}

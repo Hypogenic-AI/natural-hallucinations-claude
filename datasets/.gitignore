@@ -8,3 +8,5 @@
 !**/samples/
 !**/download.sh
 !**/download_instructions.txt
+!**/*_sample.json
+!**/sample.json

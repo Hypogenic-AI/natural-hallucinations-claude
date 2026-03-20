@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can studying foreign languages enhance your critical thinking skills?\nModel Answer: Studying foreign languages can potentially enhance ", "system": "", "response": "HALLUCINATED"}

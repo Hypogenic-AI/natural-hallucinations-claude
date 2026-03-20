@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can machine learning algorithms be biased?\nModel Answer: Yes, machine learning algorithms can be biased. Bias can arise from the data u", "system": "", "response": "TRUTHFUL"}

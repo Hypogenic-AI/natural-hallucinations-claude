@@ -1,259 +1,166 @@
 # Literature Review: Natural Hallucinations in Large Language Models
 
-## Research Hypothesis
-Some hallucinations produced by large language models (LLMs) are difficult for the models to recognize, even when all relevant information is present. These "natural hallucinations" may be robust to additional context or question phrasing, and may transfer across models or persist after training.
-
 ## Research Area Overview
 
-LLM hallucinations—the generation of fluent but factually incorrect content—represent a fundamental challenge for deploying LLMs in real-world applications. While hallucinations are often attributed to knowledge gaps, emerging research suggests a more nuanced picture: some hallucinations arise from the training objective itself, leading models to reproduce common human misconceptions rather than generate truthful content.
-
-This literature review synthesizes findings on hallucination detection, robustness, transferability, and the mechanisms underlying these failures.
-
----
+This review examines systematic, robust hallucinations in large language models (LLMs) — what we term "natural hallucinations." The research hypothesis posits that certain LLM hallucinations are: (1) robust to additional information or question reformulation, (2) difficult for LLMs to self-detect even with all necessary information present, (3) transferable across models, and (4) more easily memorized if encountered during training. We surveyed 19 papers spanning hallucination characterization, detection, mitigation, and theoretical foundations.
 
 ## Key Papers
 
-### 1. TruthfulQA: Measuring How Models Mimic Human Falsehoods
-**Authors**: Lin, Hilton, Evans (2021)
-**Source**: arXiv:2109.07958, 2693 citations
-**File**: `papers/2109.07958_TruthfulQA.pdf`
+### Paper 1: CHOKE — Certain Hallucinations Overriding Known Evidence
+**Simhi, Itzhak, Barez, Stanovsky, Belinkov (2025)** — arXiv:2502.12964
 
-**Key Contributions**:
-- Introduces concept of "imitative falsehoods" - false answers with high likelihood on training distribution
-- 817 questions across 38 categories designed to elicit these falsehoods
-- Demonstrates **inverse scaling**: larger models are *less* truthful (GPT-3-175B: 58% truthful vs human: 94%)
+- **Key Contribution**: Defines CHOKE as cases where LLMs demonstrably know the correct answer yet produce hallucinated responses with *high certainty* under trivial prompt perturbations. This is the closest existing concept to "natural hallucinations."
+- **Methodology**: Three-stage pipeline: (1) knowledge test via few-shot prompting, (2) hallucination elicitation via 56 natural prompt variants, (3) certainty measurement via token probability, probability difference, and semantic entropy.
+- **Datasets**: TriviaQA, Natural Questions (up to 20K examples per model).
+- **Models**: Mistral-7B, Llama-3.1-8B, Gemma-2-9B/27B (base and instruct).
+- **Key Results**: 16-43% of hallucinations-despite-knowledge occur with high certainty. CHOKE examples show significantly higher cross-prompt consistency (Jaccard 40.6% vs 13.6% random). Prompt-based mitigation largely fails (6-8% success); trained probes achieve 54% CHOKE detection.
+- **Code**: Uses semantic_uncertainty repo. No standalone release.
+- **Relevance**: Directly demonstrates robustness of certain hallucinations across prompts. The phenomenon appears across all tested model families but specific instances were not compared cross-model.
 
-**Critical Findings for Our Hypothesis**:
-1. **Transfer across models**: GPT-Neo/J shows similar inverse scaling to GPT-3 without adversarial filtering, suggesting imitative falsehoods transfer between models with similar training distributions
-2. **Robustness to paraphrasing**: Truthfulness scores don't change substantially on paraphrased questions
-3. **Not syntactic artifacts**: Control questions with same syntax but different content show normal scaling (larger = better)
+### Paper 2: LLMs Know More Than They Show
+**Orgad, Toker, Gekhman et al. (2024)** — arXiv:2410.02707, ICLR 2025
 
-**Methodology**: Human evaluation of generated answers; automated GPT-judge classifier (90-96% accuracy)
+- **Key Contribution**: Internal LLM representations encode truthfulness information at exact answer tokens, yet models consistently generate incorrect answers. Introduces error taxonomy including "consistently incorrect" (Type C) errors — the model gives the same wrong answer 29/30 times.
+- **Methodology**: Linear probing classifiers on intermediate representations. Systematic probing across all layers and token positions.
+- **Datasets**: 10 datasets including TriviaQA, HotpotQA, Natural Questions, Winobias, MNLI, Math, IMDB.
+- **Models**: Mistral-7b, Llama3-8b (base and instruct variants).
+- **Key Results**: Answer-token probing achieves AUC 0.85-0.95. Cross-task generalization is poor — truthfulness encoding is skill-specific. Using probes to select from resampled responses improves accuracy 30-40 points for Type C errors.
+- **Code**: https://github.com/technion-cs-nlp/LLMsKnow
+- **Relevance**: Type C errors (consistently incorrect despite internal knowledge) are the mechanistic signature of natural hallucinations.
 
-**Relevance**: TruthfulQA provides the foundational benchmark for studying "natural hallucinations" that are difficult to fix by scaling alone.
+### Paper 3: Distinguishing Ignorance from Error (HK+/HK-)
+**Simhi, Herzig, Szpektor, Belinkov (2024)** — arXiv:2410.22071
 
----
+- **Key Contribution**: Formalizes HK- (ignorance — model lacks knowledge) vs HK+ (error despite knowledge). Develops WACK framework for model-specific hallucination datasets.
+- **Methodology**: Knowledge detection via multi-sample generation. HK+ elicitation via 4 settings (truthful, persona, Alice-Bob, snowballing). Detection via linear SVM on hidden states.
+- **Datasets**: TriviaQA, Natural Questions (30K examples each).
+- **Models**: Mistral-7B-v0.3, Llama-3.1-8B, Gemma-2-9B.
+- **Key Results**: HK+ prevalence: 4-24%. **Cross-model HK+ Jaccard similarity only 0.10-0.36** (vs. 0.6-0.8 for knowledge). Prompt mitigation helps HK+ (9-51%) but barely helps HK- (0.8-3.2%).
+- **Code**: https://github.com/technion-cs-nlp/hallucination-mitigation
+- **Relevance**: HK+ is precisely natural hallucinations. Low cross-model Jaccard is **counterevidence** to transfer — different models hallucinate on different questions despite shared knowledge.
 
-### 2. How Language Model Hallucinations Can Snowball
-**Authors**: Zhang, Press, Merrill, Liu, Smith (2023)
-**Source**: arXiv:2305.13534
-**File**: `papers/2305.13534_hallucination_snowball.pdf`
+### Paper 4: Hallucination, Monofacts, and Miscalibration
+**Miao & Kearns (2025)** — arXiv:2502.08666, PNAS 2026
 
-**Key Contributions**:
-- Demonstrates "hallucination snowballing" - models make errors they can separately recognize as wrong
-- ChatGPT identifies 67% of its own mistakes; GPT-4 identifies 87%
-- Created 3 datasets: primality testing, senator search, graph connectivity
+- **Key Contribution**: Calibrated LLMs must hallucinate at a rate lower-bounded by monofact rate minus miscalibration. Selective upweighting of 5% of training data reduces hallucination by 40%.
+- **Methodology**: Bigram models and SFT on T5/GPT2 with controlled fact frequency distributions.
+- **Datasets**: IMDb movie facts, synthetic biographies (10K).
+- **Models**: Bigram, T5-Small/Large, GPT2-Medium/Large.
+- **Key Results**: Hallucination scales linearly with monofact rate. Architecture-independent. Upweighting 312 examples (~6%) can halve hallucination.
+- **Relevance**: Theoretical grounding — natural hallucinations are statistically inevitable for rare facts. Architecture-independence supports cross-model transfer of the phenomenon.
 
-**Critical Findings for Our Hypothesis**:
-1. **Self-recognition**: Models "know" their errors are wrong when asked separately
-2. **Over-commitment**: LMs commit to early mistakes for consistency, generating supporting false claims
-3. **Robustness to interventions**: Snowballed hallucinations persist with temperature changes (0.0, 0.6, 0.9)
-4. **Limits of prompting**: Even with "Let's think step by step", 95% of failures still show snowballing
+### Paper 5: Hallucinate or Memorize
+**Niimi (2025)** — arXiv:2511.08877
 
-**Mechanism**: Initial committal (Yes/No first token) + inherently sequential problems (beyond single-step transformer reasoning)
+- **Key Contribution**: Hallucination and memorization are two sides of the same probabilistic process. Citation count proxies training frequency. Inflection at ~90 citations; saturation at ~1,248.
+- **Key Results**: High-citation group scored 72% higher on accuracy (Cohen's d = 1.02). Log(citations) vs. similarity: r = 0.75, R² = 0.56.
+- **Relevance**: Directly supports hypothesis that hallucinations used in training could be more easily memorized.
 
-**Relevance**: Directly supports hypothesis that some hallucinations are recognizable but still produced due to generation dynamics.
+### Paper 6: TruthfulQA
+**Lin, Hilton, Evans (2022)** — arXiv:2109.07958
 
----
+- **Key Contribution**: Benchmark of 817 questions eliciting "imitative falsehoods." Larger models are *less* truthful (inverse scaling).
+- **Datasets**: 817 questions, 38 categories. https://github.com/sylinrl/TruthfulQA
+- **Models**: GPT-3, GPT-Neo/J, GPT-2, UnifiedQA, plus external evaluations.
+- **Key Results**: Best model 58% truthful vs 94% human. Inverse scaling across 4 model families. Persistent across paraphrases.
+- **Relevance**: Cross-model consistency of imitative falsehoods strongly supports transfer hypothesis. Robustness across paraphrases supports persistence.
 
-### 3. INSIDE: LLMs' Internal States Retain the Power of Hallucination Detection
-**Authors**: Chen et al. (2024)
-**Source**: arXiv:2402.03744, ICLR 2024
-**File**: `papers/2402.03744_INSIDE.pdf`
+### Paper 7: Sources of Hallucination on Inference Tasks
+**McKenna, Li et al. (2023)** — arXiv:2305.14552
 
-**Key Contributions**:
-- Proposes EigenScore: uses eigenvalues of sentence embedding covariance matrix
-- Feature clipping approach for overconfident hallucinations
-- State-of-the-art hallucination detection on CoQA, SQuAD, TriviaQA, NQ
+- **Key Contribution**: Attestation bias (models affirm training-attested hypotheses regardless of premise) and relative frequency bias drive NLI hallucinations.
+- **Models**: LLaMA-65B, GPT-3.5, PaLM-540B, GPT-4.
+- **Key Results**: 1.9-2.2x more false entailment for attested hypotheses. GPT-3.5 recall drops 92.3→55.3 with entity replacement. Biases resist prompt engineering.
+- **Code**: https://github.com/Teddy-Li/LLM-NLI-Analysis
+- **Relevance**: Cross-model consistency across LLaMA, GPT-3.5, PaLM, GPT-4 demonstrates training-data-driven hallucinations transfer. Resistance to prompting shows robustness.
 
-**Critical Findings for Our Hypothesis**:
-1. **Self-consistent hallucinations exist**: Some hallucinations are "overconfident" - consistent across samples
-2. **Internal states encode truthfulness**: Dense semantic information in embeddings captures factuality
-3. **Better LLMs = better detection**: LLaMA-13B enables better hallucination detection than 7B
+### Additional Relevant Papers
 
-**Methodology**:
-- EigenScore = (1/K) * sum(log(λᵢ)) where λᵢ are eigenvalues of embedding covariance
-- Lower EigenScore = more consistent responses = likely factual
-- Feature clipping truncates extreme activations to reduce overconfidence
-
-**Relevance**: Provides methods to identify "natural hallucinations" that are consistent and thus harder to detect via sampling.
-
----
-
-### 4. SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection
-**Authors**: Manakul, Liusie, Gales (2023)
-**Source**: arXiv:2303.08896, 685 citations
-**File**: `papers/2303.08896_selfcheckgpt.pdf`
-
-**Key Contributions**:
-- Self-consistency based hallucination detection without external databases
-- Multiple methods: BERTScore, QA, n-gram, NLI, LLM prompting
-- Applicable to black-box models (no access to logits needed)
-
-**Critical Findings for Our Hypothesis**:
-1. **Factual = consistent**: If LLM knows a fact, sampled responses are similar and consistent
-2. **Hallucinations = divergent**: Hallucinated facts show contradiction across samples
-3. **Sentence-level detection**: Can identify specific hallucinated sentences within passages
-
-**Key Insight**: Works well for "random" hallucinations but may struggle with consistent/"natural" hallucinations that transfer across samples.
-
----
-
-### 5. Surveys on LLM Hallucination
-
-#### A Survey on Hallucination in Large Language Models (Huang et al., 2023)
-**Source**: arXiv:2311.05232, 1960 citations
-**File**: `papers/2311.05232_hallucination_survey_huang.pdf`
-
-**Taxonomy**:
-- **Factuality hallucination**: Contradicts established facts
-- **Faithfulness hallucination**: Diverges from source content/context
-
-**Causes**:
-1. Data: Misinformation in training data, knowledge boundary issues
-2. Training: Exposure bias, knowledge shortcuts
-3. Inference: Decoding strategies, context window limitations
-
-#### Siren's Song in the AI Ocean (Zhang et al., 2023)
-**Source**: arXiv:2309.01219, 819 citations
-**File**: `papers/2309.01219_hallucination_siren_song.pdf`
-
-Complements the above with analysis of detection and mitigation methods.
-
----
-
-### 6. Additional Detection Methods
-
-#### Semantic Entropy Probes (Kossen et al., 2024)
-**Source**: arXiv:2406.15927
-**File**: `papers/2406.15927_semantic_entropy_probes.pdf`
-
-- Cheap probes trained on semantic entropy signals
-- Uses internal representations rather than multiple generations
-- More efficient than sampling-based methods
-
-#### LLM Internal States Reveal Hallucination Risk (Ji et al., 2024)
-**Source**: arXiv:2407.03282
-**File**: `papers/2407.03282_internal_states_risk.pdf`
-
-- Studies if LLMs can estimate their own hallucination risk
-- Inspired by human self-awareness of knowledge gaps
-
----
-
-### 7. Self-Awareness and Uncertainty
-
-#### R-Tuning: Instructing LLMs to Say 'I Don't Know' (Zhang et al., 2023)
-**Source**: arXiv:2311.09677
-**File**: `papers/2311.09677_r_tuning.pdf`
-
-- Fine-tunes models to refuse answering when uncertain
-- Reduces hallucinations by encouraging appropriate abstention
-
-#### SaySelf: Teaching LLMs to Express Confidence (Xu et al., 2024)
-**Source**: arXiv:2405.20974
-**File**: `papers/2405.20974_SaySelf.pdf`
-
-- Self-reflective rationales for confidence expression
-- Aims to calibrate verbal uncertainty with actual knowledge
-
----
+| Paper | ID | Year | Key Finding |
+|-------|-----|------|------------|
+| Cross-Model Consistency Finch-Zk | 2508.14314 | 2025 | Cross-model consistency reinforces shared errors |
+| Phenomenology of Hallucinations | 2603.13911 | 2026 | Models detect uncertainty internally but signal silent at output |
+| Hallucination is Inevitable | 2401.11817 | 2024 | Formal proof LLMs cannot avoid hallucination |
+| Why Language Models Hallucinate (Kalai) | 2509.04664 | 2025 | Natural statistical pressures cause systematic hallucination |
+| LLMs Will Always Hallucinate | 2409.05746 | 2024 | Structural inevitability via Gödel's theorem |
+| Banishing Hallucinations | 2406.17642 | 2024 | Next-token prediction hallucinations are threshold-based |
+| Sycophancy in LLMs | 2411.15287 | 2024 | RLHF exacerbates sycophancy |
+| Factual Misalignment Short/Long Form | 2510.11218 | 2025 | Systematic misalignment across 16 LLMs by query format |
+| Chain of Verification | 2309.11495 | 2023 | Verification reduces hallucination |
+| HaluEval | 2305.11747 | 2023 | Hallucination evaluation benchmark |
+| Earth is Flat — Factual Errors | 2401.00761 | 2024 | Systematic factual error patterns |
+| Don't Hallucinate, Abstain | 2402.00367 | 2024 | Multi-LLM collaboration for knowledge gaps |
 
 ## Common Methodologies
 
-### Hallucination Detection Approaches
-
-| Method | Type | Mechanism | Strengths | Limitations |
-|--------|------|-----------|-----------|-------------|
-| Self-consistency | Black-box | Multiple samples + similarity | No model access needed | Fails for consistent hallucinations |
-| EigenScore | White-box | Eigenvalues of embedding covariance | Handles some overconfident cases | Requires internal access |
-| Semantic entropy | White-box | Entropy over semantic clusters | Principled uncertainty | Computational cost |
-| Trained probes | White-box | Classifiers on hidden states | Fast inference | Requires training data |
-| LLM-as-judge | Black-box | Ask another LLM to verify | Flexible | Expensive, may share biases |
-
-### Evaluation Metrics
-- **AUROC**: Area under ROC curve for detection
-- **Accuracy/Truthfulness rate**: Fraction of correct answers
-- **Pearson correlation**: Correlation between detection score and factuality
-- **AUC-PR**: For imbalanced datasets
-
----
+1. **Knowledge probing**: Few-shot prompting with multiple samples to establish whether a model "knows" the answer (CHOKE, HK+/HK-)
+2. **Linear probing on hidden states**: Classifiers on intermediate representations to detect truthfulness (LLMs Know More, HK+/HK-)
+3. **Prompt perturbation**: Test hallucination persistence across paraphrases and prompt variants (CHOKE, TruthfulQA)
+4. **Cross-model evaluation**: Test same questions across model families (all papers)
+5. **Semantic entropy**: Cluster generations semantically to measure uncertainty (CHOKE)
 
 ## Standard Baselines
 
-1. **Perplexity**: -1/T * sum(log p(yₜ))
-2. **Length-normalized entropy**: Average token entropy
-3. **Lexical similarity**: ROUGE-L across samples
-4. **Token probability thresholds**: Max(-log p) or Avg(-log p)
+- TruthfulQA benchmark (817 questions, many published results)
+- Few-shot QA on TriviaQA / Natural Questions
+- Prompt-based mitigation ("be truthful" instructions — consistently weak)
+- Uncertainty-based detection (token probabilities, semantic entropy)
+- Linear probes on hidden states
 
----
+## Evaluation Metrics
+
+- **Truthfulness rate**: Fraction of factually correct responses
+- **CHOKE-Score**: Detection rate for high-certainty hallucinations
+- **AUC**: Binary classification of hallucinated vs correct
+- **Jaccard similarity**: Overlap of hallucinated examples across models/prompts
+- **Exact match**: Factual QA evaluation
+- **Semantic entropy**: Uncertainty quantification
 
 ## Datasets in the Literature
 
-| Dataset | Size | Task | Used In |
-|---------|------|------|---------|
-| TruthfulQA | 817 Q | Truthfulness benchmark | TruthfulQA, many follow-ups |
-| HaluEval | 35K | Hallucination detection | HaluEval paper, INSIDE |
-| CoQA | 8K | Conversational QA | INSIDE, many detection papers |
-| TriviaQA | 95K | Closed-book QA | INSIDE, many detection papers |
-| Natural Questions | 307K | Open-domain QA | INSIDE, detection papers |
-| SQuAD | 100K | Reading comprehension | INSIDE, detection papers |
-| WikiBio (SelfCheckGPT) | 238 | Biography generation | SelfCheckGPT |
-
----
+| Dataset | Used By | Task | Size |
+|---------|---------|------|------|
+| TruthfulQA | TruthfulQA, many evaluations | Truthfulness QA | 817 questions |
+| TriviaQA | CHOKE, HK+/HK-, LLMs Know | Factual QA | 95K+ |
+| Natural Questions | CHOKE, HK+/HK-, LLMs Know | Factual QA | 91K+ |
+| HaluEval | Various evaluations | Hallucination detection | ~35K |
+| Levy/Holt | Sources of Hallucination | NLI | 2.4K |
 
 ## Gaps and Opportunities
 
-### What's Missing
+1. **No unified "natural hallucinations" study**: No paper systematically studies all four aspects (robustness, self-detection difficulty, cross-model transfer, memorization predictability) together.
+2. **Cross-model transfer is contested**: TruthfulQA and Sources of Hallucination show cross-model patterns, but HK+/HK- shows low Jaccard (0.10-0.36) for specific instances.
+3. **Temporal prediction unexplored**: No paper tests whether hallucinations in older models predict hallucinations in newer models of the same family.
+4. **Training data frequency link underexplored**: Monofacts theory validated only on small models.
+5. **Self-detection of robust hallucinations**: CHOKE shows uncertainty methods fail, probing shows promise. Gap between internal knowledge and output remains unexplained.
 
-1. **Systematic study of hallucination transfer**: No paper comprehensively studies which hallucinations transfer across model families
-2. **Temporal persistence**: Limited work on whether hallucinations persist after additional training/RLHF
-3. **Fine-grained categorization of "natural" hallucinations**: TruthfulQA identifies imitative falsehoods broadly but doesn't categorize by difficulty of recognition
-4. **Cross-version analysis**: How do hallucinations change between model versions (e.g., GPT-3 → GPT-4)?
-
-### Open Questions
-
-1. Are there questions that cause hallucinations in ALL models regardless of architecture?
-2. Can we predict which hallucinations will be "natural" (hard to recognize) vs "random"?
-3. Does training on TruthfulQA reduce hallucinations or just cause memorization?
-
----
-
-## Recommendations for Experiments
+## Recommendations for Our Experiment
 
 ### Recommended Datasets
-1. **Primary**: TruthfulQA (817 questions with categories)
-2. **Secondary**: HaluEval QA samples (10K with labels), SelfCheckGPT WikiBio (sentence-level annotations)
-3. **Supporting**: CoQA, TriviaQA, NQ for comparison with other methods
+1. **TruthfulQA** (primary): 817 questions, cross-model results for comparison
+2. **TriviaQA** (validation, 18K): Used by CHOKE and HK+/HK- papers
+3. **Natural Questions** (open-domain, 3.6K validation): Complementary factual QA
+
+### Recommended Approach
+1. **Identify natural hallucination candidates**: CHOKE-style — test across prompt variants, find high-certainty hallucinations despite knowledge
+2. **Test cross-model transfer**: Same instances across model families, measure Jaccard overlap
+3. **Test temporal prediction**: Compare across model versions (Llama-2 vs Llama-3, etc.)
+4. **Test robustness**: Persistence under information augmentation (providing correct answer in context)
 
 ### Recommended Baselines
-1. Self-consistency (SelfCheckGPT variants)
-2. EigenScore (INSIDE)
-3. Semantic entropy probes (if internal access available)
-4. Perplexity and entropy baselines
+- Random baseline
+- Uncertainty-based detection (token probability, semantic entropy)
+- Linear probing on hidden states
+- Prompt-based mitigation
 
 ### Recommended Metrics
-1. Per-question hallucination rate across models (transfer analysis)
-2. Recognition accuracy (can model identify its own error in isolation)
-3. Robustness to paraphrasing
-4. Correlation with model size/training
+- Hallucination persistence rate (fraction surviving perturbation)
+- Cross-model Jaccard similarity
+- Self-detection accuracy
+- Temporal prediction accuracy
 
 ### Methodological Considerations
-1. Use greedy decoding for consistency with TruthfulQA paper
-2. Test multiple model families (GPT, LLaMA, Mistral, Claude)
-3. Control for question category effects
-4. Consider both generation and multiple-choice evaluation
-
----
-
-## Key Takeaways for "Natural Hallucinations" Research
-
-1. **Evidence for the hypothesis exists**: TruthfulQA's inverse scaling and snowballing paper both suggest hallucinations that models "know" are wrong but still produce
-
-2. **Transfer is likely**: GPT-Neo/J shows same patterns as GPT-3 without adversarial filtering, suggesting training distribution similarities cause shared hallucinations
-
-3. **Robustness confirmed**: Paraphrasing and temperature changes don't substantially affect these hallucinations
-
-4. **Detection methods exist**: Combination of self-consistency (for random) and internal states (for overconfident) can identify hallucinations
-
-5. **Gap to fill**: No systematic study of which specific TruthfulQA questions cause consistent hallucinations across ALL tested models and whether these persist through training
+- Use multiple prompt variants (56+ per CHOKE) for reliable robustness measurement
+- Control for HK- vs HK+ — natural hallucinations should be HK+
+- Consider monofact theory — natural hallucinations may cluster around rare facts
+- Account for model-specific vs universal patterns

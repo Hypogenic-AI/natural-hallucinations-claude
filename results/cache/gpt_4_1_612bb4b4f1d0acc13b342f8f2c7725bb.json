@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which city in California, whose name means \"the spring,\" features a Mediterranean climate, a large Hispanic demographic, and historic a", "system": "", "response": "HALLUCINATED"}

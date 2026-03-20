@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can studying music enhance your cognitive abilities?\nModel Answer: Yes, studying music can enhance cognitive abilities. Research has sh", "system": "", "response": "HALLUCINATED"}

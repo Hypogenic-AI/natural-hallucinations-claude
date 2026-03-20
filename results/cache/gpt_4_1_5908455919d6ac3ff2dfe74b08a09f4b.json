@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Where does the snowfall exceed that of Montreal?\nModel Answer: Snowfall in Montreal is significant, averaging about **210 cm (83 inches", "system": "", "response": "TRUTHFUL"}

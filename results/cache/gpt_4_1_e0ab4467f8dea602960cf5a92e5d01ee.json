@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who said, \"Sometimes a cigar is just a cigar\"?\nModel Answer: The phrase \"Sometimes a cigar is just a cigar\" is attributed to Sigmund Fr", "system": "", "response": "HALLUCINATED"}

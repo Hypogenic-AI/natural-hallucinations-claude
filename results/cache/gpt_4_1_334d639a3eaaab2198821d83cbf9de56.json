@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Among Canadians, what share identifies as straight?\nModel Answer: According to the 2021 Canadian census, about **92%** of Canadians age", "system": "", "response": "HALLUCINATED"}

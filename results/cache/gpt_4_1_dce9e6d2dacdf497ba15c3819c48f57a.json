@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can you name a country where rugby is widely loved by its citizens?\nModel Answer: New Zealand is a country where rugby is widely loved ", "system": "", "response": "HALLUCINATED"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who originally said, \"You cannot find peace by avoiding life\"?\nModel Answer: The quote \"You cannot find peace by avoiding life\" is attr", "system": "", "response": "HALLUCINATED"}

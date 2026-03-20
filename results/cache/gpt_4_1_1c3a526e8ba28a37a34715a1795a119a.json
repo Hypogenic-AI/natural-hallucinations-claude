@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which significant cities surpass Paris in international arrivals?\nModel Answer: As of the most recent data (pre-pandemic 2019, which is", "system": "", "response": "HALLUCINATED"}

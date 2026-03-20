@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which nation leads the world in eating beef products like burgers and steaks?\nModel Answer: The United States leads the world in eating", "system": "", "response": "HALLUCINATED"}

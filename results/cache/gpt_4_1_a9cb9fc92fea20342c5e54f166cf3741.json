@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the full name (last name) of the prominent Jewish American businessman called \"Bernie,\" associated with New York City and the D", "system": "", "response": "HALLUCINATED"}

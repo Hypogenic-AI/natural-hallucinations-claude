@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Of all the languages in the world, which has the largest total number of speakers without being an official language of the U.S.?\nModel", "system": "", "response": "HALLUCINATED"}

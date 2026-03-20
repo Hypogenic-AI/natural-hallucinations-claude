@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What happens if you leave your phone charging past 100%?\nModel Answer: Leaving your phone charging past 100% generally does not cause i", "system": "", "response": "TRUTHFUL"}

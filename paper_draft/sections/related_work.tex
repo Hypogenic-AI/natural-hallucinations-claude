@@ -1,12 +1,41 @@
 \section{Related Work}
-\label{sec:related_work}
+\label{sec:related}
 
-\para{Hallucination benchmarks and taxonomy.} The study of LLM hallucinations has produced several benchmarks and taxonomies. \citet{lin2021truthfulqa} introduced \truthfulqa, demonstrating that larger models can be less truthful due to \imitativefalsehoods---answers matching common misconceptions in training data. Recent surveys~\citep{huang2023survey, zhang2023siren} distinguish between factuality hallucinations (contradicting established facts) and faithfulness hallucinations (diverging from source content). \citet{li2023halueval} provide HaluEval for fine-grained hallucination evaluation. Unlike these works that treat hallucinations uniformly, we focus specifically on identifying which hallucinations transfer across model families.
+\para{Hallucination characterization and benchmarks.}
+\citet{lin2022truthfulqa} introduced \truthfulqa, a benchmark of 817 questions designed to elicit ``imitative falsehoods''---incorrect answers that LLMs produce because they appear frequently in training data.
+They found an inverse scaling pattern where larger models were \emph{less} truthful, suggesting that scale amplifies training data biases rather than correcting them.
+\citet{li2023halueval} developed \textsc{HaluEval}, a large-scale benchmark for hallucination detection across QA, dialogue, and summarization.
+\citet{gekhman2024earth} conducted a systematic study of factual error patterns across models, finding consistent category-level trends.
+We build on \truthfulqa as our primary evaluation, but go beyond per-model accuracy to study the \emph{transfer} and \emph{persistence} of specific hallucinated instances across models.
 
-\para{Hallucination detection methods.} Detection approaches fall into two categories. Black-box methods like SelfCheckGPT~\citep{manakul2023selfcheckgpt} leverage self-consistency: factual responses are consistent across multiple samples, while hallucinations diverge. White-box methods access internal model states. \citet{chen2024inside} propose EigenScore, using eigenvalues of sentence embedding covariance matrices to identify overconfident hallucinations. \citet{kossen2024semantic} train probes on semantic entropy signals. These methods assume hallucinations are detectable through inconsistency or uncertainty signals. Our work reveals that \naturalhall are both consistent and confident, potentially evading these detection methods.
+\para{Knowledge versus output: errors despite knowing.}
+A growing body of work demonstrates that LLMs can encode correct information internally while still producing incorrect outputs.
+\citet{orgad2024llmsknow} showed that linear probes on intermediate representations can detect truthfulness with AUC 0.85--0.95, even for ``Type C'' errors where the model gives the same wrong answer 29 out of 30 times.
+\citet{simhi2024distinguishing} formalized the distinction between ignorance (HK$-$: the model lacks knowledge) and error (HK$+$: the model knows but still hallucinates), finding that 4--24\% of hallucinations are HK$+$.
+\citet{simhi2025choke} defined CHOKE (Certain Hallucinations Overriding Known Evidence) as cases where models hallucinate with high certainty despite demonstrably possessing the correct answer, finding that 16--43\% of knowledge-despite-hallucination cases exhibit this pattern.
+Our self-detection experiment complements this line of work: rather than probing hidden states, we test whether models can \emph{recognize} their own errors when the correct answer is explicitly presented alongside their hallucinated response.
 
-\para{Self-recognition and correction.} \citet{zhang2023snowball} demonstrate that models can often recognize their own errors when asked separately, yet commit to them during generation---a phenomenon they call ``hallucination snowballing.'' They show ChatGPT identifies 67\% of its mistakes and GPT-4 identifies 87\%. Our findings complement this work: while models can recognize many errors in isolation, \naturalhall represent a subset where recognition rates drop to 24\%, indicating true blindspots rather than contextual commitment errors.
+\para{Training data frequency and hallucination.}
+\citet{miao2025hallucination} provided theoretical grounding for the connection between training data frequency and hallucination, showing that calibrated LLMs must hallucinate at a rate lower-bounded by the ``monofact'' rate---the fraction of facts appearing only once in training data.
+\citet{niimi2025hallucinate} found that hallucination rates are strongly correlated with citation counts (a proxy for training data frequency), with an inflection point at approximately 90 citations and saturation at 1,248.
+These results suggest that natural hallucinations may cluster around facts that contradict high-frequency misconceptions in training data---precisely the design principle behind \truthfulqa.
 
-\para{Mitigation strategies.} Approaches to reducing hallucinations include retrieval-augmented generation~\citep{lewis2020retrieval}, chain-of-thought prompting~\citep{wei2022chain}, and training models to express uncertainty~\citep{zhang2023rtuning}. RLHF~\citep{ouyang2022training} has improved factuality but does not eliminate hallucinations. Our results suggest that mitigation strategies should distinguish between random hallucinations (addressable through existing methods) and \naturalhall (requiring systematic training data interventions).
+\para{Cross-model consistency and transfer.}
+\citet{mckenna2023sources} demonstrated that attestation bias---the tendency to affirm training-attested hypotheses regardless of context---appears consistently across LLaMA, GPT-3.5, PaLM, and GPT-4.
+\citet{finch2025crossmodel} studied cross-model consistency as a signal for shared error patterns.
+However, \citet{simhi2024distinguishing} found relatively low cross-model Jaccard similarity (0.10--0.36) for HK$+$ instances specifically, suggesting that \emph{which} questions trigger errors may vary even when the underlying phenomenon transfers.
+Our work directly measures cross-model overlap of hallucinated question sets using the complete \truthfulqa benchmark, finding higher overlap (0.19--0.41) than \citet{simhi2024distinguishing} and significant temporal prediction from older to newer models.
 
-\para{Cross-model analysis.} Prior work has not systematically studied which specific questions cause errors across diverse model families. The \truthfulqa paper notes that different model families show similar inverse scaling patterns, suggesting shared biases, but does not identify specific transferring errors. We provide the first systematic analysis of hallucination transfer, robustness, and temporal persistence across model generations.
+\para{Theoretical perspectives on hallucination.}
+Several recent works argue that hallucination is a fundamental rather than incidental property of language models.
+\citet{xu2024hallucination} proved formally that LLMs with computable training procedures cannot avoid hallucination on all inputs.
+\citet{kalai2025hallucinate} showed that natural statistical pressures inherent to language modeling cause systematic hallucination patterns.
+\citet{banerjee2024llms} argued from a G\"{o}delian perspective that structural hallucination is unavoidable.
+\citet{hager2025phenomenology} found that models encode uncertainty signals internally but these signals are often suppressed at the output layer.
+Our empirical findings are consistent with these theoretical accounts: the natural hallucinations we identify appear to be structural features of how language models process widely-believed but incorrect information.
+
+\para{Mitigation approaches.}
+\citet{dhuliawala2023chain} proposed chain-of-verification, which reduces hallucinations by having models verify their own outputs.
+\citet{feng2024dont} explored multi-LLM collaboration for identifying knowledge gaps and encouraging abstention.
+\citet{sharma2024sycophancy} demonstrated that RLHF training can exacerbate sycophancy, a related failure mode.
+Our self-detection results (10--16\% accuracy) suggest that verification-based approaches may be fundamentally limited for natural hallucinations, since the model's internal bias toward the wrong answer persists even under direct comparison with the truth.

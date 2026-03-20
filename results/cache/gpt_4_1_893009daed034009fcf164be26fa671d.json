@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Besides France and Belgium, which other EU countries have French as a spoken language?\nModel Answer: Besides France and Belgium, Luxemb", "system": "", "response": "TRUTHFUL"}

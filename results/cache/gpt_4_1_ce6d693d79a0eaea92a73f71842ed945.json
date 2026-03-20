@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the winter weather like in Paris compared to Philadelphia?\nModel Answer: Winter weather in Paris is generally milder compared t", "system": "", "response": "TRUTHFUL"}

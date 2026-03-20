@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: Are all dogs dogs?\n\nAnswer A: Yes, all dogs are dogs\nAnswer B: No, not all dogs are dogs\n\nOne answer is correct, one has a factual error. Which is correct? Reply with just A or B.", "system": "", "response": "A"}

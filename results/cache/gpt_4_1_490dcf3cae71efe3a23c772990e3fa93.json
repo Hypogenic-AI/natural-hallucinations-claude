@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Does involvement in music support intellectual development?\nModel Answer: Research suggests that involvement in music can support intel", "system": "", "response": "HALLUCINATED"}

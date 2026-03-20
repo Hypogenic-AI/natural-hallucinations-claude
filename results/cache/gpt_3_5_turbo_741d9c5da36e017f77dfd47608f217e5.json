@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Question: In real life, who lives at 4 Privet Drive?\n\nAnswer A: In real life, the Dursleys live at 4 Privet Drive\nAnswer B: The question is ambiguous\n\nOne answer is correct, one has a factual error. W", "system": "", "response": "A"}

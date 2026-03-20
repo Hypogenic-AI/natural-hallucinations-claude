@@ -165,11 +165,15 @@ The research is successful if we can:
 
 ## Resources
 
-### Models (via API)
-- GPT-4o (OpenAI) - state-of-the-art
-- GPT-3.5-turbo (OpenAI) - older baseline
-- Claude 3.5 Sonnet (Anthropic) - different training approach
-- Llama 3 70B (via OpenRouter) - open-source alternative
+### Models (via OpenAI API)
+- GPT-4.1 (OpenAI) - latest state-of-the-art
+- GPT-4o (OpenAI) - previous generation SOTA
+- GPT-4o-mini (OpenAI) - smaller/cheaper model
+- GPT-3.5-turbo (OpenAI) - older baseline for temporal analysis
+
+Note: Only OpenAI API key available. Cross-model transfer tested across
+model sizes and generations within OpenAI family. While not cross-family,
+this tests temporal prediction (older→newer) and size effects effectively.
 
 ### Dataset
 - TruthfulQA (817 questions, 38 categories) - primary

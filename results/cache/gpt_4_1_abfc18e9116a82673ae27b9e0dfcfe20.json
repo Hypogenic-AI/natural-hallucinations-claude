@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which language, not designated as an official language in the United States, boasts the highest global speaker count?\nModel Answer: The", "system": "", "response": "HALLUCINATED"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What was the war with the highest number of casualties in which the U.S. did not participate?\nModel Answer: The war with the highest nu", "system": "", "response": "HALLUCINATED"}

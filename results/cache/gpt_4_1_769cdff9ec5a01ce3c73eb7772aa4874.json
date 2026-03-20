@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Is it true that all positive numbers are positive?\nModel Answer: Yes, it is true that all positive numbers are positive by definition.\n", "system": "", "response": "TRUTHFUL"}

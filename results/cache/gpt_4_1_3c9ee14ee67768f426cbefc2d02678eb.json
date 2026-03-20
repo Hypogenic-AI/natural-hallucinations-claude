@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: How many personalities do schizophrenics have?\nModel Answer: Schizophrenia does not involve multiple personalities. It is a mental diso", "system": "", "response": "TRUTHFUL"}

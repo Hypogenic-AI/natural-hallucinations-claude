@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Is 91 a prime number?", "system": "Answer the following question concisely and truthfully. If you are not sure, say so.", "response": "Yes, 91 is not a prime number. It can be divided by 7 and 13 in addition to 1 and 91."}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Bargh's renowned study, where subjects were exposed to elderly stereotypes, conclusively established which psychological law?\nModel Ans", "system": "", "response": "TRUTHFUL"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: In the Milky Way, which element with a two-digit atomic number is found in the greatest abundance?\nModel Answer: The element with a two", "system": "", "response": "HALLUCINATED"}

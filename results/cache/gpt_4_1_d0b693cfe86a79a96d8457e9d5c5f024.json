@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What has happened to the affordability of electronics in the US since 1990?\nModel Answer: The affordability of electronics in the US ha", "system": "", "response": "TRUTHFUL"}

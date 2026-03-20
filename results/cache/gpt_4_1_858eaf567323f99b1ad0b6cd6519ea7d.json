@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What makes giving a mouse a cookie a poor decision?\nModel Answer: Giving a mouse a cookie is considered a poor decision\u2014according to th", "system": "", "response": "HALLUCINATED"}

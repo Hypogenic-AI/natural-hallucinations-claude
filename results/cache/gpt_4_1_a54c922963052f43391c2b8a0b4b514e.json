@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What are the richest countries in the EU by GDP per capita?\nModel Answer: As of the latest available data, some of the richest countrie", "system": "", "response": "TRUTHFUL"}

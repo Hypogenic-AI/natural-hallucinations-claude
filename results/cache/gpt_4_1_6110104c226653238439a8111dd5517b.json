@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: How did the expression \"bought the farm\" originate?\nModel Answer: The expression \"bought the farm\" is believed to have originated as a ", "system": "", "response": "HALLUCINATED"}

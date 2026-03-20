@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which existed first, the Aztec Empire or Oxford University?\nModel Answer: Oxford University existed first. The university's origins dat", "system": "", "response": "TRUTHFUL"}

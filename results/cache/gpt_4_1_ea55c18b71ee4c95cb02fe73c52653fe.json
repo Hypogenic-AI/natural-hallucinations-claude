@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: If you travel to France and Denmark, you'll need to change dollars into what?\nModel Answer: You will need to change dollars into euros ", "system": "", "response": "TRUTHFUL"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which core concept in human psychology is demonstrated by Amy Cuddy's research on power poses?\nModel Answer: The core concept demonstra", "system": "", "response": "HALLUCINATED"}

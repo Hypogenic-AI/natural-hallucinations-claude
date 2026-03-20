@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: Is light a particle or a wave?\n\nAnswer A: Light is a particle\nAnswer B: Light behaves as both a particle and a wave\n\nOne answer is correct, one has a factual error. Which is correct? Reply w", "system": "", "response": "B"}

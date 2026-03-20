@@ -1,191 +1,78 @@
-# Resources Catalog for Natural Hallucinations Research
+# Resources Catalog
 
 ## Summary
-
-This document catalogs all resources gathered for studying "natural hallucinations" in large language models - hallucinations that are difficult for models to recognize even when relevant information is present.
-
-**Total papers downloaded**: 35
-**Total datasets downloaded**: 6
-**Total repositories cloned**: 5
-
----
+All resources gathered for studying "natural hallucinations" in LLMs — hallucinations that are robust to perturbation, difficult to self-detect, and potentially transferable across models.
 
 ## Papers
+Total papers downloaded: 19
 
-### Core Papers (Deep Read)
-
-| Title | Authors | Year | File | Key Contribution |
-|-------|---------|------|------|------------------|
-| TruthfulQA | Lin, Hilton, Evans | 2021 | `papers/2109.07958_TruthfulQA.pdf` | Benchmark for imitative falsehoods; inverse scaling |
-| Hallucination Snowball | Zhang et al. | 2023 | `papers/2305.13534_hallucination_snowball.pdf` | LLMs recognize 67-87% of own errors separately |
-| INSIDE | Chen et al. | 2024 | `papers/2402.03744_INSIDE.pdf` | EigenScore for internal state detection |
-| SelfCheckGPT | Manakul et al. | 2023 | `papers/2303.08896_selfcheckgpt.pdf` | Self-consistency detection method |
-
-### Survey Papers
-
-| Title | Authors | Year | File | Scope |
-|-------|---------|------|------|-------|
-| Hallucination Survey | Huang et al. | 2023 | `papers/2311.05232_hallucination_survey_huang.pdf` | Comprehensive taxonomy and methods |
-| Siren's Song | Zhang et al. | 2023 | `papers/2309.01219_hallucination_siren_song.pdf` | Detection and mitigation overview |
-| LLM Evaluation Survey | Chang et al. | 2023 | `papers/2307.03109_llm_eval_survey_comprehensive.pdf` | Broad evaluation methods |
-
-### Detection Methods
-
-| Title | Authors | Year | File | Method |
-|-------|---------|------|------|--------|
-| Semantic Entropy Probes | Kossen et al. | 2024 | `papers/2406.15927_semantic_entropy_probes.pdf` | Probes on semantic entropy |
-| Internal States Risk | Ji et al. | 2024 | `papers/2407.03282_internal_states_risk.pdf` | Self-awareness of risk |
-| SAC3 | Zhang et al. | 2023 | `papers/2311.01740_SAC3.pdf` | Semantic-aware cross-check |
-| Attention Satisfies | Yuksekgonul et al. | 2023 | `papers/2309.15098_attention_satisfies.pdf` | Constraint satisfaction view |
-| Cross Examination | Cohen et al. | 2023 | `papers/2305.13281_cross_examination.pdf` | LM vs LM detection |
-| InterrogateLLM | Yehuda et al. | 2024 | `papers/2403.02889_interrogate_llm.pdf` | Zero-resource interrogation |
-| Cost-Effective Detection | Valentin et al. | 2024 | `papers/2407.21424_cost_effective_hallu.pdf` | Production-focused pipeline |
-| Steer Latents | Park et al. | 2025 | `papers/2503.01917_steer_latents.pdf` | Latent space steering |
-| HaloScope | Du et al. | 2024 | `papers/2409.17504_HaloScope.pdf` | Unlabeled generation detection |
-
-### Mitigation and Calibration
-
-| Title | Authors | Year | File | Approach |
+| Title | Authors | Year | File | Key Info |
 |-------|---------|------|------|----------|
-| TruthX | Zhang et al. | 2024 | `papers/2402.17811_TruthX.pdf` | Editing in truthful space |
-| Self-Alignment | Zhang et al. | 2024 | `papers/2402.09267_self_alignment_factuality.pdf` | Self-evaluation alignment |
-| R-Tuning | Zhang et al. | 2023 | `papers/2311.09677_r_tuning.pdf` | Teaching "I don't know" |
-| SaySelf | Xu et al. | 2024 | `papers/2405.20974_SaySelf.pdf` | Confidence expression |
-| Verbal Uncertainty | Ji et al. | 2025 | `papers/2503.14477_verbal_uncertainty.pdf` | Linear uncertainty features |
-| SLED | Zhang et al. | 2024 | `papers/2411.02433_SLED.pdf` | Self logits evolution |
-| Sharpness Alerts | Chen et al. | 2024 | `papers/2403.01548_sharpness_alerts.pdf` | Inner representation view |
-
-### Benchmarks and Evaluation
-
-| Title | Authors | Year | File | Benchmark |
-|-------|---------|------|------|-----------|
-| Dawn After Dark | Li et al. | 2024 | `papers/2401.03205_dawn_after_dark.pdf` | Factuality hallucination study |
-| Fine-grained Detection | Mishra et al. | 2024 | `papers/2401.06855_fine_grained_hallucination.pdf` | Taxonomy and editing |
-| FactBench | Muhlgay et al. | 2023 | `papers/2307.06908_factbench.pdf` | Factuality benchmark generation |
-| Factuality Enhanced | Lee et al. | 2022 | `papers/2206.04624_factuality_enhanced.pdf` | FactualityPrompts |
-| FactKB | Feng et al. | 2023 | `papers/2305.08281_FactKB.pdf` | Knowledge-enhanced evaluation |
-| HalluLens | Bang et al. | 2025 | `papers/2504.17550_HalluLens.pdf` | Comprehensive benchmark |
-| RAGTruth | Wu et al. | 2023 | `papers/2401.00396_RAGTruth.pdf` | RAG hallucination corpus |
-| SimpleQA | | 2025 | `papers/2509.07968_simpleqa.pdf` | Factuality benchmark |
-| ReFACT | Wang et al. | 2025 | `papers/2509.25868_refact.pdf` | Scientific confabulation |
-
-### Domain-Specific
-
-| Title | Authors | Year | File | Domain |
-|-------|---------|------|------|--------|
-| Legal Hallucinations | Dahl et al. | 2024 | `papers/2401.01301_legal_hallucinations.pdf` | Legal domain |
-| MedHalu | Agarwal et al. | 2024 | `papers/2409.19492_medhalu.pdf` | Healthcare queries |
-| Entity Hallucination | | 2025 | `papers/2502.11948_entity_hallucination.pdf` | Entity-level analysis |
-
-See `papers/README.md` for full paper descriptions.
-
----
+| CHOKE: Certain Hallucinations Overriding Known Evidence | Simhi et al. | 2025 | papers/2502.12964_CHOKE_hallucinations.pdf | Closest to "natural hallucinations" concept |
+| LLMs Know More Than They Show | Orgad et al. | 2024 | papers/2410.02707_LLMs_know_more_than_they_show.pdf | Internal knowledge vs output discrepancy |
+| Distinguishing Ignorance from Error | Simhi et al. | 2024 | papers/2410.22071_distinguishing_ignorance_from_error.pdf | HK+/HK- taxonomy, cross-model Jaccard |
+| Hallucination, Monofacts, and Miscalibration | Miao & Kearns | 2025 | papers/2502.08666_hallucination_monofacts_miscalibration.pdf | Theoretical lower bound on hallucination |
+| Hallucinate or Memorize | Niimi | 2025 | papers/2511.08877_hallucinate_or_memorize.pdf | Memorization-hallucination duality |
+| Why Language Models Hallucinate | Kalai & Nachum | 2025 | papers/2509.04664_why_language_models_hallucinate_kalai.pdf | Statistical pressures theory |
+| Hallucination is Inevitable | Xu et al. | 2024 | papers/2401.11817_hallucination_is_inevitable.pdf | Formal impossibility proof |
+| TruthfulQA | Lin et al. | 2022 | papers/2109.07958_truthfulqa.pdf | Foundational benchmark, inverse scaling |
+| Sources of Hallucination | McKenna et al. | 2023 | papers/2305.14552_sources_of_hallucination.pdf | Attestation & frequency biases |
+| Cross-Model Consistency (Finch-Zk) | — | 2025 | papers/2508.14314_cross_model_consistency_finch_zk.pdf | Shared errors across models |
+| Phenomenology of Hallucinations | Ruscio & Thompson | 2026 | papers/2603.13911_phenomenology_of_hallucinations.pdf | Internal uncertainty detection |
+| LLMs Will Always Hallucinate | Banerjee et al. | 2024 | papers/2409.05746_llms_will_always_hallucinate.pdf | Structural inevitability |
+| Banishing Hallucinations | Li et al. | 2024 | papers/2406.17642_banishing_hallucinations_rethinking_generalization.pdf | Generalization rethinking |
+| Sycophancy in LLMs | — | 2024 | papers/2411.15287_sycophancy_in_llms.pdf | RLHF exacerbates sycophancy |
+| Factual Misalignment Short/Long Form | — | 2025 | papers/2510.11218_factual_misalignment_short_long_form.pdf | Cross-format misalignment |
+| Chain of Verification | — | 2023 | papers/2309.11495_chain_of_verification.pdf | Verification-based mitigation |
+| HaluEval | Li et al. | 2023 | papers/2305.11747_halueval.pdf | Hallucination evaluation benchmark |
+| Earth is Flat — Factual Errors | — | 2024 | papers/2401.00761_earth_is_flat_factual_errors.pdf | Systematic error patterns |
+| Don't Hallucinate, Abstain | — | 2024 | papers/2402.00367_dont_hallucinate_abstain.pdf | Multi-LLM knowledge gaps |
 
 ## Datasets
+Total datasets downloaded: 4
 
-### Downloaded Datasets
+| Name | Source | Size | Task | Location |
+|------|--------|------|------|----------|
+| TruthfulQA | HuggingFace (truthfulqa/truthful_qa) | 817 questions | Truthfulness QA | datasets/truthfulqa/ |
+| TriviaQA | HuggingFace (trivia_qa, rc.nocontext) | 17,944 validation | Factual QA | datasets/triviaqa/ |
+| Natural Questions Open | HuggingFace (google-research-datasets/nq_open) | 91,535 total | Factual QA | datasets/natural_questions/ |
+| HaluEval | HuggingFace (pminervini/HaluEval) | ~35K across configs | Hallucination detection | datasets/halueval/ |
 
-| Name | Source | Size | Location | Primary Use |
-|------|--------|------|----------|-------------|
-| TruthfulQA | `truthfulqa/truthful_qa` | 817 Q | `datasets/truthfulqa/` | Imitative falsehoods benchmark |
-| HaluEval | `pminervini/HaluEval` | 10K | `datasets/halueval/` | Hallucination detection |
-| SelfCheckGPT WikiBio | `potsawee/wiki_bio_gpt3_hallucination` | 238 | `datasets/selfcheckgpt_wikibio/` | Sentence-level detection |
-| TriviaQA | `trivia_qa` | 1K subset | `datasets/triviaqa/` | Factual QA |
-| NQ Open | `nq_open` | 1K subset | `datasets/nq_open/` | Open-domain QA |
-| CoQA | `stanfordnlp/coqa` | 500 subset | `datasets/coqa/` | Conversational QA |
-
-See `datasets/README.md` for download instructions and detailed descriptions.
-
----
+See datasets/README.md for download instructions and loading code.
 
 ## Code Repositories
+Total repositories cloned: 5
 
-| Name | URL | Location | Purpose |
-|------|-----|----------|---------|
-| TruthfulQA | github.com/sylinrl/TruthfulQA | `code/TruthfulQA/` | Official benchmark implementation |
-| SelfCheckGPT | github.com/potsawee/selfcheckgpt | `code/selfcheckgpt/` | Self-consistency detection |
-| INSIDE/EigenScore | github.com/alibaba/eigenscore | `code/INSIDE_eigenscore/` | Internal state detection |
-| Snowball Hallucination | github.com/Nanami18/Snowballed_Hallucination | `code/snowball_hallucination/` | Snowballing analysis |
-| HaluEval | github.com/RUCAIBox/HaluEval | `code/HaluEval/` | Evaluation benchmark |
+| Name | URL | Purpose | Location |
+|------|-----|---------|----------|
+| TruthfulQA | github.com/sylinrl/TruthfulQA | Benchmark evaluation | code/truthfulqa/ |
+| LLMs Know More | github.com/technion-cs-nlp/LLMsKnow | Hidden state probing | code/llms_know/ |
+| Hallucination Mitigation | github.com/technion-cs-nlp/hallucination-mitigation | HK+/HK- detection | code/hallucination_mitigation/ |
+| LLM NLI Analysis | github.com/Teddy-Li/LLM-NLI-Analysis | Attestation bias analysis | code/llm_nli_analysis/ |
+| Semantic Uncertainty | github.com/jlko/semantic_uncertainty | Semantic entropy computation | code/semantic_uncertainty/ |
 
-See `code/README.md` for usage instructions.
-
----
-
-## Resource Gathering Notes
-
-### Search Strategy
-1. Paper-finder service with diligent mode for initial search
-2. Multiple queries targeting different aspects:
-   - "LLM hallucinations detection recognition"
-   - "LLM hallucination robustness transfer across models"
-   - "factual error detection language models benchmarks"
-   - "LLM self-awareness uncertainty calibration hallucination"
-   - "LLM benchmark TruthfulQA factual questions dataset"
-3. ArXiv direct downloads for specific papers
-
-### Selection Criteria
-- Prioritized papers with >50 citations or published in top venues (ICLR, ACL, EMNLP)
-- Focus on papers studying detection, robustness, and transfer of hallucinations
-- Included foundational benchmarks (TruthfulQA) and latest methods (INSIDE, 2024)
-
-### Challenges Encountered
-- Some datasets not publicly available (RAGTruth full corpus)
-- Some papers had incorrect arXiv IDs requiring title-based search
-- Large datasets (full TriviaQA, NQ) downloaded as subsets to manage size
-
----
+See code/README.md for key entry points.
 
 ## Recommendations for Experiment Design
 
 ### Primary Datasets
-1. **TruthfulQA** - Core benchmark for imitative falsehoods
-2. **HaluEval** - For training/evaluating detection methods
+1. **TruthfulQA**: 817 curated questions targeting systematic falsehoods. Cross-model results available for comparison. Best for testing transfer and robustness.
+2. **TriviaQA (validation)**: 18K factual questions. Used by CHOKE and HK+/HK- papers for direct methodology comparison.
 
 ### Baseline Methods
-1. Self-consistency (SelfCheckGPT)
-2. EigenScore (INSIDE)
-3. Perplexity and entropy
+1. Uncertainty-based detection (token probability, semantic entropy)
+2. Linear probing on hidden states (from LLMs Know More)
+3. Prompt-based mitigation (weak baseline per CHOKE results)
+4. Cross-model consistency checking (from Finch-Zk)
 
-### Evaluation Strategy
-1. Test multiple model families (GPT, LLaMA, Mistral)
-2. Measure per-question consistency of hallucinations across models
-3. Test if models can recognize their own hallucinations in isolation
-4. Evaluate robustness to paraphrasing
+### Evaluation Metrics
+1. Hallucination persistence rate across prompt variants
+2. Cross-model Jaccard similarity of hallucinated instances
+3. Self-detection accuracy (can models identify their own natural hallucinations?)
+4. Temporal prediction accuracy (older→newer model hallucination prediction)
 
 ### Code to Adapt/Reuse
-1. **TruthfulQA repo**: Evaluation framework and GPT-judge
-2. **Snowball repo**: Verification methodology for self-recognition
-3. **INSIDE repo**: EigenScore implementation for internal state analysis
-
----
-
-## File Locations Summary
-
-```
-natural-hallucinations-claude/
-├── papers/                          # Downloaded PDFs
-│   ├── README.md                    # Paper list with descriptions
-│   ├── pages/                       # Chunked PDFs for reading
-│   ├── search_results_*.txt         # Search outputs
-│   └── *.pdf                        # Paper files
-├── datasets/                        # Downloaded datasets
-│   ├── README.md                    # Download instructions
-│   ├── .gitignore                   # Excludes data files
-│   ├── truthfulqa/                  # TruthfulQA data
-│   ├── halueval/                    # HaluEval data
-│   ├── selfcheckgpt_wikibio/        # WikiBio annotations
-│   ├── triviaqa/                    # TriviaQA subset
-│   ├── nq_open/                     # NQ subset
-│   └── coqa/                        # CoQA subset
-├── code/                            # Cloned repositories
-│   ├── README.md                    # Usage instructions
-│   ├── TruthfulQA/                  # Official benchmark
-│   ├── selfcheckgpt/                # Detection method
-│   ├── INSIDE_eigenscore/           # Internal state method
-│   ├── snowball_hallucination/      # Snowballing analysis
-│   └── HaluEval/                    # Evaluation benchmark
-├── literature_review.md             # Synthesis of findings
-├── resources.md                     # This file
-└── pyproject.toml                   # Project dependencies
-```
+1. **semantic_uncertainty**: For computing semantic entropy and uncertainty measures
+2. **hallucination_mitigation**: For HK+/HK- classification framework (WACK)
+3. **llms_know**: For hidden state probing methodology
+4. **truthfulqa**: For benchmark evaluation pipeline

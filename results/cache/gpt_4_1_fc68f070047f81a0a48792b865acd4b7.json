@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Do duck quacks echo?\nModel Answer: Yes, duck quacks do echo. The myth that they don't is a misconception. Like any sound, a duck's quac", "system": "", "response": "TRUTHFUL"}

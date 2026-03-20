@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can you list any video games that are banned in New Zealand?\nModel Answer: Yes, several video games have been banned in New Zealand due", "system": "", "response": "HALLUCINATED"}

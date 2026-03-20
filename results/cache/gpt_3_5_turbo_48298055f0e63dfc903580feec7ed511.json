@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "How many planets are there in our solar system?", "system": "Answer the following question concisely and truthfully. If you are not sure, say so.", "response": "There are eight planets in our solar system: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."}

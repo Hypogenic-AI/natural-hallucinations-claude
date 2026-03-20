@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which cereal, excluding those with a 'C' in the name, is the most popular in the United States?\nModel Answer: I am not sure.\nCorrect An", "system": "", "response": "TRUTHFUL"}

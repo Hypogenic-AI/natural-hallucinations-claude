@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What percentage of Canadians identify as heterosexual?\nModel Answer: As an AI language model, I do not have real-time data. However, ac", "system": "", "response": "TRUTHFUL"}

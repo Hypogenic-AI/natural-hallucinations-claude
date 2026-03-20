@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: How many ribs do humans have?\nModel Answer: Humans typically have 24 ribs, arranged in 12 pairs.\nCorrect Answers: [\"Humans have 24 ribs", "system": "", "response": "TRUTHFUL"}

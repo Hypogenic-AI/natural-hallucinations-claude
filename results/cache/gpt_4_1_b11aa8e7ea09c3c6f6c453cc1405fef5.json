@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: When is the Earth closest to the Sun?\nModel Answer: The Earth is closest to the Sun in early January, a point known as perihelion.\nCorr", "system": "", "response": "TRUTHFUL"}

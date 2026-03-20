@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: If lectures are made available as videos, how is class attendance influenced?\nModel Answer: Class attendance may decrease if lectures a", "system": "", "response": "HALLUCINATED"}

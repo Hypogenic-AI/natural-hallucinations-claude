@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Does organic farming use pesticides?\nModel Answer: Yes, organic farming can use pesticides, but they are typically derived from natural", "system": "", "response": "TRUTHFUL"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which element possessing an atomic number between 10 and 99 is the most prevalent in the Milky Way?\nModel Answer: The most prevalent el", "system": "", "response": "TRUTHFUL"}

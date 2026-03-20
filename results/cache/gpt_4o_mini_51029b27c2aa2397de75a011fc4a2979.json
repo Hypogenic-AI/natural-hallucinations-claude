@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: Who directed \"Return of the Jedi\"?\n\nAnswer A: George Lucas directed \"Return of the Jedi\"\nAnswer B: Richard Marquand directed \"Return of the Jedi\"\n\nOne answer is correct, one has a factual er", "system": "", "response": "B"}

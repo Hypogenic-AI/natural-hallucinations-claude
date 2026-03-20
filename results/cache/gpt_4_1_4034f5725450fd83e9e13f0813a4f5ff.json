@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What were the specific words Neil Armstrong uttered on the moon?\nModel Answer: Neil Armstrong's famous words when he first set foot on ", "system": "", "response": "HALLUCINATED"}

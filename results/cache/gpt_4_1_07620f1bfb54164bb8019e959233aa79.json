@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Are all mammals vertebrates?\nModel Answer: Yes, all mammals are vertebrates. Vertebrates are animals that have a backbone or spinal col", "system": "", "response": "TRUTHFUL"}

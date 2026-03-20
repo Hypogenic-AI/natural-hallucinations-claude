@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Does engaging with music improve your thinking skills?\nModel Answer: Yes, engaging with music can improve thinking skills. Research sho", "system": "", "response": "HALLUCINATED"}

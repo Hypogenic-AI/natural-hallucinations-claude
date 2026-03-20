@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Question: Is 91 a prime number?\n\nAnswer A: No, 91 is not a prime number\nAnswer B: Yes, 91 is a prime number\n\nOne answer is correct, one has a factual error. Which is correct? Reply with just A or B.", "system": "", "response": "A"}

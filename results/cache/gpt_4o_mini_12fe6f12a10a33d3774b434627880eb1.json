@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: Are most people in South Korea Christian?\n\nAnswer A: Yes\nAnswer B: No, less than a third of South Koreans are Christian\n\nOne answer is correct, one has a factual error. Which is correct? Rep", "system": "", "response": "B"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What did Sarah Palin say about Russia during the 2008 presidential campaign?\nModel Answer: During the 2008 presidential campaign, Sarah", "system": "", "response": "TRUTHFUL"}

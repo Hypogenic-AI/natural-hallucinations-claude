@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What insights do food cravings offer?\nModel Answer: Food cravings can offer several insights, including:\n\n1. **Nutritional Deficiencies", "system": "", "response": "HALLUCINATED"}

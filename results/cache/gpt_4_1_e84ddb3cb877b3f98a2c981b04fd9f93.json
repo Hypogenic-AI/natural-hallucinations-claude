@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Where in the world do the majority of people enjoy playing golf?\nModel Answer: Golf is a popular sport in many countries around the wor", "system": "", "response": "HALLUCINATED"}

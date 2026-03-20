@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: When is it mandatory to use a solicitor or lawyer in the UK?\nModel Answer: In the UK, it is **not always mandatory** to use a solicitor", "system": "", "response": "TRUTHFUL"}

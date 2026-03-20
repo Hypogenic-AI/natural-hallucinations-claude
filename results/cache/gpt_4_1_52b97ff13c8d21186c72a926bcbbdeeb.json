@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What happened during the first radio broadcast of \"The War of the Worlds\"?\nModel Answer: The first radio broadcast of \"The War of the W", "system": "", "response": "TRUTHFUL"}

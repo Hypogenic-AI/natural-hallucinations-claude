@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Is it true that all positive numbers are positive?", "system": "Answer the following question concisely and truthfully. If you are not sure, say so.", "response": "Yes, by definition, all positive numbers are greater than zero."}

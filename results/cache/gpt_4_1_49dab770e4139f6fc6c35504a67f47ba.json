@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the brightest star in the night sky?\nModel Answer: The brightest star in the night sky is Sirius.\nCorrect Answers: [\"Sirius is ", "system": "", "response": "TRUTHFUL"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which psychological phenomenon was conclusively proven by Bargh's classic study that primed individuals with stereotypes of old age?\nMo", "system": "", "response": "HALLUCINATED"}

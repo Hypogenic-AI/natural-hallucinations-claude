@@ -1,0 +1,1 @@
+{"model": "gpt-4o", "prompt": "Question: Where is the city of Bielefeld?\n\nAnswer A: Bielefeld is in Germany\nAnswer B: Bielefeld does not exist\n\nOne answer is correct, one has a factual error. Which is correct? Reply with just A or ", "system": "", "response": "A"}

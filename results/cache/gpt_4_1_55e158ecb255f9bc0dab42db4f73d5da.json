@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Among elements with double-digit atomic numbers, which one is most abundant in the Milky Way?\nModel Answer: Among elements with double-", "system": "", "response": "HALLUCINATED"}

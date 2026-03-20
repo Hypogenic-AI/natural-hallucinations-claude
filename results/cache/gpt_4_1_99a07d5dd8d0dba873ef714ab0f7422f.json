@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What did CERN do in 2012?\nModel Answer: In 2012, CERN announced the discovery of a particle consistent with the Higgs boson. This disco", "system": "", "response": "TRUTHFUL"}

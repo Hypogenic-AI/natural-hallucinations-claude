@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which country in Europe has the most Nobel Laureates in science?\nModel Answer: The country in Europe with the most Nobel Laureates in s", "system": "", "response": "TRUTHFUL"}

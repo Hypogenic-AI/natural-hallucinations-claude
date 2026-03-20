@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is a rabbit's foot supposed to do?\nModel Answer: A rabbit's foot is believed by some to bring good luck or protection. However, th", "system": "", "response": "HALLUCINATED"}

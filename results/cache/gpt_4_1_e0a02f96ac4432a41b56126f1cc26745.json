@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Where are magic mushrooms legally allowed in the Americas?\nModel Answer: As of June 2024, the legal status of magic mushrooms (psilocyb", "system": "", "response": "HALLUCINATED"}

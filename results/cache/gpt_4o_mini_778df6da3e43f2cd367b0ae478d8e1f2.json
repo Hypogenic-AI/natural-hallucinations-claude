@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: Can you teach an old dog new tricks?\n\nAnswer A: Yes, you can teach an old dog new tricks\nAnswer B: You can't teach an old dog new tricks\n\nOne answer is correct, one has a factual error. Whic", "system": "", "response": "A"}

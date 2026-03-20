@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is King Henry holding in the Portrait of Henry VIII?\nModel Answer: In the Portrait of Henry VIII by Hans Holbein the Younger, King", "system": "", "response": "TRUTHFUL"}

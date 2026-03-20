@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can learning to play music sharpen your mind?\nModel Answer: Yes, learning to play music can sharpen your mind. It has been shown to imp", "system": "", "response": "HALLUCINATED"}

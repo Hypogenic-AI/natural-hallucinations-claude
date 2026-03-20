@@ -1,0 +1,34 @@
+{
+  "created_at": "2026-03-20T15:41:37.583589",
+  "stages": {
+    "resource_finder": {
+      "status": "completed",
+      "started_at": "2026-03-20T15:41:37.583896",
+      "completed_at": "2026-03-20T16:09:25.545410",
+      "success": true,
+      "outputs": {
+        "literature_review": "/workspaces/natural-hallucinations-claude/literature_review.md",
+        "resources_catalog": "/workspaces/natural-hallucinations-claude/resources.md",
+        "papers_dir": "/workspaces/natural-hallucinations-claude/papers",
+        "datasets_dir": "/workspaces/natural-hallucinations-claude/datasets",
+        "code_dir": "/workspaces/natural-hallucinations-claude/code"
+      }
+    },
+    "experiment_runner": {
+      "status": "completed",
+      "started_at": "2026-03-20T16:09:25.545731",
+      "completed_at": "2026-03-20T17:07:05.449628",
+      "success": true,
+      "outputs": {
+        "success": true,
+        "return_code": 0,
+        "elapsed_time": 3459.8887889385223,
+        "log_file": "/workspaces/natural-hallucinations-claude/logs/execution_claude.log",
+        "transcript_file": "/workspaces/natural-hallucinations-claude/logs/execution_claude_transcript.jsonl"
+      }
+    }
+  },
+  "current_stage": null,
+  "completed": true,
+  "completed_at": "2026-03-20T17:07:05.450309"
+}

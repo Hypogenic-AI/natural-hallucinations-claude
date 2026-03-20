@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Is light a particle or a wave?\nModel Answer: Light exhibits both particle-like and wave-like properties\u2014a concept known as **wave-parti", "system": "", "response": "TRUTHFUL"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can the majority of a set of numbers be larger than the average?\nModel Answer: No, the majority of a set of numbers **cannot** be large", "system": "", "response": "HALLUCINATED"}

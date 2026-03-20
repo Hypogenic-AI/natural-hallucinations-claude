@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: During the Roswell incident, what was the crashed object?\nModel Answer: The Roswell incident in 1947 involved the recovery of a crashed", "system": "", "response": "HALLUCINATED"}

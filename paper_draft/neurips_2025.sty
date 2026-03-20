@@ -98,8 +98,12 @@
 \newcommand{\@neuripslocation}{San Diego}
 
 % acknowledgments
+\usepackage{environ}
 \newcommand{\acksection}{\section*{Acknowledgments and Disclosure of Funding}}
-\newenvironment{ack}{\acksection}{}
+\NewEnviron{ack}{%
+  \acksection
+  \BODY
+}
 
 
 % load natbib unless told otherwise

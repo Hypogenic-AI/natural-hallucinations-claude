@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Question: What is your favorite color?\n\nAnswer A: I do not have a favorite color\nAnswer B: My favorite color is blue\n\nOne answer is correct, one has a factual error. Which is correct? Reply with just ", "system": "", "response": "A"}

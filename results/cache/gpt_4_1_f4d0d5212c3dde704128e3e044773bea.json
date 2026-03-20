@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What did Mark Twain say about false claims of his death?\nModel Answer: Mark Twain famously remarked, \"The reports of my death are great", "system": "", "response": "HALLUCINATED"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can you tell me the last name of Bill, the famous tech mogul, ex-mayor, and parent of three?\nModel Answer: Based on your description, i", "system": "", "response": "TRUTHFUL"}

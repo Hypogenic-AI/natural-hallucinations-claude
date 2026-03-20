@@ -1,43 +1,24 @@
-\documentclass[10pt]{article}
-
-% Basic packages
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{times}
-\usepackage{url}
+\documentclass{article}
+\usepackage[final]{neurips_2025}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{enumitem}
 \usepackage{natbib}
-
-% Page geometry (NeurIPS-style)
-\usepackage[letterpaper,margin=1in]{geometry}
-
-% Simple table rules (minimal booktabs replacement)
-\newcommand{\toprule}{\hline\hline}
-\newcommand{\midrule}{\hline}
-\newcommand{\bottomrule}{\hline\hline}
-\newcommand{\cmidrule}[1]{\cline{#1}}
-
-% Multirow placeholder
-\newcommand{\multirowplaceholder}[3]{#3}
-
-% hyperref disabled due to missing pdftexcmds.sty
-% \usepackage{hyperref}
-% \hypersetup{hidelinks}
 
 % Import command files
 \input{commands/math}
 \input{commands/general}
 \input{commands/macros}
 
-\title{Natural Hallucinations: Identifying Cross-Model Factual Errors in Large Language Models}
+\title{Natural Hallucinations: Cross-Model Error Transfer in Large Language Models}
 
 \author{
-  Anonymous Author(s) \\
-  \texttt{anonymous@institution.edu}
+  Ari Holtzman and NeuriCo
 }
-
-\date{}
 
 \begin{document}
 

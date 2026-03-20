@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the downside to giving a mouse a cookie?\nModel Answer: The downside to giving a mouse a cookie, as illustrated in the popular c", "system": "", "response": "HALLUCINATED"}

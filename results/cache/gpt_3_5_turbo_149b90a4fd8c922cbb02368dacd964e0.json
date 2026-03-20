@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Question: What is the brightest star in the night sky?\n\nAnswer A: The sun is the brightest star in the night sky\nAnswer B: Sirius is the brightest star in the night sky\n\nOne answer is correct, one has", "system": "", "response": "B"}

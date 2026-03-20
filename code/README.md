@@ -1,89 +1,81 @@
-# Code Repositories for Natural Hallucinations Research
+# Code Repositories for "Natural Hallucinations" Research
 
-## Cloned Repositories
+Cloned with `git clone --depth 1` on 2026-03-20.
 
-### 1. TruthfulQA
-- **URL**: https://github.com/sylinrl/TruthfulQA
-- **Location**: `code/TruthfulQA/`
-- **Purpose**: Official implementation of TruthfulQA benchmark for measuring model truthfulness
-- **Key Files**:
-  - `truthfulqa/evaluate.py` - Evaluation code
-  - `truthfulqa/utilities.py` - Helper functions
-  - `data/` - Question data and reference answers
-- **How to Use**:
-  ```bash
-  cd code/TruthfulQA
-  pip install -e .
-  python -m truthfulqa.evaluate --model_name <model> --model_path <path>
-  ```
+---
 
-### 2. SelfCheckGPT
-- **URL**: https://github.com/potsawee/selfcheckgpt
-- **Location**: `code/selfcheckgpt/`
-- **Purpose**: Zero-resource black-box hallucination detection via self-consistency
-- **Key Files**:
-  - `selfcheckgpt/` - Core implementation
-  - `demo/` - Example notebooks
-- **How to Use**:
-  ```python
-  from selfcheckgpt.modeling_selfcheck import SelfCheckBERTScore, SelfCheckNgram
-  selfcheck = SelfCheckBERTScore()
-  scores = selfcheck.predict(sentences, sampled_passages)
-  ```
+## 1. TruthfulQA
 
-### 3. INSIDE / EigenScore
-- **URL**: https://github.com/alibaba/eigenscore
-- **Location**: `code/INSIDE_eigenscore/`
-- **Purpose**: Hallucination detection using LLM internal states and eigenvalue-based consistency
-- **Key Files**:
-  - `eigenscore.py` - Core EigenScore implementation
-  - `feature_clip.py` - Feature clipping for overconfident hallucinations
-- **Key Insight**: Uses eigenvalues of sentence embedding covariance matrix to detect semantic divergence
+- **Path:** `truthfulqa/`
+- **Source:** https://github.com/sylinrl/TruthfulQA
+- **Purpose:** Benchmark of 817 questions measuring whether LLMs mimic human falsehoods. Supports generation and multiple-choice (MC1/MC2) evaluation tasks.
+- **Key files:**
+  - `TruthfulQA.csv` -- Full benchmark dataset (questions + reference answers)
+  - `truthfulqa/evaluate.py` -- Main evaluation script
+  - `truthfulqa/metrics.py` -- Scoring metrics (BLEURT, ROUGE, BLEU, GPT-judge)
+  - `truthfulqa/models.py` -- Model interface for evaluation
 
-### 4. Snowballed Hallucination
-- **URL**: https://github.com/Nanami18/Snowballed_Hallucination
-- **Location**: `code/snowball_hallucination/`
-- **Purpose**: Study of hallucination snowballing - how early mistakes lead to more errors
-- **Key Files**:
-  - Code for primality testing, senator search, and graph connectivity experiments
-- **Key Insight**: LLMs can identify 67-87% of their own mistakes when presented in isolation
+---
 
-### 5. HaluEval
-- **URL**: https://github.com/RUCAIBox/HaluEval
-- **Location**: `code/HaluEval/`
-- **Purpose**: Hallucination evaluation benchmark with 35K generated samples
-- **Key Files**:
-  - `evaluation/` - Evaluation scripts
-  - `data/` - Benchmark data
-- **How to Use**:
-  ```bash
-  cd code/HaluEval/evaluation
-  python evaluation.py
-  ```
+## 2. LLMs Know More Than They Show
 
-## Relevance to Natural Hallucinations Research
+- **Path:** `llms_know/`
+- **Source:** https://github.com/technion-cs-nlp/LLMsKnow
+- **Purpose:** Probing LLM internal representations to detect hallucinations. Shows that LLMs encode correctness, error type, and question difficulty internally even when producing wrong answers.
+- **Key files:**
+  - `src/generate_model_answers.py` -- Generate model answers per dataset
+  - `src/extract_exact_answer.py` -- Extract exact answers from model outputs
+  - `src/probe_all_layers_and_tokens.py` -- Probe all layers/tokens for heatmaps (Section 2)
+  - `src/probe.py` -- Probe specific layer and token (Section 3)
+  - `src/probe_choose_answer.py` -- Use probes to select better answers
+  - `src/logprob_detection.py` -- Log-probability based hallucination detection
+  - `src/probe_type_of_error.py` -- Classify error types via probing
+- **Supported models:** Mistral-7B (v0.2 Instruct, v0.3), Llama-3-8B (base + Instruct)
 
-These repositories provide:
+---
 
-1. **Benchmarks**: TruthfulQA for imitative falsehoods, HaluEval for diverse hallucinations
-2. **Detection Methods**: SelfCheckGPT (self-consistency), INSIDE/EigenScore (internal states)
-3. **Analysis Tools**: Snowball paper's verification methodology for studying if models recognize their errors
+## 3. Hallucination Mitigation (HK+/HK- Detection)
 
-## Key Questions to Investigate
+- **Path:** `hallucination_mitigation/`
+- **Source:** https://github.com/technion-cs-nlp/hallucination-mitigation
+- **Purpose:** Two papers: (a) benchmarks and interventions for combating hallucinations (attention-based interventions, dynamic intervention); (b) distinguishing ignorance-based vs. error-based hallucinations using WACK datasets.
+- **Key files:**
+  - `Constructing_Benchmarks_and_Interventions_for_Combating_Hallucinations_in_LLMs/`
+    - `RunAllSteps.py` -- End-to-end pipeline
+    - `ModelInside.py` -- Internal model analysis
+    - `InteventionByDetection.py` -- Intervention methods
+    - `DatasetCreationWithoutContext.py` -- Dataset generation
+  - `Distinguishing_Ignorance_from_Error_in_LLM_Hallucinations/`
+    - `RunAllSteps.py` -- End-to-end pipeline
+    - `ModelInside.py` -- Internal model analysis for error vs ignorance
+    - `plot_results.py` -- Visualization
 
-1. **Transferability**: Do hallucinations on TruthfulQA questions transfer across different model families?
-2. **Recognizability**: Can models identify hallucinated statements when presented in isolation (snowballing)?
-3. **Persistence**: Do certain hallucinations persist after fine-tuning or RLHF?
-4. **Detection**: Which detection methods (consistency vs internal states) work better for "natural" hallucinations?
+---
 
-## Installation Notes
+## 4. LLM NLI Analysis (Sources of Hallucination)
 
-Most repositories require:
-```bash
-pip install transformers torch datasets
-```
+- **Path:** `llm_nli_analysis/`
+- **Source:** https://github.com/Teddy-Li/LLM-NLI-Analysis
+- **Purpose:** Investigates sources of hallucination in NLI tasks, focusing on attestation bias and frequency priors. Uses Levy/Holt directional entailment dataset.
+- **Key files:**
+  - `gpt3_inference.py` -- Run NLI with GPT-3/4 models
+  - `llama_inference.py` -- Run NLI with LLaMA models
+  - `poll_attestation.py` -- Measure attestation bias
+  - `get_frequencies_ngram.py` -- Measure relative frequency prior
+  - `randprem_experiments.py` -- Random premise controlled experiments
+  - `frequency_controlled_experiments.py` -- Frequency-controlled evaluation
 
-For INSIDE/EigenScore, also need:
-```bash
-pip install scipy numpy
-```
+---
+
+## 5. Semantic Uncertainty
+
+- **Path:** `semantic_uncertainty/`
+- **Source:** https://github.com/jlko/semantic_uncertainty
+- **Purpose:** Detecting hallucinations via semantic entropy -- clusters sampled LLM responses by meaning and computes entropy over semantic clusters. Published in Nature.
+- **Key files:**
+  - `semantic_uncertainty/generate_answers.py` -- Generate LLM answers with sampling
+  - `semantic_uncertainty/compute_uncertainty_measures.py` -- Compute semantic entropy and other uncertainty measures
+  - `semantic_uncertainty/analyze_results.py` -- Analyze and aggregate results
+  - `semantic_uncertainty/uncertainty/uncertainty_measures/semantic_entropy.py` -- Core semantic entropy implementation
+  - `semantic_uncertainty/uncertainty/uncertainty_measures/p_true.py` -- P(True) baseline
+  - `semantic_uncertainty/uncertainty/models/huggingface_models.py` -- HuggingFace model wrappers

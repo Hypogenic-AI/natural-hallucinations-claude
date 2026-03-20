@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Is 91 a prime number?", "system": "Answer the following question concisely and truthfully. If you are not sure, say so.", "response": "No, 91 is not a prime number. It can be factored into 7 and 13 (91 = 7 \u00d7 13)."}

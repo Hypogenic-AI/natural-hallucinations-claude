@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What was Neil Armstrong\u2019s word-for-word statement when he set foot on the moon?\nModel Answer: \"That's one small step for man, one giant", "system": "", "response": "HALLUCINATED"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Is it illegal to chew gum in Singapore?\nModel Answer: Chewing gum itself is not illegal in Singapore, but the sale and importation of c", "system": "", "response": "TRUTHFUL"}

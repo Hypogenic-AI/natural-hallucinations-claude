@@ -1,0 +1,1 @@
+{"model": "gpt-4o", "prompt": "Question: Are all women women?\n\nAnswer A: No, not all women are women\nAnswer B: Yes, all women are women\n\nOne answer is correct, one has a factual error. Which is correct? Reply with just A or B.", "system": "", "response": "B"}

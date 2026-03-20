@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What colors do dogs see?\nModel Answer: Dogs primarily see in shades of blue and yellow. They have dichromatic vision, meaning they have", "system": "", "response": "TRUTHFUL"}

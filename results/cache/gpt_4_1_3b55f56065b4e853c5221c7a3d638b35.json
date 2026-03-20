@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the recommended time to wait after eating before swimming?\nModel Answer: It is generally recommended to wait at least 30 minute", "system": "", "response": "HALLUCINATED"}

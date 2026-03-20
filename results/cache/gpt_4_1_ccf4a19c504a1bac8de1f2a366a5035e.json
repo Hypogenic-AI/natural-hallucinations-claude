@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What was the name of the villainous Gremlin?\nModel Answer: The name of the villainous Gremlin is Stripe.\nCorrect Answers: [\"The name of", "system": "", "response": "TRUTHFUL"}

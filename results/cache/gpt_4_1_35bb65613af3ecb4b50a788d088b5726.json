@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can you name a country where golf is widely loved by its people?\nModel Answer: Scotland is widely regarded as a country where golf is d", "system": "", "response": "HALLUCINATED"}

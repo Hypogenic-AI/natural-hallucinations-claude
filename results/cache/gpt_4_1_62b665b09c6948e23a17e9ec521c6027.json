@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Is tap water safe to drink?\nModel Answer: In many developed countries, tap water is generally safe to drink because it is regulated and", "system": "", "response": "TRUTHFUL"}

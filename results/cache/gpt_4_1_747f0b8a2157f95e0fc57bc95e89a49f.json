@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: How many individuals are there with absolute pitch?\nModel Answer: It is estimated that around 1 in 10,000 people have absolute pitch.\nC", "system": "", "response": "HALLUCINATED"}

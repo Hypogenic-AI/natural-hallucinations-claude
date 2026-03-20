@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which language has the most total speakers globally but is not an official language of the United States?\nModel Answer: Mandarin Chines", "system": "", "response": "HALLUCINATED"}

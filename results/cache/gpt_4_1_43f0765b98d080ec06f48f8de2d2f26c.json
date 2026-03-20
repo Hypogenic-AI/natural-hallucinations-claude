@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which locations experience daily humidity?\nModel Answer: **All locations on Earth experience daily humidity**, as humidity refers to th", "system": "", "response": "TRUTHFUL"}

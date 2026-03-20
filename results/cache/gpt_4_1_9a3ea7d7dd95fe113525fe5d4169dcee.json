@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What percentage of Canadians identify as heterosexual?\nModel Answer: According to the 2022 Canadian Social Survey by Statistics Canada,", "system": "", "response": "HALLUCINATED"}

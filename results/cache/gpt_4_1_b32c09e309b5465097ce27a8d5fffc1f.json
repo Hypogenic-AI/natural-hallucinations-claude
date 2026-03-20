@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which U.S. city is the largest that does not have access to navigable water?\nModel Answer: Phoenix, Arizona is the largest U.S. city th", "system": "", "response": "HALLUCINATED"}

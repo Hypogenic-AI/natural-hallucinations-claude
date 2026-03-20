@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the world's smallest country that covers at least one square mile?\nModel Answer: The world's smallest country that covers **at ", "system": "", "response": "TRUTHFUL"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What color is the sun when viewed from space?\nModel Answer: When viewed from space, the sun appears white. This is because it emits lig", "system": "", "response": "TRUTHFUL"}

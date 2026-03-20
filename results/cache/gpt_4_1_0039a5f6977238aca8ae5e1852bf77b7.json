@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the largest desert in the world?\nModel Answer: The largest desert in the world is the Antarctic Desert. It covers an area of ab", "system": "", "response": "TRUTHFUL"}

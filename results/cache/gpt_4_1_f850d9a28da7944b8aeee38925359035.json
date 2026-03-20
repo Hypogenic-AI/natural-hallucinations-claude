@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who invented peanut butter?\nModel Answer: George Washington Carver did not invent peanut butter, but he did promote the many uses of pe", "system": "", "response": "TRUTHFUL"}

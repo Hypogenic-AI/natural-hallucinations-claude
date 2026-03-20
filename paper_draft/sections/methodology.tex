@@ -1,51 +1,79 @@
 \section{Methodology}
-\label{sec:methodology}
+\label{sec:method}
 
-We design four experiments to test whether \naturalhall exist and to characterize their properties.
+We design a four-experiment pipeline to test whether certain hallucinations are \emph{natural}---consistent across models, robust to rephrasing, resistant to self-detection, and predictable across generations.
 
-\subsection{Dataset and Models}
+\subsection{Dataset}
+\label{sec:dataset}
 
-\para{Dataset.} We use the \truthfulqa benchmark~\citep{lin2021truthfulqa}, which contains 817 questions across 38 categories designed to elicit \imitativefalsehoods. Categories include Misconceptions, Stereotypes, Misquotations, Proverbs, Language, and Law. We randomly sample 100 questions (seed=42) for our primary experiments.
+We use the complete \truthfulqa benchmark \citep{lin2022truthfulqa}, consisting of 817 questions across 38 categories including Misconceptions, Superstitions, Myths, Education, Misquotations, and Conspiracies.
+Each question includes a best answer, a set of correct answers, and a set of incorrect answers.
+The benchmark is designed to elicit ``imitative falsehoods''---answers that sound plausible because they reflect widely-held but incorrect beliefs.
+We load the dataset directly from HuggingFace (\texttt{truthfulqa/truthful\_qa}, generation configuration) without filtering or modification.
 
-\para{Models.} We evaluate four models spanning different providers and architectures:
-\begin{itemize}
-    \item \gptfour (OpenAI)---state-of-the-art proprietary model
-    \item \gptthree (OpenAI)---older baseline for temporal analysis
-    \item \claude (Anthropic via OpenRouter)---different training methodology
-    \item \llama (Meta via OpenRouter)---open-source alternative
-\end{itemize}
-All models use greedy decoding (temperature=0) for reproducibility, with maximum 256 tokens per response.
+\subsection{Models}
+\label{sec:models}
 
-\para{Evaluation protocol.} Following \citet{lin2021truthfulqa}, we use \gptfour as a judge to evaluate correctness. The judge compares each response against \truthfulqa's lists of correct and incorrect reference answers, marking responses as correct if they semantically match any correct answer or appropriately express uncertainty (\eg ``I don't know'').
+We evaluate four OpenAI models spanning three years of development:
 
-\subsection{Experiment 1: Cross-Model Transfer}
-
-We present each of the 100 questions to all four models and record correctness. We define a question as exhibiting a \emph{natural hallucination} if at least 3 of 4 models produce incorrect answers. This threshold balances identifying shared errors while allowing for model-specific noise.
-
-\para{Metrics.} We compute per-model accuracy and identify the set of \naturalhall. We also calculate pairwise Pearson correlations between model error patterns to assess the degree of error sharing.
-
-\subsection{Experiment 2: Robustness to Paraphrasing}
-
-For each identified natural hallucination, we generate three semantically equivalent paraphrases using \claude. Paraphrases preserve the question's meaning while varying phrasing, word order, and vocabulary. We then test all four models on each paraphrase.
-
-\para{Metrics.} We define the robustness score as the fraction of paraphrases that still produce errors for each model. A question is ``highly robust'' if at least 2 of 3 paraphrases cause failures.
-
-\subsection{Experiment 3: Self-Recognition}
-
-We test whether models can identify their own errors when asked directly. For each incorrect response, we present the model with its own answer and ask: ``Is the following answer correct? [answer]''. We compare recognition rates for two groups:
-\begin{itemize}
-    \item \textbf{Natural hallucinations}: errors on questions where $\geq$3 models failed
-    \item \textbf{Model-specific errors}: errors on questions where only that model failed
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \gptfourone (2025): the most recent and capable model, also serves as our automated judge.
+    \item \gptfouro (2024): previous-generation flagship model.
+    \item \gptfouromini (2024): a smaller, more efficient variant.
+    \item \gptthreefive (2023): an older baseline that enables temporal analysis.
 \end{itemize}
 
-\para{Metrics.} Recognition rate is the fraction of errors that the model correctly identifies as incorrect. The recognition gap is the difference between rates for model-specific versus natural hallucinations.
+All models are queried via the OpenAI API with temperature 0.0 for deterministic outputs and a maximum of 300 tokens per response.
+The system prompt instructs: ``Answer the following question concisely and truthfully. If you are not sure, say so.''
 
-\subsection{Experiment 4: Temporal Analysis}
+\subsection{Experiment 1: Cross-Model Hallucination Survey}
+\label{sec:exp1}
 
-We compare error patterns between \gptthree (older) and \gptfour (newer) to test whether older model errors predict newer model errors. We construct a 2$\times$2 contingency table: (both correct, only GPT-3.5 wrong, only GPT-4o wrong, both wrong).
+We query all four models on all 817 \truthfulqa questions.
+\gptfourone serves as an automated judge, classifying each response as \textsc{Truthful} or \textsc{Hallucinated} by comparing it against the ground-truth correct and incorrect answer lists provided with each question.
+We process 10 concurrent API calls per model for efficiency.
 
-\para{Metrics.} We compute: (1) the conditional probability $P(\text{GPT-4o wrong} \mid \text{GPT-3.5 wrong})$, measuring error inheritance; (2) Pearson correlation between error patterns; and (3) statistical significance via chi-squared test.
+From the per-question results, we compute: (1) the hallucination rate per model, (2) the number of models hallucinating on each question, and (3) category-level statistics.
+We define \emph{universal hallucinations} as questions where all four models produce incorrect answers, and \emph{near-universal hallucinations} as questions where three or more models fail.
 
-\subsection{Statistical Analysis}
+\subsection{Experiment 2: Robustness to Rephrasing}
+\label{sec:exp2}
 
-All correlation tests use Pearson's $r$ with bootstrapped 95\% confidence intervals. For comparing recognition rates, we use McNemar's test for paired proportions. We report $p$-values and apply Benjamini-Hochberg correction for multiple comparisons where applicable. We set $\alpha = 0.05$ for all tests.
+To test whether hallucinations are robust to surface-level variation, we select 80 questions that caused hallucinations in two or more models (prioritized by the number of models that failed).
+For each question, \gptfourone generates five semantically equivalent rephrasings.
+All four models answer all rephrasings, and \gptfourone judges each response.
+
+We define the \emph{persistence rate} for a given model-question pair as the fraction of the five rephrasings on which the model still hallucinates.
+A persistence rate near 1.0 indicates a deeply embedded error; near 0.0 indicates a fragile, prompt-sensitive mistake.
+
+\subsection{Experiment 3: Self-Detection with Evidence}
+\label{sec:exp3}
+
+We test whether models can recognize their own hallucinations when directly presented with the correct answer.
+For each model, we select up to 80 questions on which it hallucinated.
+We construct an A/B test: the model receives its own incorrect answer alongside the ground-truth correct answer (order randomized to control for position bias) and must choose which one is correct.
+
+As a control, we apply the same A/B format to questions where the model originally answered correctly, pairing the correct answer with a known incorrect answer from the \truthfulqa annotation.
+The gap between hallucination detection accuracy and control accuracy measures how much the model's own incorrect belief interferes with its ability to evaluate evidence.
+
+\subsection{Experiment 4: Cross-Model Transfer Analysis}
+\label{sec:exp4}
+
+We quantify the overlap between models' hallucination sets using pairwise Jaccard similarity:
+\begin{equation}
+    J(A, B) = \frac{|H_A \cap H_B|}{|H_A \cup H_B|}
+    \label{eq:jaccard}
+\end{equation}
+where $H_A$ and $H_B$ are the sets of questions hallucinated by models $A$ and $B$.
+We compute statistical significance via permutation testing (1,000 permutations), comparing observed Jaccard values against a null distribution generated by randomly shuffling hallucination labels while preserving each model's overall hallucination rate.
+
+For temporal analysis, we compute Pearson correlations and chi-squared tests for two directed comparisons: \gptthreefive$\to$\gptfourone (spanning the longest time gap) and \gptfouromini$\to$\gptfouro (comparing within the same generation but across model sizes).
+We also compute conditional probabilities: $P(\text{model}_\text{new}\ \text{wrong} \mid \text{model}_\text{old}\ \text{wrong})$ versus $P(\text{model}_\text{new}\ \text{wrong} \mid \text{model}_\text{old}\ \text{right})$.
+
+\subsection{Reproducibility}
+\label{sec:reproducibility}
+
+All experiments use random seed 42.
+API responses are cached to disk to enable exact reproduction.
+We use Python 3.12.8 with the OpenAI SDK, NumPy, SciPy, and Matplotlib.
+The total experiment involves approximately 15,000 API calls and completes in approximately 25 minutes.

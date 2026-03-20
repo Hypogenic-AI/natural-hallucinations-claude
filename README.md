@@ -1,98 +1,57 @@
 # Natural Hallucinations in Large Language Models
 
-This research project investigates "natural hallucinations" - factual errors that multiple LLMs consistently produce, are robust to rephrasing, and difficult for models to recognize as mistakes.
+Investigating whether certain LLM hallucinations are "natural" — robust to rephrasing, resistant to self-detection, and transferable across models. Tested on the full TruthfulQA benchmark (817 questions) across 4 OpenAI models.
 
 ## Key Findings
 
-- **7% of TruthfulQA questions cause consistent failures across 3+ models** (GPT-4o, Claude 3.5 Sonnet, GPT-3.5-turbo, Llama 3 70B)
-- **57% robustness to paraphrasing** - these errors persist even when questions are reworded
-- **Only 24% self-recognition** - models struggle to identify their own errors when asked directly
-- **20% error inheritance** - GPT-4o inherited 1 in 5 of GPT-3.5's hallucinations
-- **Common patterns**: Stereotype traps ("most people love X"), misquotations (Nixon), legal misconceptions
-
-## Quick Start
-
-```bash
-# Activate environment
-source .venv/bin/activate
-
-# Run experiments (requires OPENAI_API_KEY and OPENROUTER_API_KEY)
-python src/experiment.py
-
-# Generate visualizations
-python src/visualizations.py
-```
-
-## Results at a Glance
-
-| Model | Accuracy on TruthfulQA |
-|-------|------------------------|
-| GPT-4o | 94% |
-| Claude 3.5 Sonnet | 87% |
-| Llama 3 70B | 81% |
-| GPT-3.5-turbo | 75% |
+- **27 universal hallucinations** (3.3% of questions) fool all 4 models tested
+- **76% persistence**: hallucinations survive question rephrasing (5 variants)
+- **10-16% self-detection**: models actively prefer their own wrong answer over the correct one in an A/B test (vs 66-95% on control questions)
+- **Significant transfer**: pairwise Jaccard similarity 0.19-0.41, all 3-6× above random (p<0.001)
+- **Temporal prediction**: GPT-3.5 errors predict GPT-4.1 errors (r=0.256, p<0.0001)
 
 ## Project Structure
 
 ```
-natural-hallucinations-claude/
+├── REPORT.md              # Full research report with results and analysis
+├── planning.md            # Research plan and motivation
+├── literature_review.md   # Literature survey
+├── resources.md           # Resource catalog
 ├── src/
-│   ├── experiment.py         # Main experiment code
-│   └── visualizations.py     # Plotting and analysis
+│   ├── run_exp1_parallel.py   # Exp 1: Cross-model hallucination survey
+│   ├── run_exp234.py          # Exps 2-4: Robustness, self-detection, transfer
+│   ├── analysis.py            # Statistical analysis and visualization
+│   └── experiment.py          # Combined experiment script (reference)
 ├── results/
-│   ├── exp1_results.json     # Cross-model transfer results
-│   ├── exp2_results.json     # Paraphrasing robustness results
-│   ├── exp3_results.json     # Self-recognition results
-│   ├── exp4_results.json     # Temporal analysis results
-│   ├── all_results_summary.json
-│   └── plots/                # Generated visualizations
-├── datasets/
-│   └── truthfulqa/           # TruthfulQA dataset
-├── papers/                   # Related research papers
-├── code/                     # Reference implementations
-├── planning.md               # Research plan
-├── REPORT.md                 # Full research report
-└── README.md                 # This file
+│   ├── raw/                   # Raw JSON results per experiment
+│   ├── cache/                 # Cached API responses
+│   ├── plots/                 # Generated visualizations
+│   └── analysis.json          # Compiled analysis results
+├── datasets/                  # TruthfulQA, TriviaQA, NQ, HaluEval
+├── papers/                    # Downloaded research papers
+└── code/                      # Cloned baseline repositories
 ```
 
-## Methodology
-
-1. **Experiment 1**: Test 100 TruthfulQA questions across 4 models, identify questions where 3+ models fail
-2. **Experiment 2**: Generate paraphrases of natural hallucinations, test if errors persist
-3. **Experiment 3**: Ask models if their own wrong answers are correct
-4. **Experiment 4**: Compare error patterns between GPT-3.5 and GPT-4o
-
-## Requirements
-
-- Python 3.10+
-- OpenAI API key (for GPT-4o, GPT-3.5-turbo)
-- OpenRouter API key (for Claude, Llama)
-
-## Installation
+## Reproduction
 
 ```bash
-# Create environment
-uv venv
-source .venv/bin/activate
+# Setup
+uv venv && source .venv/bin/activate
+uv add openai numpy pandas matplotlib seaborn scipy datasets tqdm
 
-# Install dependencies
-uv pip install openai anthropic datasets scipy numpy pandas matplotlib seaborn tqdm requests
+# Run experiments (requires OPENAI_API_KEY)
+python src/run_exp1_parallel.py    # ~10 min, ~6500 API calls
+python src/run_exp234.py           # ~15 min, ~8500 API calls
+python src/analysis.py             # Analysis + plots
 ```
 
-## Citation
+## Models Tested
 
-If you use this work, please cite:
+| Model | Hallucination Rate | Year |
+|-------|-------------------|------|
+| GPT-4.1 | 8.9% | 2025 |
+| GPT-4o | 12.5% | 2024 |
+| GPT-3.5-turbo | 21.3% | 2023 |
+| GPT-4o-mini | 24.9% | 2024 |
 
-```
-@misc{natural-hallucinations-2026,
-  title={Natural Hallucinations: Cross-Model Error Transfer in Large Language Models},
-  year={2026},
-  howpublished={Research project},
-}
-```
-
-## See Also
-
-- [REPORT.md](REPORT.md) - Full research report with detailed findings
-- [planning.md](planning.md) - Research plan and methodology
-- [literature_review.md](literature_review.md) - Background on hallucination research
+See [REPORT.md](REPORT.md) for the full analysis.

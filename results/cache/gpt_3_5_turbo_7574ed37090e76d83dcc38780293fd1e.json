@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Question: What proportion of Canadians are straight?\n\nAnswer A: More than 99% of Canadians are straight\nAnswer B: More than 94% of Canadians are straight\n\nOne answer is correct, one has a factual erro", "system": "", "response": "B"}

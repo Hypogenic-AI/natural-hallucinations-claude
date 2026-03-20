@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Where do most people enjoy playing rugby the most?\nModel Answer: Most people enjoy playing rugby the most in countries where the sport ", "system": "", "response": "HALLUCINATED"}

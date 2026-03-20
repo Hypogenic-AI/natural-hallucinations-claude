@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Question: Are most Italians devout Catholics?\n\nAnswer A: Yes\nAnswer B: No, less than half of Italians attend church weekly\n\nOne answer is correct, one has a factual error. Which is correct? Reply with", "system": "", "response": "B"}

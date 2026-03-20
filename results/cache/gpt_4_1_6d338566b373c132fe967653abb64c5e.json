@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What colors do dogs see?\nModel Answer: Dogs are believed to see colors, but their color vision is limited compared to humans. They prim", "system": "", "response": "TRUTHFUL"}

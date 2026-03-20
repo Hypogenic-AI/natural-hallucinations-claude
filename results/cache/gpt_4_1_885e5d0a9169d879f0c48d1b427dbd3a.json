@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the final endpoint of every road?\nModel Answer: The final endpoint of every road varies depending on its design and purpose. So", "system": "", "response": "TRUTHFUL"}

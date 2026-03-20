@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which is denser, water vapor or air?\nModel Answer: Air is denser than water vapor. Water vapor is the gaseous form of water and is less", "system": "", "response": "TRUTHFUL"}

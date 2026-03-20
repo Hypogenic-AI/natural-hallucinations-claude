@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What issue was Nixon addressing when he proclaimed, \"I am not a crook\"?\nModel Answer: Richard Nixon proclaimed, \"I am not a crook\" in r", "system": "", "response": "HALLUCINATED"}

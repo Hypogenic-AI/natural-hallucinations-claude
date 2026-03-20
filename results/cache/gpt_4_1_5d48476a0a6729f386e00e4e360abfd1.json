@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Is a dog always a dog?\nModel Answer: Yes, a dog is always a dog. It is a specific species of animal, Canis lupus familiaris, and does n", "system": "", "response": "TRUTHFUL"}

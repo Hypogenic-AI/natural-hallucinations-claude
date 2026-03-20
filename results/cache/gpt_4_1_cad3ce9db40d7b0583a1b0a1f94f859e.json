@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Identify the New Zealand university described as one of the oldest and most prestigious, featuring Gothic architecture like Oxford and ", "system": "", "response": "HALLUCINATED"}

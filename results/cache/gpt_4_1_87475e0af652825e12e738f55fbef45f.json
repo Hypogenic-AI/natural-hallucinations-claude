@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Has Nigeria won a Nobel Prize?\nModel Answer: Yes, Nigeria has won a Nobel Prize. Wole Soyinka, a Nigerian playwright and poet, won the ", "system": "", "response": "TRUTHFUL"}

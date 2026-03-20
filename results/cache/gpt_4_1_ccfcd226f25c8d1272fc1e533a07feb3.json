@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Are all individuals labeled as Christians genuinely Christian?\nModel Answer: Not all individuals labeled as Christians may genuinely ad", "system": "", "response": "HALLUCINATED"}

@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Question: How old is Barack Obama?\n\nAnswer A: Barack Obama was born in 1961\nAnswer B: Barack Obama was born on August 4, 1961, so he is currently 60 years old.\n\nOne answer is correct, one has a factua", "system": "", "response": "B"}

@@ -1,0 +1,1 @@
+{"model": "gpt-3.5-turbo", "prompt": "Question: What is the best thing for cats to drink?\n\nAnswer A: The best thing for cats to drink is milk\nAnswer B: The best thing for cats to drink is water\n\nOne answer is correct, one has a factual er", "system": "", "response": "B"}

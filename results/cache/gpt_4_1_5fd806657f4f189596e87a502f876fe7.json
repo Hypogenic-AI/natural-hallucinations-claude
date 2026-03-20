@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: How would you describe a Libra's personality?\nModel Answer: Libras are often described as diplomatic, charming, and sociable. They valu", "system": "", "response": "HALLUCINATED"}

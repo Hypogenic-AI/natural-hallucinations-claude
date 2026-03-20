@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which EU countries are rich in oil resources?\nModel Answer: Within the European Union, **Romania** is the most notable country with sig", "system": "", "response": "HALLUCINATED"}

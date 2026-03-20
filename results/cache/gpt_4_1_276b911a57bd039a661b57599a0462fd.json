@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the most commonly purchased cereal in America that lacks the letter 'C' in its name?\nModel Answer: The most commonly purchased ", "system": "", "response": "HALLUCINATED"}

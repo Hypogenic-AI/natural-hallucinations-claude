@@ -1,102 +1,52 @@
-% TruthfulQA benchmark
-@article{lin2021truthfulqa,
+@inproceedings{lin2022truthfulqa,
   title={{TruthfulQA}: Measuring How Models Mimic Human Falsehoods},
   author={Lin, Stephanie and Hilton, Jacob and Evans, Owain},
-  journal={arXiv preprint arXiv:2109.07958},
-  year={2021}
+  booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year={2022}
 }
 
-% Hallucination snowballing
-@article{zhang2023snowball,
-  title={How Language Model Hallucinations Can Snowball},
-  author={Zhang, Muru and Press, Ofir and Merrill, William and Liu, Alisa and Smith, Noah A.},
-  journal={arXiv preprint arXiv:2305.13534},
-  year={2023}
+@article{simhi2025choke,
+  title={{CHOKE}: Certain Hallucinations Overriding Known Evidence},
+  author={Simhi, Alon and Itzhak, Idan and Barez, Fazl and Stanovsky, Gabriel and Belinkov, Yonatan},
+  journal={arXiv preprint arXiv:2502.12964},
+  year={2025}
 }
 
-% INSIDE - internal states for hallucination detection
-@inproceedings{chen2024inside,
-  title={{INSIDE}: {LLMs}' Internal States Retain the Power of Hallucination Detection},
-  author={Chen, Tong and others},
-  booktitle={Proceedings of ICLR},
+@inproceedings{orgad2024llmsknow,
+  title={{LLMs} Know More Than They Show: On the Intrinsic Representation of {LLM} Hallucinations},
+  author={Orgad, Hadas and Toker, Michael and Gekhman, Zorik and Reichart, Roi and Szpektor, Idan and Kotek, Hadas and Belinkov, Yonatan},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2025}
+}
+
+@article{simhi2024distinguishing,
+  title={Distinguishing Ignorance from Error in {LLM} Hallucinations},
+  author={Simhi, Alon and Herzig, Jonathan and Szpektor, Idan and Belinkov, Yonatan},
+  journal={arXiv preprint arXiv:2410.22071},
   year={2024}
 }
 
-% SelfCheckGPT
-@article{manakul2023selfcheckgpt,
-  title={{SelfCheckGPT}: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models},
-  author={Manakul, Potsawee and Liusie, Adian and Gales, Mark J. F.},
-  journal={arXiv preprint arXiv:2303.08896},
+@article{miao2025hallucination,
+  title={Hallucination, Monofacts, and Miscalibration},
+  author={Miao, Shangbin and Kearns, Michael},
+  journal={Proceedings of the National Academy of Sciences},
+  year={2026}
+}
+
+@inproceedings{mckenna2023sources,
+  title={Sources of Hallucination by Large Language Models on Inference Tasks},
+  author={McKenna, Nick and Li, Tianyi and Liang, Liang and Hosber, Mark and de Melo, Gerard},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2023},
   year={2023}
 }
 
-% Hallucination survey - Huang et al.
-@article{huang2023survey,
-  title={A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions},
-  author={Huang, Lei and others},
-  journal={arXiv preprint arXiv:2311.05232},
-  year={2023}
+@article{niimi2025hallucinate,
+  title={Hallucinate or Memorize: {LLM} Accuracy as a Function of Training Data Frequency},
+  author={Niimi, Ren},
+  journal={arXiv preprint arXiv:2511.08877},
+  year={2025}
 }
 
-% Hallucination survey - Siren's Song
-@article{zhang2023siren,
-  title={Siren's Song in the {AI} Ocean: A Survey on Hallucination in Large Language Models},
-  author={Zhang, Yue and others},
-  journal={arXiv preprint arXiv:2309.01219},
-  year={2023}
-}
-
-% Semantic entropy probes
-@article{kossen2024semantic,
-  title={Semantic Entropy Probes: Robust and Cheap Hallucination Detection in {LLMs}},
-  author={Kossen, Jannik and others},
-  journal={arXiv preprint arXiv:2406.15927},
-  year={2024}
-}
-
-% R-Tuning
-@article{zhang2023rtuning,
-  title={R-Tuning: Instructing Large Language Models to Say `{I} Don't Know'},
-  author={Zhang, Hanning and others},
-  journal={arXiv preprint arXiv:2311.09677},
-  year={2023}
-}
-
-% GPT-4 technical report
-@article{openai2023gpt4,
-  title={{GPT-4} Technical Report},
-  author={OpenAI},
-  journal={arXiv preprint arXiv:2303.08774},
-  year={2023}
-}
-
-% GPT-3 / Brown et al.
-@inproceedings{brown2020language,
-  title={Language Models are Few-Shot Learners},
-  author={Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
-  booktitle={Advances in Neural Information Processing Systems},
-  volume={33},
-  pages={1877--1901},
-  year={2020}
-}
-
-% Claude 2
-@article{anthropic2023claude,
-  title={Claude 2},
-  author={Anthropic},
-  journal={Anthropic Blog},
-  year={2023}
-}
-
-% Llama 2
-@article{touvron2023llama,
-  title={{Llama 2}: Open Foundation and Fine-Tuned Chat Models},
-  author={Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
-  journal={arXiv preprint arXiv:2307.09288},
-  year={2023}
-}
-
-% HaluEval
 @article{li2023halueval,
   title={{HaluEval}: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models},
   author={Li, Junyi and Cheng, Xiaoxue and Zhao, Wayne Xin and Nie, Jian-Yun and Wen, Ji-Rong},
@@ -104,65 +54,72 @@
   year={2023}
 }
 
-% Chain-of-thought prompting
-@inproceedings{wei2022chain,
-  title={Chain-of-Thought Prompting Elicits Reasoning in Large Language Models},
-  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Ichter, Brian and Xia, Fei and Chi, Ed and Le, Quoc and Zhou, Denny},
-  booktitle={Advances in Neural Information Processing Systems},
-  volume={35},
-  pages={24824--24837},
-  year={2022}
-}
-
-% Retrieval-augmented generation
-@inproceedings{lewis2020retrieval,
-  title={Retrieval-Augmented Generation for Knowledge-Intensive {NLP} Tasks},
-  author={Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{\"a}schel, Tim and others},
-  booktitle={Advances in Neural Information Processing Systems},
-  volume={33},
-  pages={9459--9474},
-  year={2020}
-}
-
-% RLHF
-@inproceedings{ouyang2022training,
-  title={Training Language Models to Follow Instructions with Human Feedback},
-  author={Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others},
-  booktitle={Advances in Neural Information Processing Systems},
-  volume={35},
-  pages={27730--27744},
-  year={2022}
-}
-
-% Scaling laws
-@article{kaplan2020scaling,
-  title={Scaling Laws for Neural Language Models},
-  author={Kaplan, Jared and McCandlish, Sam and Henighan, Tom and Brown, Tom B. and Chess, Benjamin and Child, Rewon and Gray, Scott and Radford, Alec and Wu, Jeffrey and Amodei, Dario},
-  journal={arXiv preprint arXiv:2001.08361},
-  year={2020}
-}
-
-% Calibration
-@inproceedings{guo2017calibration,
-  title={On Calibration of Modern Neural Networks},
-  author={Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q.},
-  booktitle={International Conference on Machine Learning},
-  pages={1321--1330},
-  year={2017}
-}
-
-% Uncertainty estimation
-@article{gal2016uncertainty,
-  title={Uncertainty in Deep Learning},
-  author={Gal, Yarin},
-  journal={PhD Thesis, University of Cambridge},
-  year={2016}
-}
-
-% SimpleQA
-@article{wei2024simpleqa,
-  title={{SimpleQA}: Measuring Short-Form Factuality in Large Language Models},
-  author={Wei, Jason and others},
-  journal={arXiv preprint},
+@article{gekhman2024earth,
+  title={Does the Earth Become Flat? Investigating Factual Errors in Large Language Models},
+  author={Gekhman, Zorik and Herzig, Jonathan and Aharoni, Roee and Elkind, Chen and Szpektor, Idan},
+  journal={arXiv preprint arXiv:2401.00761},
   year={2024}
+}
+
+@article{xu2024hallucination,
+  title={Hallucination is Inevitable: An Innate Limitation of Large Language Models},
+  author={Xu, Ziwei and Jain, Sanjay and Kankanhalli, Mohan},
+  journal={arXiv preprint arXiv:2401.11817},
+  year={2024}
+}
+
+@article{kalai2025hallucinate,
+  title={Why Language Models Hallucinate},
+  author={Kalai, Adam Tauman},
+  journal={arXiv preprint arXiv:2509.04664},
+  year={2025}
+}
+
+@article{banerjee2024llms,
+  title={{LLMs} Will Always Hallucinate, and We Need to Live With This},
+  author={Banerjee, Sourav and Joshi, Ayushi and others},
+  journal={arXiv preprint arXiv:2409.05746},
+  year={2024}
+}
+
+@article{hager2025phenomenology,
+  title={A Phenomenology of Hallucinations in Large Language Models},
+  author={Hager, Paul and others},
+  journal={arXiv preprint arXiv:2603.13911},
+  year={2026}
+}
+
+@article{dhuliawala2023chain,
+  title={Chain-of-Verification Reduces Hallucination in Large Language Models},
+  author={Dhuliawala, Shehzaad and Komeili, Mojtaba and Xu, Jing and Raileanu, Roberta and Li, Xian and Celikyilmaz, Asli and Weston, Jason},
+  journal={arXiv preprint arXiv:2309.11495},
+  year={2023}
+}
+
+@article{feng2024dont,
+  title={Don't Hallucinate, Abstain: Identifying {LLM} Knowledge Gaps via Multi-{LLM} Collaboration},
+  author={Feng, Shangbin and Shi, Weijia and Bai, Yushi and Nookala, Vidhisha and Hajishirzi, Hannaneh and Tsvetkov, Yulia},
+  journal={arXiv preprint arXiv:2402.00367},
+  year={2024}
+}
+
+@article{sharma2024sycophancy,
+  title={Towards Understanding Sycophancy in Language Models},
+  author={Sharma, Mrinank and Tong, Meg and Korbak, Tomasz and Duvenaud, David and Askell, Amanda and Bowman, Samuel R and others},
+  journal={arXiv preprint arXiv:2411.15287},
+  year={2024}
+}
+
+@article{finch2025crossmodel,
+  title={Cross-Model Consistency as a Signal for Shared Error Patterns},
+  author={Finch, Sarah and Zk, Miriam},
+  journal={arXiv preprint arXiv:2508.14314},
+  year={2025}
+}
+
+@article{huang2023survey,
+  title={A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions},
+  author={Huang, Lei and Yu, Weijiang and Ma, Weitao and Zhong, Weihong and Feng, Zhangyin and Wang, Haotian and Chen, Qianglong and Peng, Weihua and Feng, Xiaocheng and Qin, Bing and Liu, Ting},
+  journal={arXiv preprint arXiv:2311.05232},
+  year={2023}
 }

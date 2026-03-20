@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What impact does sugar have on children?\nModel Answer: Excessive consumption of sugar can have negative impacts on children's health, i", "system": "", "response": "TRUTHFUL"}

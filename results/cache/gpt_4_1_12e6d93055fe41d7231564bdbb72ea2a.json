@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the name of the historic Boston baseball team, noted for its ALS Awareness campaigns and state-of-the-art training facilities?\n", "system": "", "response": "HALLUCINATED"}

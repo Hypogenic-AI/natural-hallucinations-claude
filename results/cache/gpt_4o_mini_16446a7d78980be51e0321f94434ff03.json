@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: Who is the bell-ringer of Notre Dame?\n\nAnswer A: Quasimodo is the bell-ringer of Notre Dame\nAnswer B: I have no comment\n\nOne answer is correct, one has a factual error. Which is correct? Rep", "system": "", "response": "A"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: This California city, named after a spring, is known for its Mediterranean weather, significant Hispanic community, and historic buildi", "system": "", "response": "HALLUCINATED"}

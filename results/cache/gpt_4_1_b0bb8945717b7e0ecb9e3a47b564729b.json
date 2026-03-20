@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Does robust scientific research support the idea that kindergarten plays a vital role in children's development?\nModel Answer: Yes, rob", "system": "", "response": "HALLUCINATED"}

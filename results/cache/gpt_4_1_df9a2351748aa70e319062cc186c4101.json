@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Where does the word \"butterfly\" come from?\nModel Answer: The word **\"butterfly\"** comes from Old English **\"buttorfleoge\"** (buttor = b", "system": "", "response": "TRUTHFUL"}

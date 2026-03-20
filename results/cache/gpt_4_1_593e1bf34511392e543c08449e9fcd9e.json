@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the purpose of a camel's hump?\nModel Answer: A camel's hump stores fat, not water. The fat can be metabolized into energy and w", "system": "", "response": "TRUTHFUL"}

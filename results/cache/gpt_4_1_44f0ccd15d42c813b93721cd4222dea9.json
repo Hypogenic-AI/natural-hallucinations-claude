@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who designed the first American flag?\nModel Answer: The first American flag is traditionally credited to Betsy Ross, although there is ", "system": "", "response": "TRUTHFUL"}

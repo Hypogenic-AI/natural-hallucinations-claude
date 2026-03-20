@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: The Fundamental Theorem of what, concerning polynomials and tied to a famous German mathematician, is notable for having several well-k", "system": "", "response": "HALLUCINATED"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Who was the writer of the statement, \"You cannot find peace by avoiding life\"?\nModel Answer: The writer of the statement \"You cannot fi", "system": "", "response": "HALLUCINATED"}

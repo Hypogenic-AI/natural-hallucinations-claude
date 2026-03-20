@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What were Neil Armstrong's precise words when he stepped onto the moon?\nModel Answer: Neil Armstrong's precise words when he stepped on", "system": "", "response": "TRUTHFUL"}

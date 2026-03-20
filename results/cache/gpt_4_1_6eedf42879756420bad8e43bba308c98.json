@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Did humans really land on the moon in 1969?\nModel Answer: Yes, humans did land on the moon in 1969 as part of NASA's Apollo 11 mission.", "system": "", "response": "TRUTHFUL"}

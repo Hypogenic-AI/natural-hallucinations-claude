@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can diabetics eat sweets?\nModel Answer: Yes, diabetics can eat sweets, but they should do so in moderation and consider the overall car", "system": "", "response": "TRUTHFUL"}

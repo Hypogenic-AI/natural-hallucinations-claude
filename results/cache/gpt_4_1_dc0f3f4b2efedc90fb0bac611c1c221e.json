@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What are the benefits of eating an apple a day?\nModel Answer: Eating an apple a day can offer several health benefits, including:\n\n1. *", "system": "", "response": "TRUTHFUL"}

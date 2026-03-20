@@ -7,8 +7,7 @@ Begin research execution.
 The idea submitter has provided SPECIFIC INSTRUCTIONS that MUST take precedence
 over the general research workflow. Read carefully and follow these:
 
-LLMs still hallucinate quite a bit. My bet is, one of the reasons for this is that there are hallucinations that are difficult for LLMs to recognize, even when they have all the information needed. One of the reasons for this may be that hallucinations are usually about something extra an LLM sees, but contradictory in-context information is normal to see, so doesn&#39;t necessarily allow the model to know its hallucinating.
-Can we see how robust certain hallucinations are to include information/the question asked? Do these hallucinations transfer? If models are trained on these Natural Hallucinations, are these beliefs remembered more easily? If we find them for older models, do they predict hallucinations in later models?
+LLMs still hallucinate quite a bit. One of the reasons for this may be that hallucinations are difficult for LLMs to recognize, even when they have all the information needed. Hallucinations are usually about something extra an LLM sees, but contradictory in-context information is normal to see, so doesn&#39;t necessarily allow the model to know it&#39;s hallucinating. This idea explores the robustness and transferability of such &#34;natural hallucinations,&#34; their memorability if used in training, and whether hallucinations in older models predict those in newer models.
 
 ────────────────────────────────────────────────────────────────────────────────
 IMPORTANT: The above instructions from the user have HIGHER PRIORITY than the
@@ -20,7 +19,7 @@ and the general workflow, ALWAYS follow the user&#39;s instructions.
 CRITICAL: Environment Setup
 ────────────────────────────────────────────────────────────────────────────────
 You MUST use an isolated environment for this project. DO NOT use the
-idea-explorer environment or any existing system environment.
+neurico environment or any existing system environment.
 
 REQUIRED STEPS (in order):
 
@@ -53,7 +52,7 @@ REQUIRED STEPS (in order):
    EOF
 
    CRITICAL: This ensures uv won't search parent directories for pyproject.toml
-   and contaminate the idea-explorer environment!
+   and contaminate the neurico environment!
 
 3. Activate the environment:
    source .venv/bin/activate
@@ -85,7 +84,7 @@ REQUIRED STEPS (in order):
    - This ensures reproducibility of the research environment
 
 WHY: Using an isolated environment ensures:
-- No pollution of the idea-explorer environment
+- No pollution of the neurico environment
 - Fast package installation with uv (10-100x faster than pip)
 - Automatic dependency tracking with pyproject.toml
 - Clean, reproducible research setup
@@ -222,15 +221,15 @@ Nlp
 
 ## HYPOTHESIS / RESEARCH QUESTION
 
-Some hallucinations produced by large language models (LLMs) are difficult for the models to recognize, even when all relevant information is present. These &#34;natural hallucinations&#34; may be robust to additional context or question phrasing, and may transfer across models or persist after training. Investigating the robustness, transferability, and memorability of such hallucinations can reveal whether hallucinations found in older models predict those in newer models.
+Certain hallucinations produced by large language models (LLMs) are robust to the inclusion of additional information or changes in the question asked, making them difficult for LLMs to recognize even when all necessary information is present. These &#34;natural hallucinations&#34; may transfer across models and, if used in training, could be more easily remembered by models. Hallucinations found in older models may also predict hallucinations in later models.
 
 
 ## BACKGROUND
 
 ### User-Provided Instructions and Context:
 
-&gt;&gt;&gt; LLMs still hallucinate quite a bit. My bet is, one of the reasons for this is that there are hallucinations that are difficult for LLMs to recognize, even when they have all the information needed. One of the reasons for this may be that hallucinations are usually about something extra an LLM sees, but contradictory in-context information is normal to see, so doesn&#39;t necessarily allow the model to know its hallucinating.
-Can we see how robust certain hallucinations are to include information/the question asked? Do these hallucinations transfer? If models are trained on these Natural Hallucinations, are these beliefs remembered more easily? If we find them for older models, do they predict hallucinations in later models? &lt;&lt;&lt;
+&gt;&gt;&gt; LLMs still hallucinate quite a bit. One of the reasons for this may be that hallucinations are difficult for LLMs to recognize, even when they have all the information needed. Hallucinations are usually about something extra an LLM sees, but contradictory in-context information is normal to see, so doesn&#39;t necessarily allow the model to know it&#39;s hallucinating. This idea explores the robustness and transferability of such &#34;natural hallucinations,&#34; their memorability if used in training, and whether hallucinations in older models predict those in newer models.
+ &lt;&lt;&lt;
 
 (Note: Follow any specific instructions above with high priority)
 
@@ -1640,14 +1639,14 @@ CRITICAL REMINDERS:
 
 WORKSPACE DIRECTORY AND DIRECTORY SAFETY:
 ────────────────────────────────────────────────────────────────────────────────
-You are running in the project workspace directory: /data/hypogenicai/workspaces/natural-hallucinations-claude
+You are running in the project workspace directory: /workspaces/natural-hallucinations-claude
 
 WORKING DIRECTORY VERIFICATION:
 Before creating or writing ANY files, ALWAYS verify you are in the correct directory:
 
 1. Run `pwd` to check your current directory
-2. You should be in: /data/hypogenicai/workspaces/natural-hallucinations-claude
-3. If you're somewhere else, run: cd /data/hypogenicai/workspaces/natural-hallucinations-claude
+2. You should be in: /workspaces/natural-hallucinations-claude
+3. If you're somewhere else, run: cd /workspaces/natural-hallucinations-claude
 
 MANDATORY VERIFICATION POINTS - Run `pwd` and verify location:
 ✓ Before creating any new directories (mkdir results, mkdir figures, etc.)

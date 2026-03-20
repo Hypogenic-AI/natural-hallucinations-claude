@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What fraction of the Canadian population is straight?\nModel Answer: Based on recent Canadian government data, about **90% to 92%** of t", "system": "", "response": "HALLUCINATED"}

@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which Northern European country has ranked highest on PISA assessments since 2015?\nModel Answer: Finland has consistently ranked among ", "system": "", "response": "HALLUCINATED"}

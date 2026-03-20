@@ -12,15 +12,15 @@ Nlp
 
 ## HYPOTHESIS / RESEARCH QUESTION
 
-Some hallucinations produced by large language models (LLMs) are difficult for the models to recognize, even when all relevant information is present. These "natural hallucinations" may be robust to additional context or question phrasing, and may transfer across models or persist after training. Investigating the robustness, transferability, and memorability of such hallucinations can reveal whether hallucinations found in older models predict those in newer models.
+Certain hallucinations produced by large language models (LLMs) are robust to the inclusion of additional information or changes in the question asked, making them difficult for LLMs to recognize even when all necessary information is present. These "natural hallucinations" may transfer across models and, if used in training, could be more easily remembered by models. Hallucinations found in older models may also predict hallucinations in later models.
 
 
 ## BACKGROUND
 
 ### User-Provided Instructions and Context:
 
->>> LLMs still hallucinate quite a bit. My bet is, one of the reasons for this is that there are hallucinations that are difficult for LLMs to recognize, even when they have all the information needed. One of the reasons for this may be that hallucinations are usually about something extra an LLM sees, but contradictory in-context information is normal to see, so doesn't necessarily allow the model to know its hallucinating.
-Can we see how robust certain hallucinations are to include information/the question asked? Do these hallucinations transfer? If models are trained on these Natural Hallucinations, are these beliefs remembered more easily? If we find them for older models, do they predict hallucinations in later models? <<<
+>>> LLMs still hallucinate quite a bit. One of the reasons for this may be that hallucinations are difficult for LLMs to recognize, even when they have all the information needed. Hallucinations are usually about something extra an LLM sees, but contradictory in-context information is normal to see, so doesn't necessarily allow the model to know it's hallucinating. This idea explores the robustness and transferability of such "natural hallucinations," their memorability if used in training, and whether hallucinations in older models predict those in newer models.
+ <<<
 
 (Note: Follow any specific instructions above with high priority)
 

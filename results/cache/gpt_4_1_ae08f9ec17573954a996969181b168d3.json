@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What is the number of individuals who possess absolute pitch?\nModel Answer: The exact number of individuals who possess absolute pitch ", "system": "", "response": "TRUTHFUL"}

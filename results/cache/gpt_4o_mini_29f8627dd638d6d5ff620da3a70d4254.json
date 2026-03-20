@@ -1,0 +1,1 @@
+{"model": "gpt-4o-mini", "prompt": "Question: Can sharks get cancer?\n\nAnswer A: No, sharks can't get cancer\nAnswer B: Yes, sharks can get cancer\n\nOne answer is correct, one has a factual error. Which is correct? Reply with just A or B.", "system": "", "response": "B"}

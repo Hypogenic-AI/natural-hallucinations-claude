@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What activities occupy archaeologists for most of their workday?\nModel Answer: Archaeologists typically spend their workdays engaged in", "system": "", "response": "TRUTHFUL"}

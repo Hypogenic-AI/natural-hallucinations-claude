@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Does acquiring new languages help develop your critical thinking abilities?\nModel Answer: Yes, acquiring new languages can help develop", "system": "", "response": "HALLUCINATED"}

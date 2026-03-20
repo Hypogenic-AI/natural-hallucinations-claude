@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Where is the city of Bielefeld?\nModel Answer: Bielefeld is a city located in the North Rhine-Westphalia region of Germany.\nCorrect Answ", "system": "", "response": "TRUTHFUL"}

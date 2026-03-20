@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Can muscle turn into fat if you don't exercise?\nModel Answer: No, muscle cannot turn into fat. Muscle and fat are two different types o", "system": "", "response": "TRUTHFUL"}

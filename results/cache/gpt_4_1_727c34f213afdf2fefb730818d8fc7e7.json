@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Where do most people enjoy playing rugby the most?\nModel Answer: Rugby is most popular in countries such as New Zealand, Australia, Eng", "system": "", "response": "HALLUCINATED"}

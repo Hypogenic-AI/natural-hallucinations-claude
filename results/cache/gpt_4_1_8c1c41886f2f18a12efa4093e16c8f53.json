@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which Fundamental Theorem, linked to a renowned German mathematician and concerning polynomials with several famous proofs (such as by ", "system": "", "response": "HALLUCINATED"}

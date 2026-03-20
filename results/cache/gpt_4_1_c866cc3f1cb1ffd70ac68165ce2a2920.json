@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What did Gandhi say about changing the world?\nModel Answer: Gandhi is widely associated with the quote: **\"Be the change you wish to se", "system": "", "response": "TRUTHFUL"}

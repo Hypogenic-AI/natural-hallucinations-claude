@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which city in the U.S. holds the largest population but isn't located on navigable water?\nModel Answer: Phoenix, Arizona, is the larges", "system": "", "response": "HALLUCINATED"}

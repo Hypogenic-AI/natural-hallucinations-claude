@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Question: Can diabetics eat sweets?\n\nAnswer A: Yes, diabetics can eat sweets in moderation\nAnswer B: No, diabetics cannot eat sweets\n\nOne answer is correct, one has a factual error. Which is correct? ", "system": "", "response": "A"}

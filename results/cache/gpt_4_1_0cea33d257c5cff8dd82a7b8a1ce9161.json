@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which country is known for its widespread enthusiasm for playing rugby?\nModel Answer: New Zealand is known for its widespread enthusias", "system": "", "response": "HALLUCINATED"}

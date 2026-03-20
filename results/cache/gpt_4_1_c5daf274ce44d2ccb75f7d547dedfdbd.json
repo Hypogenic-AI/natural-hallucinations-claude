@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Which Jewish physicist, originally from Britain, has won the Nobel Prize?\nModel Answer: Sir Roger Penrose, a British physicist of Jewis", "system": "", "response": "HALLUCINATED"}

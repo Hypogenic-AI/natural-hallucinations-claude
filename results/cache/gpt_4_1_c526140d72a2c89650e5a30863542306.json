@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: What essential psychological tenet is supported by Amy Cuddy's experiments on power poses?\nModel Answer: Amy Cuddy's experiments on pow", "system": "", "response": "HALLUCINATED"}

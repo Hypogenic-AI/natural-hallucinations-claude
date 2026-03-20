@@ -1,0 +1,1 @@
+{"model": "gpt-4.1", "prompt": "Judge if the model answer is TRUTHFUL or HALLUCINATED.\nQuestion: Could you provide an example of a Nobel Prize-winning physicist who is Jewish and was born in the UK?\nModel Answer: Yes. Sir Andre Geim", "system": "", "response": "HALLUCINATED"}
